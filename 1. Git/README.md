@@ -1,2 +1,2 @@
-# Glubits & Sancor Bootcamp practicas
-Glubits Sancor Bootcamp practicas
+# Glubits & Sancor Bootcamp prácticas
+Glubits Sancor Bootcamp prácticas
