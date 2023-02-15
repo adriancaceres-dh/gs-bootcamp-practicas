@@ -6,7 +6,7 @@ public class Ejercicio2 {
 //    double $ueldo; // no puede tener carecteres especiales.
 //    String @pellido; // no puede tener caracteres especiales.
 //    String direccion;
-//    boolean licencia_de_conducir; // no puede tener caracteres especiales.
+//    boolean licencia_de_conducir;
 //    double estatura de la persona; // no puede contener espacios.
 //    int cantidad-de-hijos; // no puede conteneter caracteres especiales.
 }
