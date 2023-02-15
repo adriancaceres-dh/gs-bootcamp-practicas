@@ -10,11 +10,11 @@ public class ejercicio2 {
     double estatura de la persona;
     int cantidad-de-hijos;
      */
-        String nombre = "Juan";
+        String nombre1;
         int edad = 10;
         double sueldo;
         String apellido;
-        String direccion = "Av. libertador al 1012";
+        double direccion;
         boolean licenciaDeConducir;
         double estaturaDeLaPersona;
         int cantidadDeHijos;

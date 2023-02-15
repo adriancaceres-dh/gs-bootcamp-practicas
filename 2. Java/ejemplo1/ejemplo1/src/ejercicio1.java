@@ -10,7 +10,7 @@ public class ejercicio1 {
         String apellido = "Gomez";
         int edad = 35;
         boolean si = !false;
-        String sueldo = "45857.90";
-        double nombre;
+        double sueldo = 45857.90;
+        String nombre = "Julian";
     }
 }
