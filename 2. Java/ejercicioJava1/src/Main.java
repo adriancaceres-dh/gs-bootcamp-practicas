@@ -4,7 +4,23 @@ public class Main {
     public static void main(String[] args) {
 
         //Ejercicios vistos en clase
+
+        /* Consigna
+        * Una empresa quiere calcular el porcentaje de ventas
+        * Se pide ingresar el total de ventas
+        * Se pide ingresar un parcial de ventas
+        * Por ultimo mostrar el resultado*/
+
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese total de ventas");
+        double totalVentas = scanner.nextDouble();
+        System.out.println("Ingrese parcial de ventas");
+        double parcialVentas = scanner.nextDouble();
+        double porcentajeVentas = parcialVentas/totalVentas*100;
+        System.out.println("El porcentaje es " + porcentajeVentas);
+
+
+        /*Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingrese un numero");
         int numero = scanner.nextInt();
@@ -12,7 +28,7 @@ public class Main {
 
         System.out.println("Ingrese un nombre");
         String nombre = scanner.next();
-        System.out.println("El nombre ingresado es " + nombre);
+        System.out.println("El nombre ingresado es " + nombre);*/
 /*
         //numero
         int i = 0;
