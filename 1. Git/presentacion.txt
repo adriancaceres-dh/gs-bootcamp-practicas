@@ -1,0 +1,4 @@
+Hola! Soy Sofi, tengo 26 años, soy de Rafaela pero vivo en Rosario hace unos años.
+Lo mas difícil que hice últimamente fue tomar la decisión de dejar la universidad para ingresar al mundo de la programación.
+Me gusta mucho viajar. Mi pagina favorita es Youtube aunque la mas visitada hoy es Netflix.
+Para este bootcamp espero aprender las bases de Java y agregar un lenguaje mas a mis conocimientos y poder ponerlos en práctica. Estoy muy ansiosa por empezar esta nueva etapa y trabajar con un nuevo equipo!
