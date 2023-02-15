@@ -10,9 +10,12 @@ public class Ej2_PlayG {
     double $ueldo; //Quitar el simbolo $ que no es válido y dejar "sueldo"
     String @pellido; //Quitar el simbolo @ que no es válido y dejar "apellido"
     String direccion;
-    boolean licencia_de_conducir;
-    double estatura de la persona; //Faltó el _ entre palabras para cumplir con el estilo de escritura
-    int cantidad-de-hijos; //Sustituir los - por _ entre palabras para cumplir con el estilo de escritura
+    boolean licencia_de_conducir; //Poner en Mayus. al inicio de cada palabra siguiente a la primera.
+                                  //Puede ser licenciaDeConducir o licencia_de_conducir
+    double estatura de la persona; //No puede haber espacios en blanco entre palabras, y Poner en Mayus. al inicio
+                                  // de cada palabra siguiente a la primera. Lo correcto sería: estaturaDeLaPersona
+    int cantidad-de-hijos; //Quitar los - que no son aceptados y unir las palabras.
+                          // Dejar: cantidadDeHijos o cantidad_de_hijos
 
 
 }
