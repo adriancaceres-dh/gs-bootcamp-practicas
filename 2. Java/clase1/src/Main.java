@@ -1,7 +1,11 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {
+
+        //EJERCICIOS REALIZADOS INDIVIDUALMENTE ANTES DE CLASES
 
         //Actividad 1:
 
@@ -22,14 +26,14 @@ public class Main {
         //Actividad 2:
 
 
-        String nombre;
+        /*String nombre;
         int edad;
         double sueldo;
         String apellido;
         String direccion;
         boolean licencia_de_conducir;
         double estatura_de_la_persona;
-        int cantidad_de_hijos;
+        int cantidad_de_hijos;*/
 
 
         //Actividad 3:
@@ -42,6 +46,14 @@ public class Main {
         System.out.println("El premio final es de: $" + premioNeto(5000000));
         System.out.println("El premio final es de: $" + premioNeto(23563899));
 
+
+
+        //EJERCICIOS REALIZADOS DESPUES DE LA CLASE
+
+        //Actividad 1 y Actividad 2 igual a los anteriores.
+
+        //Actividad 3 y Actividad 4 VER CLASES NUEVAS CREADAS.
+
     }
     public static int precioCampaña(int dias){
         int precioFijo = 2;
@@ -49,7 +61,7 @@ public class Main {
         return precioTotal;
     }
 
-    public static String premioNeto (double premioBruto){
+    public static String premioNeto(double premioBruto) {
         double primerImpuesto = premioBruto * 0.0245;
         double segundoImpuesto = premioBruto * 0.15;
         double tercerImpuesto = premioBruto * 0.03;
@@ -59,5 +71,7 @@ public class Main {
         DecimalFormat formatoDecimal = new DecimalFormat("#.##");
         String numero = formatoDecimal.format(premioFinal);
         return numero;
+
     }
+
 }
