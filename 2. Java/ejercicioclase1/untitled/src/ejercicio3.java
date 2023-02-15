@@ -1,5 +1,5 @@
 /*
-public class ejercicio4 {
+public class ejercicio3 {
 
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
