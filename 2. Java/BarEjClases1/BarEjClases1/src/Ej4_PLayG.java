@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Ej4_PLayG {
@@ -29,6 +30,11 @@ public class Ej4_PLayG {
         double totalImpuestos = (primerImpuesto+segundoImpuesto+tercerImpuesto);
         double montoNeto = montoBruto - totalImpuestos ;
         System.out.println("El monto a recibir es de " + montoNeto);
+
+        DecimalFormat formatoDecimal = new DecimalFormat( "#.##");
+        String montoNetoDecimal = formatoDecimal.format(montoNeto);
+
+        System.out.println("El monto a recibir es de " + montoNetoDecimal);
     }
 
 }
