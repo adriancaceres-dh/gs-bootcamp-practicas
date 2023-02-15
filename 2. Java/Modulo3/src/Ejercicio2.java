@@ -5,7 +5,7 @@ public class Ejercicio2 {
     //String @pellido; falta el igual y la estructura de variable "variable", no se puede utilizar el arroba
    // String direccion; falta el igual y el nombre de calle entre comillas
    // boolean licencia_de_conducir; falta el true o false
-    //double estatura de la persona; falta el igual y el numero con getDecimal
+    //double estatura de la persona; falta el igual y el numero con getDecimal y no se puede usar espacios para nombrar variables
 
    // int cantidad-de-hijos; falta el igual y el numero entero
 }
