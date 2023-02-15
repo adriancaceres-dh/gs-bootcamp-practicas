@@ -21,9 +21,11 @@ public class Ejerciciosplayground {
         double estatura de la persona; // no puede incluir espacios en blanco
         int cantidad-de-hijos; // no puede utilizar caracteres especiales
 
-       */
 
+
+       */
        /* //ejercicio 3
+
 
          int total;
 
@@ -32,9 +34,9 @@ public class Ejerciciosplayground {
         total = teclado.nextInt();
         total = total * 2;
         System.out.println("El precio de la campaña es " + total);
+*/
 
-        */
-
+/*
         //ejercicio 4
         Scanner scanner = new Scanner(System.in);
         double impuesto1 = 2.45;
@@ -56,7 +58,7 @@ public class Ejerciciosplayground {
         String montoNetoPremioDecimal = formatoDecimal.format(totalNeto);
 
         System.out.println("El monto neto del premio es " + montoNetoPremioDecimal);
-
+*/
     }
 
 }
