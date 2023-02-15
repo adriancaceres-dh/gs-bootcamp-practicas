@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Ej_4_Pg {
@@ -19,9 +20,13 @@ public class Ej_4_Pg {
         System.out.println("El segundo impuesto es del 15% representa $" + impuesto2);
         System.out.println("El tercer impuesto es del 3% representa $" + impuesto3);
 
+        DecimalFormat formatDecimal = new DecimalFormat("#.##");
+
         double totalImpuestos = (impuesto1 + impuesto2 + impuesto3);
         double totalPremio = premio - totalImpuestos;
-        System.out.println("El premio total es de $" + totalPremio);
+        String montoNetoPremioDecimal = formatDecimal.format(totalPremio);
+        System.out.println("El premio total es de $" + montoNetoPremioDecimal);
+
 
     }
 
