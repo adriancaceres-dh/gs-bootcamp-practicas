@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class ejercicio4 {
@@ -15,6 +16,15 @@ public class ejercicio4 {
 
         double premio = monto - totalImpuestos;
         System.out.println("su premio es de $" + premio);
+
+        DecimalFormat formatoDecimal = new DecimalFormat( "#,##" );
+        String montoNetoPremioDecimal = formatoDecimal.format(premio);
+
+        System.out.println("El monto neto de su premio es " + montoNetoPremioDecimal );
+
+
+
+
 
     }
 }
