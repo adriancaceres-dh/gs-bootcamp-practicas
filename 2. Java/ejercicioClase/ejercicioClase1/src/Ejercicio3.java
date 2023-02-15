@@ -5,12 +5,12 @@ public class Ejercicio3 {
 
         Scanner quantityDays = new Scanner(System.in);
 
-        System.out.print("Enter the number of days the campaign will last: ");
+        System.out.print("Ingrese la cantidad de días que durará la campaña: ");
 
         int days = quantityDays.nextInt();
 
         double totalCost = days * 2.0;
 
-        System.out.println("The total cost of the campaign is $" + totalCost);
+        System.out.println("El costo total de la campaña es de $" + totalCost);
     }
 }

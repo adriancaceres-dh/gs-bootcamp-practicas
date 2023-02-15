@@ -1,23 +1,23 @@
 public class Ejercicio2 {
 
     //la variable no puede comenzar con un número
-    String 1nombre;
+    String nombre;
 
     int edad;
 
     //la variable no puede comenzar con un caracter especial
-    double $ueldo;
+    double sueldo;
 
     //la variable no puede comenzar con un caracter especial
-    String @pellido;
+    String apellido;
 
     String direccion;
 
     boolean licencia_de_conducir;
 
     //la variable no puede tener espacios
-    double estatura de la persona;
+    double estaturaDeLaPersona;
 
-    int cantidad-de-hijos;
+    int cantidad_de_hijos;
 
 }

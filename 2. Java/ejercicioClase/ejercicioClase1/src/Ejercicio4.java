@@ -1,16 +1,20 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner importAward = new Scanner(System.in);
 
-        System.out.print("Enter the total prize won: ");
+        System.out.print("Ingrese el total del premio ganado: ");
 
         int award = importAward.nextInt();
 
-        double tax = award * 0.2045;
+        double impuesto1 = award * 0.0245;
+        double impuesto2 = award * 0.15;
+        double impuesto3 = award * 0.03;
 
-        double finalAward = award - tax;
+        DecimalFormat formatoDecimal = new DecimalFormat("#.##");
+        String finalAward = formatoDecimal.format(award-impuesto1-impuesto2-impuesto3);
 
-        System.out.println("The total prize won is $" + finalAward);
+        System.out.println("El otal sin impuestos es de $" + finalAward);
     }
 }
