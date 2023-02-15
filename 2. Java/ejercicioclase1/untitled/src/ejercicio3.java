@@ -1,12 +1,15 @@
-public class ejercicio3 {
-(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+/*
+public class ejercicio4 {
 
-        System.out.println("Ingrese la cantidad de días");
-        double cantidadDias = scanner.nextDouble();
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
 
-        int precioPorDiaCampana = 2;
-        double costoTotalCampana = precioPorDiaCampana * cantidadDias;
-        System.out.println("El costo total de la campaña es " + costoTotalCampana);
-    }
+    System.out.println("Ingrese la cantidad de días");
+    double cantidadDias = scanner.nextDouble();
+
+    int precioPorDiaCampana = 2;
+    double costoTotalCampana = precioPorDiaCampana * cantidadDias;
+    System.out.println("El costo total de la campaña es " + costoTotalCampana);
 }
+}
+ */
