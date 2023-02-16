@@ -3,8 +3,8 @@ public class Main {
         String[] ciudades = {"Londres","Madrid","Nueva York","Bs As", "Asuncion", "San Paulo", "Lima", "Santiago de Chile", "Lisboa", "Tokio"};
         int [][] temperaturas = {{-2,33},{-3,32},{-8,27},{4,37},{6,42},{5,43},{0,39},{-7,26},{-1,31},{-10,35}};
 
-           int max = 0;
-           int min = 0;
+           int max = temperaturas [0][0];
+           int min = temperaturas [0][1];
            int indiceMin = 0;
            int indiceMax = 0;
 
@@ -20,7 +20,7 @@ public class Main {
                    }
                }
            }
-            System.out.println("El valor mínimo es: " + min + ". Registrada en la ciudad de: " + ciudades[indiceMin] + ".");
-            System.out.println("El valor máximo es: " + max + ". Registrada en la ciudad de: " + ciudades[indiceMax] + ".");
+            System.out.println("El valor mínimo es: " + min + "°C. Registrada en la ciudad de: " + ciudades[indiceMin] + ".");
+            System.out.println("El valor máximo es: " + max + "°C. Registrada en la ciudad de: " + ciudades[indiceMax] + ".");
         }
 }
