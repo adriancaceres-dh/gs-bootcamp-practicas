@@ -11,7 +11,7 @@ public class Ejercicio4 {
         int diariosByC = 0;
         int diarioA = 0;
 
-        for(int i = 1; i <= 5; i++){
+        for(int i = 1; i <= 50; i++){
 
             System.out.println("Opciones: 1.- Los 3 diarios, 2.- Diarios A y B, 3.- Diarios A y C, 4.- Diarios By C, 5.- Diario A");
             System.out.println("Persona número " + i + ":");
@@ -34,10 +34,10 @@ public class Ejercicio4 {
         }
 
         System.out.println("Los suscriptos a los 3 diarios son: " + diarios3 + " personas.");
-        System.out.println("Los suscriptos a los 3 diarios son: " + diariosAyB + " personas.");
-        System.out.println("Los suscriptos a los 3 diarios son: " + diariosAyC + " personas.");
-        System.out.println("Los suscriptos a los 3 diarios son: " + diariosByC + " personas.");
-        System.out.println("Los suscriptos a los 3 diarios son: " + diarioA + " personas.");
+        System.out.println("Los suscriptos a los diarios A y B son: " + diariosAyB + " personas.");
+        System.out.println("Los suscriptos a los diarios A y C son: " + diariosAyC + " personas.");
+        System.out.println("Los suscriptos a los diarios B y C son: " + diariosByC + " personas.");
+        System.out.println("Los suscriptos al diario A son: " + diarioA + " personas.");
 
     }
 }
