@@ -33,7 +33,7 @@ public class Ejercicio4 {
                         } else if (suscripcion == 4) {
                                 suscripcion4X = suscripcion4++;
                             } else if (suscripcion == 5) {
-                                    suscripcion2X = suscripcion5++;
+                                    suscripcion5X = suscripcion5++;
             }
 
             System.out.println(suscripcion1X+" personas estan suscriptas a los 3 diarios. \n"+ suscripcion2X+" personas estan suscriptas al diario A y C. \n" + suscripcion3X+" personas estan suscriptas al diario A y B. \n"+ suscripcion4X+" personas estan suscriptas al diario B y C. \n" + suscripcion5X+" personas estan suscriptas al diario A. \n" );
