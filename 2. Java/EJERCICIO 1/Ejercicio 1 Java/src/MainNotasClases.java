@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class Main {
+public class MainNotasClases {
     public static void main(String[] args) {
         /*
         //consigna adrian

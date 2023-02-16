@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class estructuraDeControl {
+public class estructuraDeControlNotasClases {
     public static void main(String[] args){
        /*
         //if Nota Clases
