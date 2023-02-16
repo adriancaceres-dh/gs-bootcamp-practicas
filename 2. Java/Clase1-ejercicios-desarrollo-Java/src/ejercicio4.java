@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Main {
+public class ejercicio4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el importe del premio");
@@ -13,7 +13,7 @@ public class Main {
         DecimalFormat formatoDecimal = new DecimalFormat("#.##");
         String montoNetoPremioDecimal = formatoDecimal.format((importePremio-impuesto1-impuesto2-impuesto3));
 
-        System.out.println("Total sin impuestos" + montoNetoPremioDecimal);
+        System.out.println("Total sin impuestos " + montoNetoPremioDecimal);
 
 
     }
