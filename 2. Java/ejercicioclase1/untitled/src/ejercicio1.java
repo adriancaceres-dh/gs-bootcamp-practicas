@@ -6,3 +6,4 @@
     double nombre = "Julián"; //El dato debe ser numerico y no de texto, este dato irís en String
 }/*
 
+ */

@@ -21,7 +21,4 @@
         int cantidad_de_hijos;
 }/*
 
-
-
-
-
+ */
