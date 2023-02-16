@@ -11,7 +11,7 @@ public class Ej_4_Pg_Clase_4 {
         int diariosA = 0;
 
         for (int i = 1; i <= 5; i++) {
-            System.out.println("Bienenido " + i + " Elija su subscripción de diario: 1- Los 3 diarios | 2- Diarios A y C | 3- Diarios A y B | 4- Diarios B y C | 5- Diario A");
+            System.out.println("Bienvenido " + i + " Elija su subscripción de diario: 1- Los 3 diarios | 2- Diarios A y C | 3- Diarios A y B | 4- Diarios B y C | 5- Diario A");
 
             int opcionElegida = scanner.nextInt();
 
