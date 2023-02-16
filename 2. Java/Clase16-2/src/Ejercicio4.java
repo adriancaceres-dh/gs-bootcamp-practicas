@@ -9,7 +9,7 @@ public class Ejercicio4 {
 
         Scanner scanner = new Scanner(System.in);
 
-        while (contadorPersonas <= 50) {
+        while (contadorPersonas <= 3) {
 
             System.out.println("Datos relevador de la persona numero: " + contadorPersonas);
             System.out.println("Ingrese 'si' si la persona esta suscripta al Diario A");
