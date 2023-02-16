@@ -16,9 +16,9 @@ public class Ejercicio3Playground {
          */
         Scanner scanner = new Scanner(System.in);
         int porcentajeFinal;
-        System.out.println("Ingreso de cantidad de dias");
+        System.out.println("Ingresar cantidad de dias");
         int ingresoDeVentas = scanner.nextInt();
-        System.out.println("Monto Total");
+        System.out.println("Ingresar Monto Total");
         int montoTotal = scanner.nextInt();
         porcentajeFinal = montoTotal * ingresoDeVentas;
         System.out.println("El monto total es " + porcentajeFinal);
