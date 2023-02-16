@@ -1,4 +1,4 @@
-import java.text.DecimalFormat;
+/*import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class ejercicio4 {
@@ -27,4 +27,4 @@ public class ejercicio4 {
 
 
     }
-}
+}*/

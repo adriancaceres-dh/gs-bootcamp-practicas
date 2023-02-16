@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class ejercicio3 {
     public static void main(String[] args) {
@@ -11,4 +11,4 @@ public class ejercicio3 {
         int costoTotal = precioPorDia * cantidadDias;
         System.out.println("El costo total de la campaña es " + costoTotal);
     }
-}
+}*/
