@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
 public class Ejercicio3 {
-    public static void main(String[] args) {
+    //REALIZADO ANTES DE CLASE
+
+    /*public static void main(String[] args) {
 
     Cliente[] clientes = new Cliente[7];
 
@@ -38,6 +42,30 @@ public class Ejercicio3 {
         public Cliente(String nombre, int servicio){
             this.nombre = nombre;
             this.servicio = servicio;
+        }
+
+    }*/
+
+    //REALIZADO EN CALSE
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < 7; i++){
+            System.out.println("Ingresa el nombre del cliente: ");
+            String nombre = scanner.next();
+            System.out.println("Ingresa el numero de servicio: ");
+            int servicio = scanner.nextInt();
+
+            if(servicio < 1 || servicio > 2){
+                System.out.println(" Los servicios pueden ser 1(Cámaras) o 2(Cámaras+Vigilancia)");
+            }else{
+                if(servicio == 1){
+                    System.out.println(nombre + " debe abonar es igual: $1500");
+                }else if (servicio == 2){
+                    System.out.println(nombre + " debe abonar es igual: $2200");
+                }
+            }
         }
 
     }
