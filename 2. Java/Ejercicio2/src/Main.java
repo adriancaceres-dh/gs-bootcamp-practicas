@@ -63,11 +63,11 @@ public class Main {
         double sueldo = 0;
 
         if(monto <= 20000){
-            sueldo = monto * 0.20;
+            sueldo = monto+monto * 0.20;
         }else if(monto > 20000 && monto <= 45000){
-            sueldo = monto * 0.10;
+            sueldo = monto+monto * 0.10;
         }else{
-            sueldo = monto * 0.05;
+            sueldo = monto+monto * 0.05;
         }
 
         System.out.println("El sueldo del empleado "+dni+" es "+ sueldo);
