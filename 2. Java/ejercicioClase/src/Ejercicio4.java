@@ -8,7 +8,7 @@ public class Ejercicio4 {
 
         int award = importAward.nextInt();
 
-        double impuesto1 = award * 0.0245;
+        double impuesto1 = award * 0.02045;
         double impuesto2 = award * 0.15;
         double impuesto3 = award * 0.03;
 
