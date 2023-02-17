@@ -12,7 +12,6 @@ public class EjercicioPlayground {
 
         for (int i=0;i<temperaturas.length;i++){
 
-
             for (int j=0;j<temperaturas[i].length;j++){
                 if(temperaturas[i][j]>mayor){
                     mayor=temperaturas[i][j];
@@ -25,8 +24,8 @@ public class EjercicioPlayground {
             }
 
             }
-        System.out.println("La temperatura mayor es de "+mayor+" de la ciudad de "+ciudades[posicionMayor]);
-        System.out.println("La temperatura menor es de "+menor+" de la ciudad de "+ciudades[posicionMenor]);
+        System.out.println("La temperatura mayor es de "+mayor+" grados, de la ciudad de "+ciudades[posicionMayor]);
+        System.out.println("La temperatura menor es de "+menor+" grados, de la ciudad de "+ciudades[posicionMenor]);
         }
     }
 
