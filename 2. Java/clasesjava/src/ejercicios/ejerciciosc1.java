@@ -35,8 +35,9 @@ public class ejerciciosc1 {
 } */
 
 //EJERCICIO N° 4
+package ejercicios;
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 public class ejerciciosc1 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -51,7 +52,4 @@ public class ejerciciosc1 {
 
         System.out.println(premioFinal);
     }
-} */
-
-
-
+}
