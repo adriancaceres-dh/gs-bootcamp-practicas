@@ -42,9 +42,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el monto bruto del premio");
         double premio = scanner.nextDouble();
-        double impuesto1 = premio * 2.45/100;
-        double impuesto2 = premio * 15/100;
-        double impuesto3 = premio * 3/100;
+        double impuesto1 = premio * 2.45 / 100;
+        double impuesto2 = premio * 15 / 100;
+        double impuesto3 = premio * 3 / 100;
 
         System.out.println("El primer impuesto es de $ " + impuesto1);
         System.out.println("El segundo impuesto es de $ " + impuesto2);
@@ -53,9 +53,10 @@ public class Main {
         double totalImpuestos;
         double totalNeto;
 
-        totalImpuestos= impuesto1+impuesto2+impuesto3;
+        totalImpuestos = impuesto1 + impuesto2 + impuesto3;
         totalNeto = premio - totalImpuestos;
 
         System.out.println("El premio total es de $ " + totalNeto);
     }
 }
+
