@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="463574b4-7b27-4c67-aa53-c89906a3b461" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/JAVA/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JAVA/ejercicio2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JAVA/ejercicio3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JAVA/ejercicio4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JAVA/ejercicios2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Vectores - Matrices/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Vectores - Matrices/ejemploMatriz.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Vectores - Matrices/ejemplosArrays.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Vectores - Matrices/ejercicio1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ejemplo/ejercicios2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/src/ejercicios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ejemplo/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/Ejercicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/Vectores - Matrices/src/temperaturasGlobales.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/Vectores - Matrices/src/temperaturasGlobales.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ejercicio1">
+  <component name="RunManager" selected="Application.temperaturasGlobales">
     <configuration name="ejemplosArrays" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplosArrays" />
       <module name="Vectores - Matrices" />
@@ -81,14 +71,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="temperaturasGlobales" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="temperaturasGlobales" />
+      <module name="Vectores - Matrices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.ejemplosArrays" />
       <item itemvalue="Application.ejercicios2" />
+      <item itemvalue="Application.temperaturasGlobales" />
       <item itemvalue="Application.ejercicio1" />
       <item itemvalue="Application.ejercicio2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.temperaturasGlobales" />
         <item itemvalue="Application.ejercicio1" />
         <item itemvalue="Application.ejercicio2" />
       </list>

@@ -1,9 +1,9 @@
 public class temperaturasGlobales {
     public static void main(String[] args) {
-        String [] ciudades ={ "Londres", " Madrid", "Nueva York", "Buenos Aires","Asuncion", "Sao Paulo","Lima","Santiago de Chile","Lisboa","Tokio" };
-        int [][] temperatura = {{-2,33}, {-3,32},{-8,27},{4,37},{6,42},{5,43},{0,39},{0,39},{-7,26},{-1,31},{-10,35}};
-        int tempMenor = temperatura[0][0];
-        int tempMayor = temperatura [0][1];
+        String ciudades[] = {"Londres", "Madrid", "Nueva York", "Buenos Aires", "Asuncion", "Sao Pablo", "Lima", "Santiago de Chile", "Lisboa", "Tokio"};
+        int temperatura[][] = {{-2, 33}, {-3, 32}, {-8, 27}, {4, 37}, {6, 42}, {5, 43}, {0, 39}, {-7, 26}, {-1, 31}, {-10, 35}};
+        int tempMenor = 0;
+        int tempMayor = 0;
         int menor = 0;
         int mayor= 0;
 
@@ -18,7 +18,7 @@ public class temperaturasGlobales {
                     }
                 }
             }
-            System.out.println("La ciudad con menor temperatura es " + ciudades[menor] + " con " + menor + "º");
-            System.out.println("La ciudad con mayor temperatura es " + ciudades[mayor] + " con " + mayor + "º");
+            System.out.println("La ciudad con menor temperatura es " + ciudades[menor] + " con " + tempMenor + "º");
+            System.out.println("La ciudad con mayor temperatura es " + ciudades[mayor]+ " con " + tempMayor + "º");
         }
     }
