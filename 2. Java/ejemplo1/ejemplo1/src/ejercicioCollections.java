@@ -12,6 +12,9 @@ public class ejercicioCollections {
         int participantes2 = 0;
         int participantes3 = 0;
         int recaudacion = 0;
+        int recaudacionCircuito1 = 0;
+        int recaudacionCircuito2 = 0;
+        int recaudacionCircuito3 = 0;
 
         Map<String, List<String>> datosParticipantes = new TreeMap<>();
         Map<String, List<String>> datosParticipantesCircuito1 = new TreeMap<>();
@@ -60,10 +63,12 @@ public class ejercicioCollections {
                     case 1:
                         costoInscripcion = 1300;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito1 = recaudacionCircuito1 + costoInscripcion;
                         break;
                     case 2:
                         costoInscripcion = 1500;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito2 = recaudacionCircuito2 + costoInscripcion;
                         break;
 
                     default:
@@ -79,14 +84,17 @@ public class ejercicioCollections {
                     case 1:
                         costoInscripcion = 1500;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito1 = recaudacionCircuito1 + costoInscripcion;
                         break;
                     case 2:
                         costoInscripcion = 2300;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito2 = recaudacionCircuito2 + costoInscripcion;
                         break;
                     case 3:
                         costoInscripcion = 2800;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito3 = recaudacionCircuito3 + costoInscripcion;
                         break;
                     default:
                         System.out.println("Ingrese una opcion valida");
@@ -136,6 +144,12 @@ public class ejercicioCollections {
         System.out.println("La recaudacion total fue de: $" +recaudacion);
 
         System.out.println("________________________________________________________________");
+
+        System.out.println("La recaudacion total del circuito n° 1: $" + recaudacionCircuito1);
+
+        System.out.println("La recaudacion total del circuito n° 2: $" + recaudacionCircuito2);
+
+        System.out.println("La recaudacion total del circuito n° 3:  $" + recaudacionCircuito3);
 
         Scanner eliminar = new Scanner(System.in);
 
