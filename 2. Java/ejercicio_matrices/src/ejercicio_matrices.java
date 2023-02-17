@@ -6,10 +6,11 @@ public class ejercicio_matrices {
 
         int temperaturas[][] = {{-2, 33}, {-3, 32}, {-8, 27}, {4, 37}, {6, 42}, {5, 43}, {0, 39}, {-7, 26}, {-1, 31}, {-10, 35}};
 
-        int temperaturaMaxima = 0;
-        int temperaturaMinima = 0;
+        int temperaturaMaxima = Integer.MIN_VALUE;
+        int temperaturaMinima = Integer.MAX_VALUE;
         int arrayFilaTemMin = 0;
         int arrayFilaTemMax = 0;
+
 
         for (int f = 0; f < temperaturas.length; f++) {
             for (int c = 0; c < temperaturas[f].length; c++) {
@@ -24,8 +25,6 @@ public class ejercicio_matrices {
                 }
             }
         }
-        System.out.println(arrayFilaTemMax);
-        System.out.println(arrayFilaTemMin);
         System.out.println("La temperatura máxima registrada fue de " + temperaturaMaxima + "°" + " en la ciudad de " + ciudades[arrayFilaTemMax]);
         System.out.println("La temperatura minima registrada fue de " + temperaturaMinima + "°" + " en la ciudad de " + ciudades[arrayFilaTemMin]);
 
