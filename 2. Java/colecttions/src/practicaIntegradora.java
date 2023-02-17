@@ -14,6 +14,9 @@ public class practicaIntegradora {
         int participantes2 = 0;
         int participantes3 = 0;
         int recaudacion = 0;
+        int recaudacionCircuito1 = 0;
+        int recaudacionCircuito2 = 0;
+        int recaudacionCircuito3 = 0;
 
         Map<String, List<String>> datosParticipantes = new TreeMap<>();
         Map<String, List<String>> datosParticipantesCircuito1 = new TreeMap<>();
@@ -62,10 +65,12 @@ public class practicaIntegradora {
                     case 1:
                         costoInscripcion = 1300;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito1 = recaudacionCircuito1 + costoInscripcion;
                         break;
                     case 2:
                         costoInscripcion = 1500;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito2 = recaudacionCircuito2 + costoInscripcion;
                         break;
 
                     default:
@@ -81,22 +86,25 @@ public class practicaIntegradora {
                     case 1:
                         costoInscripcion = 1500;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito1 = recaudacionCircuito1 + costoInscripcion;
                         break;
                     case 2:
                         costoInscripcion = 2300;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito2 = recaudacionCircuito2 + costoInscripcion;
                         break;
                     case 3:
                         costoInscripcion = 2800;
                         recaudacion = recaudacion + costoInscripcion;
+                        recaudacionCircuito3 = recaudacionCircuito3 + costoInscripcion;
                         break;
                     default:
                         System.out.println("Ingrese una opcion valida");
                         System.out.println("Ingrese el circuito que desea paticipar: \n 1- Circuito chico \n 2- Circuito medio \n 3- Circuito avanzado");
                         circuito = datosPersonales.nextInt();
             }
-        }
 
+            }
             System.out.println("Ingrese su DNI:");
             String dni = datosPersonales.next();
 
@@ -137,7 +145,15 @@ public class practicaIntegradora {
 
         System.out.println("La cantidad de participante en total es: " + datosParticipantes.size() + "\n Participantes circuito 1: " + datosParticipantesCircuito1.size()  + "\n Participantes circuito 2: " + datosParticipantesCircuito2.size() + "\n Participantes circuito 3: " + datosParticipantesCircuito3.size());
 
+        System.out.println("La recaudacion total del circuito n° 1: $" + recaudacionCircuito1);
+
+        System.out.println("La recaudacion total del circuito n° 2: $" + recaudacionCircuito2);
+
+        System.out.println("La recaudacion total del circuito n° 3:  $" + recaudacionCircuito3);
+
         System.out.println("La recaudacion total fue de: $" +recaudacion);
+
+
 
         System.out.println("________________________________________________________________");
 
