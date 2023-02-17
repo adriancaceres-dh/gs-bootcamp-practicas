@@ -3,8 +3,8 @@ public class Main {
         String[] ciudades = {"Londres","Madrid","Nueva York","Bs As", "Asuncion", "San Paulo", "Lima", "Santiago de Chile", "Lisboa", "Tokio"};
         int [][] temperaturas = {{-2,33},{-3,32},{-8,27},{4,37},{6,42},{5,43},{0,39},{-7,26},{-1,31},{-10,35}};
 
-           int max = temperaturas [0][0];
-           int min = temperaturas [0][1];
+           int max = Integer.MIN_VALUE;
+           int min = Integer.MAX_VALUE;
            int indiceMin = 0;
            int indiceMax = 0;
 
