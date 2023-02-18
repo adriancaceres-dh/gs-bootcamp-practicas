@@ -1,17 +1,45 @@
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.*;
 
- class Persona {
+ /*class Persona {
          String nombre;
+         String apellido;
          String dni;
          int edad;
+         int celular;
          int numeroParticipante;
+         int numEmergencia;
+        String grupoSanguineo;
+        int categoria;   // hardcodeo porque no pedimos datos por teclado
+// 1 - chico   2 -  Medio  3 - Avanzado
 
-public int getCategoria() {
+     public int getCelular() {
+         return celular;
+     }
+
+     public void setCelular(int celular) {
+         this.celular = celular;
+     }
+
+     public int getNumEmergencia() {
+         return numEmergencia;
+     }
+
+     public void setNumEmergencia(int numEmergencia) {
+         this.numEmergencia = numEmergencia;
+     }
+
+     public String getGrupoSanguineo() {
+         return grupoSanguineo;
+     }
+
+     public void setGrupoSanguineo(String grupoSanguineo) {
+         this.grupoSanguineo = grupoSanguineo;
+     }
+
+     public int getCategoria() {
         return categoria;
         }
 
@@ -19,10 +47,15 @@ public void setCategoria(int categoria) {
         this.categoria = categoria;
         }
 
-        int categoria;   // hardcodeo porque no pedimos datos por teclado
-// 1 - chico   2 -  Medio  3 - Avanzado
+     public String getApellido() {
+         return apellido;
+     }
 
-public int getNumeroParticipante() {
+     public void setApellido(String apellido) {
+         this.apellido = apellido;
+     }
+
+     public int getNumeroParticipante() {
         return numeroParticipante;
         }
 
@@ -57,15 +90,19 @@ public void setEdad(int edad) {
 @Override
 public String toString() {
         return "Persona{" +
+
         "nombre='" + nombre + '\'' +
+        ", apellido='" + apellido + '\'' +
         ", dni='" + dni + '\'' +
         ", edad=" + edad +
+        ", celular=" + celular +
+        ", grupoSanguineo='" + grupoSanguineo + '\'' +
+        ", numeroParticipante=" + numeroParticipante +
         ", numeroParticipante=" + numeroParticipante +
         ", categoria=" + categoria +
         '}';
         }
-        }//estructura
-
+*/
 
 public class EjercicioPLaygroundCollections {
 
@@ -197,7 +234,7 @@ public class EjercicioPLaygroundCollections {
         System.out.println("Total circuito avanzado " + importeCirtuito[2]);
 */
 
-
+    /*
         // Resulto profesor Version 2
         // Incribir a corredores en la carrera y mostrar informes
 
@@ -328,7 +365,7 @@ public class EjercicioPLaygroundCollections {
 
          }
          return importeCirtuito;
-
+       */
         /*
         //Version hecha por uno de mis compañeros para
          //tener 3 versiones diferentes y poder comprender mejor el ejercicio
@@ -511,6 +548,117 @@ public class EjercicioPLaygroundCollections {
 
 
          */
+
+
+        // MI VERSION:
+
+        Map<Integer, Map<String, String>> inscriptos = new HashMap<>();
+
+        Scanner sc = new Scanner(System.in);
+        int ultInscripto = 0;
+
+
+        while (true) {
+            System.out.println("Ingrese la categoría a la que desea inscribirse:");
+            System.out.println("1. Circuito chico");
+            System.out.println("2. Circuito medio");
+            System.out.println("3. Circuito avanzado");
+            int categoria = sc.nextInt();
+            if (categoria < 1 || categoria > 3) {
+                System.out.println("Categoría inválida");
+                continue;
+            }
+
+            System.out.println("Ingrese su DNI:");
+            String dni = sc.next();
+            System.out.println("Ingrese su nombre:");
+            String nombre = sc.next();
+            System.out.println("Ingrese su apellido:");
+            String apellido = sc.next();
+            System.out.println("Ingrese su edad:");
+            int edad = sc.nextInt();
+            System.out.println("Ingrese su número de celular:");
+            String celular = sc.next();
+            System.out.println("Ingrese su número de emergencia:");
+            String numEmergencia = sc.next();
+            System.out.println("Ingrese su grupo sanguíneo:");
+            String grupoSanguineo = sc.next();
+
+            int inscriptosCircuitoChico=0;
+            int inscriptosCircuitoMedio=0;
+            int inscriptosCircuitoAvanzado=0;
+
+            if (categoria == 1) {
+                if (edad <=18) {
+                    inscriptosCircuitoChico++;
+                }
+            } else if (categoria == 2) {
+                if (edad < 18 || edad > 18) {
+                    inscriptosCircuitoMedio++;
+                }
+            } else if ((categoria == 3)) {
+                if ( edad > 18) {
+                    inscriptosCircuitoAvanzado++;
+                } else {
+                    System.out.println("No puede inscribirse");
+                }
+            }
+
+            int monto;
+            if (categoria == 1) {
+                if (edad < 18) {
+
+                    monto = 1300;
+                } else {
+                    monto = 1500;
+                }
+            } else if (categoria == 2) {
+                if (edad < 18) {
+                    monto = 2000;
+                } else {
+                    monto = 2300;
+                }
+            } else {
+                if (edad < 18) {
+                    System.out.println("No se permiten inscripciones a menores de 18 años");
+                    continue;
+                }
+                monto = 2800;
+            }
+
+            ultInscripto++;
+           inscriptosCircuitoChico++;
+           inscriptosCircuitoMedio++;
+           inscriptosCircuitoAvanzado++;
+
+            Map<String, String> datos = new HashMap<>();
+            datos.put("DNI", dni);
+            datos.put("Nombre", nombre);
+            datos.put("Apellido", apellido);
+            datos.put("Edad", String.valueOf(edad));
+            datos.put("Celular", celular);
+            datos.put("Número de emergencia", numEmergencia);
+            datos.put("Grupo sanguíneo", grupoSanguineo);
+            datos.put("Categoría", String.valueOf(categoria));
+            datos.put("Número de inscripción", String.valueOf(ultInscripto));
+            datos.put("Monto", String.valueOf(monto));
+            inscriptos.put(ultInscripto, datos);
+
+
+            System.out.println("Inscripción exitosa");
+            System.out.println("Su número de inscripción es: " + ultInscripto);
+            System.out.println("El monto a abonar es: $" + monto);
+            System.out.print("Inscriptos: " + inscriptos);
+            //System.out.println("Inscriptos circuito chico : " +  inscriptosCircuitoChico);
+            //System.out.println("Inscriptos circuito medio : " +  inscriptosCircuitoMedio);
+            //System.out.println("Inscriptos circuito avanzado : " +  inscriptosCircuitoAvanzado);
+
+            System.out.println("¿Desea inscribir a otro participante? (s/n)");
+            String opcion = sc.next();
+            if (opcion.equals("n")) {
+                break;
+            }
+        }
 
     }
 }
