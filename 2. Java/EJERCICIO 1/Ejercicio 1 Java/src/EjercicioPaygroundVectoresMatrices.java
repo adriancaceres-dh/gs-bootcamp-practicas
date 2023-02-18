@@ -5,6 +5,9 @@ public class EjercicioPaygroundVectoresMatrices {
                 "Lima", "Santiago de Chile", "Lisboa", "Tokio"};
         int[][] temperaturas = {{-2, 33}, {-3, 32}, {-8, 27}, {4, 37}, {6, 42}, {5, 43}, {0, 39}, {-7, 26}, {-1, 31}, {-10, 35}};
 
+   // otra forma de hacerlo   integer.MIN_VALUE  integer.MAX_VALUE (CREAR ESTA VARIABLE)
+   //Y PONERLA EN EL LUGAR DEL CERO
+
         int nombre_ciudad_temp_max = 0;
         int nombre_ciudad_temp_min = 0;
 
