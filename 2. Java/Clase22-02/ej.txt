@@ -1,0 +1,2 @@
+let j = 10/0;
+console.log(j);

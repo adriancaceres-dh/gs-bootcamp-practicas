@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Clase22-02.iml" filepath="$PROJECT_DIR$/Clase22-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Excepciones y clases utilitarias/Ejercicios/Ejercicios.iml" filepath="$PROJECT_DIR$/Excepciones y clases utilitarias/Ejercicios/Ejercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SaveTheRopa/SaveTheRopa/SaveTheRopa.iml" filepath="$PROJECT_DIR$/SaveTheRopa/SaveTheRopa/SaveTheRopa.iml" />
     </modules>
   </component>
 </project>
