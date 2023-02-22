@@ -1,9 +1,9 @@
 public class persona {
-        String nombre;
-        short edad;
-        String dni;
-        double peso;
-        double altura;
+        private String nombre;
+        private int edad;
+        private String dni;
+        private double peso;
+        private double altura;
 
         public persona() {
             }
@@ -21,13 +21,30 @@ public class persona {
                 this.altura=altura;
         }
 
-        public static void método(double peso, double altura) {
+        public int calcularIMC() {
+                double imc = peso / (Math.pow(altura, 2));
 
-                public String calculoIMC(persona.peso, persona.altura) {
-                        System.out.println(peso/ altura);
+                if (imc < 20) {
+                        return -1;
+                } else if (imc >= 20 && imc <= 25) {
+                        return 0;
+                } else {
+                        return 1;
+                }
+        }
+        public boolean esMayorDeEdad() {
+                return edad > 18;
+        }
+        @Override
+        public String toString() {
+                return "Persona{" +
+                        "nombre='" + nombre + '\'' +
+                        ", edad=" + edad +
+                        ", dni='" + dni + '\'' +
+                        ", peso=" + peso +
+                        ", altura=" + altura +
+                        '}';
 
-                        persona.método(peso,altura);
-                };
         }
 };
 
