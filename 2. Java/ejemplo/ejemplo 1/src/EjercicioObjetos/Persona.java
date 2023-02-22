@@ -9,7 +9,14 @@ public class Persona{
     private double peso;
     private double altura;
 
-    // Creando constructores
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+// Creando constructores
 
     // Constructor sin parametros
     public Persona() {
