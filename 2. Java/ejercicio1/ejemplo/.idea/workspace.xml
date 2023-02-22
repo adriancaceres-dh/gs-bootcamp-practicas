@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="463574b4-7b27-4c67-aa53-c89906a3b461" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JAVA/Poo en Java/Ejercicios/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/Poo en Java/Poo en Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/Poo en Java/src/Biblioteca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/Poo en Java/src/Configuracion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/Poo en Java/src/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/Poo en Java/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/gs-bootcamp-practicas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Excepciones/Excepciones.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Excepciones/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Excepciones/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Excepciones/src/PracticaExcepciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Excepciones/src/ejemploRecursivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/SetRopa/SetRopa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/SetRopa/src/GuardaRopa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/SetRopa/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/SetRopa/src/Prenda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/Poo en Java/Ejercicios/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/Poo en Java/Ejercicios/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/Poo en Java/Ejercicios/src/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/Poo en Java/Ejercicios/src/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ejercicios/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ejercicios/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ejercicios/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ejercicios/Persona.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "C:/Users/54349/Downloads/ejercConst",
-    "settings.editor.selected.configurable": "configurable.group.language"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/54349/Downloads/ejercConst&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="CarreraSelva" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CarreraSelva" />
-      <module name="Colecciones-Mapas-Diccionarios" />
+}</component>
+  <component name="RunManager" selected="Application.PracticaExcepciones">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="Excepciones" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -62,16 +70,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Poo en Java" />
+      <module name="Excepciones" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ejemploMapa2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejemploMapa2" />
-      <module name="Colecciones-Mapas-Diccionarios" />
+    <configuration name="PracticaExcepciones" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticaExcepciones" />
+      <module name="Excepciones" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejemploRecursivo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemploRecursivo" />
+      <module name="Excepciones" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,13 +94,6 @@
     <configuration name="ejemplosArrays" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplosArrays" />
       <module name="Vectores - Matrices" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ejemplosMapas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejemplosMapas" />
-      <module name="Colecciones-Mapas-Diccionarios" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,19 +108,19 @@
     <list>
       <item itemvalue="Application.ejemplosArrays" />
       <item itemvalue="Application.ejercicios2" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.PracticaExcepciones" />
+      <item itemvalue="Application.ejemploRecursivo" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.CarreraSelva" />
-      <item itemvalue="Application.ejemploMapa2" />
-      <item itemvalue="Application.ejemplosMapas" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PracticaExcepciones" />
+        <item itemvalue="Application.ejemploRecursivo" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ejemploMapa2" />
-        <item itemvalue="Application.ejemplosMapas" />
-        <item itemvalue="Application.CarreraSelva" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +155,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/JAVA/Excepciones/src/Main.java</url>
+          <line>1</line>
+          <properties class="Main" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
