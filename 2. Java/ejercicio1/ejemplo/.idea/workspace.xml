@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="463574b4-7b27-4c67-aa53-c89906a3b461" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/src/ejercicios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/src/ejemploMapa2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/src/ejemplosListas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/src/ejemplosMapas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/Ejercicio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/Vectores - Matrices/src/temperaturasGlobales.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/Vectores - Matrices/src/temperaturasGlobales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/src/ejercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/src/CarreraSelva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/Condicionales/ejercicios1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,21 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.temperaturasGlobales">
+  <component name="RunManager" selected="Application.ejemploMapa2">
+    <configuration name="CarreraSelva" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CarreraSelva" />
+      <module name="Colecciones-Mapas-Diccionarios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejemploMapa2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemploMapa2" />
+      <module name="Colecciones-Mapas-Diccionarios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ejemplosArrays" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejemplosArrays" />
       <module name="Vectores - Matrices" />
@@ -50,16 +66,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejercicio1" />
-      <module name="Vectores - Matrices" />
+    <configuration name="ejemplosListas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplosListas" />
+      <module name="Colecciones-Mapas-Diccionarios" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejercicio2" />
-      <module name="JAVA" />
+    <configuration name="ejemplosMapas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejemplosMapas" />
+      <module name="Colecciones-Mapas-Diccionarios" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,15 +97,19 @@
     <list>
       <item itemvalue="Application.ejemplosArrays" />
       <item itemvalue="Application.ejercicios2" />
+      <item itemvalue="Application.CarreraSelva" />
+      <item itemvalue="Application.ejemploMapa2" />
+      <item itemvalue="Application.ejemplosListas" />
+      <item itemvalue="Application.ejemplosMapas" />
       <item itemvalue="Application.temperaturasGlobales" />
-      <item itemvalue="Application.ejercicio1" />
-      <item itemvalue="Application.ejercicio2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ejemploMapa2" />
+        <item itemvalue="Application.ejemplosMapas" />
+        <item itemvalue="Application.CarreraSelva" />
+        <item itemvalue="Application.ejemplosListas" />
         <item itemvalue="Application.temperaturasGlobales" />
-        <item itemvalue="Application.ejercicio1" />
-        <item itemvalue="Application.ejercicio2" />
       </list>
     </recent_temporary>
   </component>
