@@ -4,6 +4,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+        //ACTIVIDAD ANTES DE CLASES
+        /*
         GuardaRopa guardaRopa = new GuardaRopa();
 
         List<Prenda> prendas = new ArrayList<>();
@@ -30,8 +32,22 @@ public class Main {
 
 
         guardaRopa.mostrarPrendas();
+*/
 
+        //ACTIVIDAD EN CLASES
 
+        Prenda prenda = new Prenda("Marca1", "AA2");
+        Prenda prenda1 = new Prenda("Marca2", "AA5");
+
+        List<Prenda> prendas = new ArrayList<>();
+        prendas.add(prenda);
+        prendas.add(prenda1);
+
+        GuardaRopa guardaRopa = new GuardaRopa();
+        Integer id = guardaRopa.guardarPrendas(prendas);
+
+        System.out.println(id);
+        guardaRopa.mostrarPrendas(11);
 
 
 
