@@ -40,11 +40,11 @@ public class Persona{
 
     // Calcular IMC de la persona
     public int calcularIMC() {
-        double imc = peso / (Math.pow(altura, 2));
+        double imc = peso / altura * altura;
 
         if (imc < 20){
             return -1;
-        } else if (imc >= 20 && imc < 25){
+        } else if (imc < 25){
             return 0;
         } else {
             return 1;
