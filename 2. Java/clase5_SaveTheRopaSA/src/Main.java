@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         //ACTIVIDAD ANTES DE CLASES
-        /*
+
         GuardaRopa guardaRopa = new GuardaRopa();
 
         List<Prenda> prendas = new ArrayList<>();
@@ -32,11 +32,16 @@ public class Main {
 
 
         guardaRopa.mostrarPrendas();
-*/
+
+        //Elimino las prendas en el guardaRopas indicado en el parametro.
+        System.out.println("Las prendas a devolver son: " + guardaRopa.devolverPrendas(1));
+        //Vuelvo a mostrar el listado de guardaRopas con sus respectivas prendas.
+        guardaRopa.mostrarPrendas();
+
 
         //ACTIVIDAD EN CLASES
 
-        Prenda prenda = new Prenda("Marca1", "AA2");
+        /*Prenda prenda = new Prenda("Marca1", "AA2");
         Prenda prenda1 = new Prenda("Marca2", "AA5");
 
         List<Prenda> prendas = new ArrayList<>();
@@ -47,8 +52,7 @@ public class Main {
         Integer id = guardaRopa.guardarPrendas(prendas);
 
         System.out.println(id);
-        guardaRopa.mostrarPrendas(11);
-
+        guardaRopa.mostrarPrendas(11);*/
 
 
     }

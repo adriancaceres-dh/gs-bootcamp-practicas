@@ -1,12 +1,10 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class GuardaRopa {
     //ACTIVIDAD ANTES DE CLASES
-    /*
+
     int contador = 0;
     Map<Integer, List<Prenda>> diccionario = new TreeMap<>();
 
@@ -25,17 +23,28 @@ public class GuardaRopa {
         }
     }
 
+    /*public void devolverPrendas(Integer numero){
+        diccionario.remove(numero, diccionario.get(numero));
+    }*/
+
+    public List<Prenda> devolverPrendas(Integer numero){
+        List<Prenda> prendasADevolver = diccionario.get(numero);
+        diccionario.remove(numero, diccionario.get(numero));
+
+        return prendasADevolver;
+    }
+
     @Override
     public String toString() {
         return "GuardaRopa{" +
                 "contador=" + contador +
                 ", diccionario=" + diccionario +
                 '}';
-    }*/
+    }
 
     //ACTIVIDAD EN CLASES
 
-    int contador =10;
+    /*int contador =10;
     Map<Integer, List<Prenda>> prendas = new TreeMap<>();
 
 
@@ -48,7 +57,7 @@ public class GuardaRopa {
     //falta listar todas las prendas
     public void mostrarPrendas(Integer id){
         System.out.println(prendas.get(id));
-    }
+    }*/
 
 
 }
