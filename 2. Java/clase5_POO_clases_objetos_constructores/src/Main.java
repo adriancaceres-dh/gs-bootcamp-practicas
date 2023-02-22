@@ -4,7 +4,7 @@ public class Main {
         //EJERCICIO 4
         Persona persona1 = new Persona();
         Persona persona2 = new Persona("Luciano", 31, "36365939");
-        Persona persona3 = new Persona("Marcela", 17, "22026356",1.71,60.0);
+        Persona persona3 = new Persona("Alejandro", 35, "22026356",1.74,103.0);
 
         //Persona persona4 = new Persona("Hugo",90.0);
         //No permite crear una persona solo con dato nombre y peso ya que dicha clase no fue definida.
