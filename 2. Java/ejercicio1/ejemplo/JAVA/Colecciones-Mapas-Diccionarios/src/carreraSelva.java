@@ -1,8 +1,7 @@
-import java.sql.SQLOutput;
 import java.util.*;
 
 //Creacion clase persona
-class Persona{
+class Personas {
     int dni;
     String nombre;
     String apellido;
@@ -96,10 +95,10 @@ public class carreraSelva {
 
         //Inscribir participantes a una carrera mostrando informes de dichas inscripciones.
 
-        List<Persona> participantesChico = new ArrayList<>();
-        List<Persona> participantesMediano = new ArrayList<>();
-        List<Persona> participantesAvanzado = new ArrayList<>();
-        List<Persona> participantesNoInscriptos = new ArrayList<>();
+        List<Personas> participantesChico = new ArrayList<>();
+        List<Personas> participantesMediano = new ArrayList<>();
+        List<Personas> participantesAvanzado = new ArrayList<>();
+        List<Personas> participantesNoInscriptos = new ArrayList<>();
 
         System.out.println("-------------------------------------------------------------");
         System.out.println("Bienvenido corredor!! A qué carrera desea inscribirse?");
@@ -139,7 +138,7 @@ public class carreraSelva {
             int numeroParticipante = contador;
 
             //Crear nueva persona con los datos ingresados.
-            Persona persona = new Persona();
+            Personas persona = new Personas();
             persona.setNombre(nombre);
             persona.setApellido(apellido);
             persona.setDni(dni);
@@ -184,7 +183,7 @@ public class carreraSelva {
         //Imprimir por consola los participantes de cada categoria
         System.out.println("----------------------------------------------------");
         System.out.println("Participantes Circuito Chico: ");
-        for (Persona persona : participantesChico) {
+        for (Personas persona : participantesChico) {
             if(persona.getEdad() >= 18){
                 System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni() + ". Debe abonar: $1500.");
             }else{
@@ -194,7 +193,7 @@ public class carreraSelva {
         System.out.println("----------------------------------------------------");
 
         System.out.println("Participantes Circuito Mediano: ");
-        for (Persona persona : participantesMediano) {
+        for (Personas persona : participantesMediano) {
             if(persona.getEdad() >= 18){
                 System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni() + ". Debe abonar: $2300.");
             }else{
@@ -204,13 +203,13 @@ public class carreraSelva {
         System.out.println("----------------------------------------------------");
 
         System.out.println("Participantes Circuito Avanzado: ");
-        for (Persona persona : participantesAvanzado) {
+        for (Personas persona : participantesAvanzado) {
             System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni()+ ". Debe abonar: $2800.");
         }
         System.out.println("----------------------------------------------------");
 
         System.out.println("Participantes No inscriptos: ");
-        for (Persona persona : participantesNoInscriptos) {
+        for (Personas persona : participantesNoInscriptos) {
             System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni());
         }
         System.out.println("----------------------------------------------------");
@@ -279,25 +278,25 @@ public class carreraSelva {
             if(seguir == 2){
                 System.out.println("----------------------------------------------------");
                 System.out.println("Participantes Circuito Chico: ");
-                for (Persona persona : participantesChico) {
+                for (Personas persona : participantesChico) {
                     System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni());
                 }
                 System.out.println("----------------------------------------------------");
 
                 System.out.println("Participantes Circuito Mediano: ");
-                for (Persona persona : participantesMediano) {
+                for (Personas persona : participantesMediano) {
                     System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni());
                 }
                 System.out.println("----------------------------------------------------");
 
                 System.out.println("Participantes Circuito Avanzado: ");
-                for (Persona persona : participantesAvanzado) {
+                for (Personas persona : participantesAvanzado) {
                     System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni());
                 }
                 System.out.println("----------------------------------------------------");
 
                 System.out.println("Participantes No inscriptos: ");
-                for (Persona persona : participantesNoInscriptos) {
+                for (Personas persona : participantesNoInscriptos) {
                     System.out.println("Participante N°" + persona.getNumeroParticipante() + ": " + persona.getNombre() + " " + persona.getApellido() + ", DNI: " + persona.getDni());
                 }
                 System.out.println("----------------------------------------------------");
@@ -307,15 +306,15 @@ public class carreraSelva {
         }
 
         //Calcular total recaudado por categoria y por carrera
-        Map<String, List<Persona>> carrera = new TreeMap<>();
+        Map<String, List<Personas>> carrera = new TreeMap<>();
         carrera.put("Circuito Chico", participantesChico);
         carrera.put("Circuito Mediano", participantesMediano);
         carrera.put("Circuito Avanzado", participantesAvanzado);
 
         double[] montoPorCircuito = {0.0,0.0,0.0};
 
-        for (Map.Entry<String,List<Persona>> circuito : carrera.entrySet()){
-            for (Persona persona : circuito.getValue()) {
+        for (Map.Entry<String,List<Personas>> circuito : carrera.entrySet()){
+            for (Personas persona : circuito.getValue()) {
                 if(circuito.getKey().equals("Circuito Chico")){
                     if(persona.getEdad() < 18){
                         montoPorCircuito[0] += 1300;

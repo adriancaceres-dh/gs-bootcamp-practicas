@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/Colecciones-Mapas-Diccionarios.iml" filepath="$PROJECT_DIR$/JAVA/Colecciones-Mapas-Diccionarios/Colecciones-Mapas-Diccionarios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA/Poo en Java/Ejercicios/Ejercicios.iml" filepath="$PROJECT_DIR$/JAVA/Poo en Java/Ejercicios/Ejercicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA/JAVA.iml" filepath="$PROJECT_DIR$/JAVA/JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA/Poo en Java/Poo en Java.iml" filepath="$PROJECT_DIR$/JAVA/Poo en Java/Poo en Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA/Vectores - Matrices/Vectores - Matrices.iml" filepath="$PROJECT_DIR$/JAVA/Vectores - Matrices/Vectores - Matrices.iml" />
       <module fileurl="file://$PROJECT_DIR$/ejemplo.iml" filepath="$PROJECT_DIR$/ejemplo.iml" />
     </modules>
