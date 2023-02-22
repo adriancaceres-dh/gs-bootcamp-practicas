@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43854bb8-a8dd-4b6e-82a8-3ab5b36ff232" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../clase2/Ejercicios.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/Ejercicios.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/out/production/Ejercicios/Ejercicio1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/out/production/Ejercicios/Ejercicio2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/out/production/Ejercicios/Ejercicio3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/out/production/Ejercicios/Ejercicio4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/src/Ejercicio1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/src/Ejercicio2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/src/Ejercicio3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/Ejercicios/src/Ejercicio4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/untitled/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/untitled/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase2/untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +34,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/mateo/Desktop/Bootcamp/gs-bootcamp-practicas/2. Java/ejercicios/clase3"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Ejercicio1">
+    <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio1" />
+      <module name="clase3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejercicio1" />
       <module name="clase3" />
@@ -71,6 +55,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio1" />
         <item itemvalue="Application.ejercicio1" />
       </list>
     </recent_temporary>
