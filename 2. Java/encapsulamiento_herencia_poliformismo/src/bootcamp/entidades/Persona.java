@@ -1,4 +1,4 @@
-package entidades;
+package bootcamp.entidades;
 
 public class Persona {
 
@@ -9,6 +9,10 @@ public class Persona {
 
     public Persona() {}
 
+    public Persona(String nombre, String dni) {
+        this.nombre = nombre;
+        this.dni = dni;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -28,10 +32,11 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "entidades.Persona{" +
+        return "bootcamp.entidades.Persona{" +
                 "cantidadCorazones=" + cantidadCorazones +
                 ", nombre='" + nombre + '\'' +
                 ", dni='" + dni + '\'' +
                 '}';
     }
+
 }
