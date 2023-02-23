@@ -27,9 +27,12 @@ public class PracticaExcepciones2 {
      * Ejercicio 3
      * @param nombreArchivo nombre del archivo
      */
-    public void leerArchivo(String nombreArchivo) {
+    public void leerArchivo(String nombreArchivo) throws FileNotFoundException {
         String texto = null;
 
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(nombreArchivo));
+
+        /*
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(nombreArchivo));
 
@@ -43,6 +46,8 @@ public class PracticaExcepciones2 {
         } catch (IOException ex) {
             System.out.println("Error al leer el archivo especificado");
         }
+        */
+
     }
 
 }
