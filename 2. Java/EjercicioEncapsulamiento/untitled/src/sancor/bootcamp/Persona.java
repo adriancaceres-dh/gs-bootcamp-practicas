@@ -1,3 +1,5 @@
+package sancor.bootcamp;
+
 public class Persona {
 
     public final static int cantidadCorazones = 1;
@@ -29,9 +31,15 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "sancor.bootcamp.Persona{" +
                 "nombre='" + nombre + '\'' +
                 ", dni='" + dni + '\'' +
                 '}';
+    }
+
+
+
+    public  String enviarMensaje(){
+        return  "este es una persona";
     }
 }
