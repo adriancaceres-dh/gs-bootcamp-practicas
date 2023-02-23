@@ -1,16 +1,24 @@
-//Ejercicio 1 pto 1 y 2
+//Ejercicio 1
 public class PracticaExcepciones {
     public static void main(String[] args) {
+        //pto 1
+        int a = 0;
+        int b= 300;
         try {
-            int a = 0;
-            int b = 300;
             int cociente = b/a;
-        } catch (IllegalArgumentException e) {
+        } catch (ArithmeticException e) {
             System.out.println("Se ha producido un error");
-        } catch(ArithmeticException e) {
+        } finally {
+            System.out.println("Programa finalizado");
+        }
+
+        //pto 2
+        try {
+            int cociente = b/a;
+        } catch (ArithmeticException e) {
             throw new IllegalArgumentException("No se puede dividir por cero");
-        } finally{
-            System.out.println("Programa Finalizado");
+        } finally {
+            System.out.println("Programa finalizado");
         }
     }
-}
+    }
