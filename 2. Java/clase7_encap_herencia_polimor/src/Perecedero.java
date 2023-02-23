@@ -23,7 +23,7 @@ public class Perecedero extends Producto {
             precioTotal = precioTotal / 4;
         }else if(diasPorCaducar == 2){
             precioTotal = precioTotal / 3;
-        }else{
+        }else if(diasPorCaducar == 3){
             precioTotal = precioTotal / 2;
         }
         return precioTotal;
