@@ -15,7 +15,7 @@ public class NotasClases {
         persona.setDni("248842"); //class private y usando getter and setter
        persona.setNombre("Carlos");
         System.out.println(persona);
-        System.out.println(Cliente);
+
 
        Cliente cliente = new Cliente("valentina","324313");
 
