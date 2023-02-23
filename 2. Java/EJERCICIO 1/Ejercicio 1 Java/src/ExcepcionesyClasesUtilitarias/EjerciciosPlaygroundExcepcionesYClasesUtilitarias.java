@@ -6,8 +6,9 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class EjerciciosPlaygroundExcepcionesYClasesUtilitarias {
-    /*
+
     public static void main(String[] args) {
+        /*
         String mensajeFinal = "Este es el último mensaje";
         int[] numeros = new int[5];
         try {
@@ -18,10 +19,16 @@ public class EjerciciosPlaygroundExcepcionesYClasesUtilitarias {
         System.out.println(mensajeFinal);
     }
 
+
      */
+    /*
     public void leerArchivo(String nombreArchivo) {
         String texto = null;
-        BufferedReader bufferedReader = null;
+        //forma 2 metodo lance una excepcion
+        BufferedReader BufferedReader = new BufferedReader(new FileReader(nombreArchivo));
+
+        //forma 1:
+        /*BufferedReader bufferedReader = null;
 
         try {
             bufferedReader = new BufferedReader(new FileReader(nombreArchivo));
@@ -41,6 +48,9 @@ public class EjerciciosPlaygroundExcepcionesYClasesUtilitarias {
                 System.err.println("Se ha producido un error al cerrar el archivo " + nombreArchivo);
             }
         }
+
+*/
     }
+
 
 }
