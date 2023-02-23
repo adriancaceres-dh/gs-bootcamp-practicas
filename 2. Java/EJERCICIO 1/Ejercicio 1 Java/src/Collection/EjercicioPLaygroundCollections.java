@@ -1,9 +1,10 @@
+package Collection;
 
 import java.util.List;
 import java.util.Map;
 import java.util.*;
-
- /*class Persona {
+/*
+class Persona {
          String nombre;
          String apellido;
          String dni;

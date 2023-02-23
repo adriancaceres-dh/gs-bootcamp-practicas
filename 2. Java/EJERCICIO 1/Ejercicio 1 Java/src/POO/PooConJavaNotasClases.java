@@ -1,3 +1,5 @@
+package POO;
+
 public class PooConJavaNotasClases {
     public static void main(String[] args){
 

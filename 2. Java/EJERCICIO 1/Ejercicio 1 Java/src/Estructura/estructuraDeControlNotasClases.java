@@ -1,3 +1,5 @@
+package Estructura;
+
 public class estructuraDeControlNotasClases {
     public static void main(String[] args){
        /*

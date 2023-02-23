@@ -1,3 +1,5 @@
+package VectoresyMatrices;
+
 import java.util.Scanner;
 
 public class VectoresMatricesNotasClases {

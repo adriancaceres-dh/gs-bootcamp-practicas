@@ -1,3 +1,5 @@
+package POO;
+
 public class configuracion {
     //metodos de clase Estaticos
 

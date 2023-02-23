@@ -1,3 +1,5 @@
+package POO;
+
 public class PersonaPooEjercicios {
     //Ejercicio 1
     String nombre;

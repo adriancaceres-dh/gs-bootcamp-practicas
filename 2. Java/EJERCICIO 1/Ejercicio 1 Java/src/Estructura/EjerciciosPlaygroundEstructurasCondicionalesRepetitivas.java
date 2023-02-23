@@ -1,3 +1,5 @@
+package Estructura;
+
 import java.util.Scanner;
 
 public class EjerciciosPlaygroundEstructurasCondicionalesRepetitivas {
