@@ -1,3 +1,5 @@
+package com.bootcamp.encapsulamiento.entidades;
+
 public class Persona {
     public final static int cantidadCorazones = 1;
     private String nombre;
@@ -25,4 +27,18 @@ public class Persona {
     public void setDni(String dni) {
         this.dni = dni;
     }
+
+    @Override
+    public String toString() {
+        return "com.bootcamp.encapsulamiento.entidades.Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", dni='" + dni + '\'' +
+                '}';
+    }
+
+    public String enviarMensaje() {
+        return "Esta es una persona";
+    }
+
+
 }
