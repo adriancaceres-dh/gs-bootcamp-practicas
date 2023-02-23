@@ -13,4 +13,11 @@ public class Proveedor extends Persona{
     public String enviarMensaje() {
         return "Enviar email con una carta de recomendacion";
     }
+
+    @Override
+    public void caminar() {
+        System.out.println("Camina proveedor " + this.codigoProveedor);
+    }
+
+
 }
