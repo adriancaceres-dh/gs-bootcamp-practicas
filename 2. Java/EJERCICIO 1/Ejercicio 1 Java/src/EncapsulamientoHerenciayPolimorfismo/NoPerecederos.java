@@ -20,6 +20,7 @@ public class NoPerecederos extends Producto{
         return getPrecio() * cantidadDeProductos;
     }
 
+
     @Override
     public String toString() {
         return "NoPerecederos{" +

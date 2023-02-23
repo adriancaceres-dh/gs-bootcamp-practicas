@@ -34,6 +34,7 @@ public class Producto {
                 ", precio=" + precio +
                 '}';
     }
+
     public double calcular(int cantidadDeProductos) {
         return precio * cantidadDeProductos;
     }
