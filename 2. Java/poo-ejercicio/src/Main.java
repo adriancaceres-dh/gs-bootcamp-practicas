@@ -3,7 +3,7 @@ public class Main {
     // Ejercicio 3 y 4
         Persona persona1 = new Persona();
         Persona persona2 = new Persona("Lucas", 28, "1294871");
-        Persona persona3 = new Persona("Laura", 10, "9814282", 75, 1.75);
+        Persona persona3 = new Persona("Laura", 10, "9814282", 90, 1.90);
 
     // Ejercicio 4- Sí, es posible solo realizandolo de esta manera. Para poder realizarlo igual que arriba es necesario
         //  crear el metodo constructor con los datos que querramos pasar.
