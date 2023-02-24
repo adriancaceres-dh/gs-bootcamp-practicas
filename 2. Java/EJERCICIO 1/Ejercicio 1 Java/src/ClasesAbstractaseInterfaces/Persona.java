@@ -1,6 +1,10 @@
 package ClasesAbstractaseInterfaces;
 
-public abstract class Persona {
+public abstract class Persona { // es abstracta porque no se va a usar no se instancia, se usa
+   // se usa estudiantes o tutor
+    // es el padre
+
+    //las clases generan los objetos (los objetos son los que usan new)
     private String nombre;
     private String apellido;
     private int edad;
