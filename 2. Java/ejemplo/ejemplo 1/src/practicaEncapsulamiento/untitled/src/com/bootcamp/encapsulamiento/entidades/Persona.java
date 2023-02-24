@@ -1,6 +1,6 @@
 package com.bootcamp.encapsulamiento.entidades;
 
-public class Persona {
+public abstract class Persona {
 
     public final static int cantidadCorazones = 1;
 
@@ -41,4 +41,6 @@ public class Persona {
     public String enviarMensaje() {
         return  "Esta es una persona";
     }
+
+    public abstract void caminar();
 }
