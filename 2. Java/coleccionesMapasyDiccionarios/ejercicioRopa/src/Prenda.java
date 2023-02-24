@@ -1,12 +1,14 @@
 import java.util.HashMap;
 public class Prenda {
-    public static void main(String[] args) {
         String marca;
         String modelo;
+
+    public Prenda(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
     }
 
-    }
+
+
 
 }
-
-//ejercicio que no había que resolver

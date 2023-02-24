@@ -1,14 +1,21 @@
 import java.util.HashMap;
 
 public class GuardarRopa {
-    public static void main(String[] args) {
+    int contador = 10;
+    Map<Integer,List<Prenda>> prendas = new HashMap<>();
 
-        HashMap<Integer, String> diccionario = new HashMap<>();
-        int contador = 0;
-
-        public Integer guardarPrendas
-        (List<Prenda>listadePrenda);
+    public Integer guardarPrenda(List<Prenda> listaPrendas) {
+        contador++;
+        prendas.put(contador,listaPrendas);
+        return contador;
     }
+
+    // falta listar todas las prendas
+
+    public void mostrarPrenda(Integer id) {
+        System.out.println(prendas.get(id));
     }
 
-    //ejercicio que no había que resolver
+
+
+    }
