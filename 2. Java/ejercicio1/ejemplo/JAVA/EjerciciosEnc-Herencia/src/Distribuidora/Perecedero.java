@@ -24,7 +24,7 @@ public class Perecedero extends Producto{
     }
  // Ejercicio 3
     @Override
-    public double Calcular(int CantidadDeProductos) {
+    public double calcular(int CantidadDeProductos) {  //sobreescribir el metodo calcular
         double precioFinal = CantidadDeProductos * this.getPrecio();
         if (this.diasPorCaducar == 1){
             precioFinal = precioFinal/4;

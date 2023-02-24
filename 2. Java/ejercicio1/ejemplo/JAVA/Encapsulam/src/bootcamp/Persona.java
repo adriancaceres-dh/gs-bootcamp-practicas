@@ -1,17 +1,18 @@
-package bootcamp.entidades;
+package bootcamp;
 
 public class Persona {
-    public static int cantidadDeCorazones = 1;
-    private String nombre;              //como buena practica deberian ir privados los atributos de las clases
+    public final static int cantidadCorazones = 1;
+    private String nombre;
     private String dni;
 
-    public Persona(){}  //Constructor (siempre publico para que lo pueda llamar en el main)
-    public  Persona (String nombre, String dni){
+    public Persona() {}
+
+    public Persona(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
@@ -27,12 +28,16 @@ public class Persona {
         this.dni = dni;
     }
 
-    @Override                                        //si tengo que sobreescribir
+    @Override
     public String toString() {
-        return "bootcamp.entidades.Persona{" +
+        return "com.bootcamp.encapsulamiento.entidades.ClaseAbst.Persona{" +
                 "nombre='" + nombre + '\'' +
                 ", dni='" + dni + '\'' +
                 '}';
     }
-}
 
+    public String enviarMensaje() {
+        return "Esta es una persona";
+    }
+
+}

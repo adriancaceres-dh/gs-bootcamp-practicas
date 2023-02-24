@@ -26,8 +26,8 @@ public class NoPerecedero extends Producto {
     }
 
     @Override
-    public double Calcular(int CantidadDeProductos) {
-        return super.Calcular(CantidadDeProductos);
+    public double calcular(int CantidadDeProductos) {
+        return super.calcular(CantidadDeProductos);
     }
 
     public NoPerecedero(String nombre, double precio) {

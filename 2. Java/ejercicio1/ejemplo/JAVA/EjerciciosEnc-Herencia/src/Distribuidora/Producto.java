@@ -32,7 +32,7 @@ public class Producto {
                 ", precio=" + precio +
                 '}';
     }
-    public double Calcular (int CantidadDeProductos){
+    public double calcular (int CantidadDeProductos){  //los metodos van en minuscula
         return precio * CantidadDeProductos;
     }
 }
