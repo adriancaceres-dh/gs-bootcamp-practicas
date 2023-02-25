@@ -1,3 +1,5 @@
+package com.bootcamp.ejercicios.condicionales;
+
 import java.util.Scanner;
 
 public class EjercicioCondicionales1 {

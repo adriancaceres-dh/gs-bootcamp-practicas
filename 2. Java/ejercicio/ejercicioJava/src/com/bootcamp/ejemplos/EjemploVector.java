@@ -1,3 +1,5 @@
+package com.bootcamp.ejemplos;
+
 public class EjemploVector {
 
     public static void main(String[] args) {

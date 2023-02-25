@@ -1,3 +1,5 @@
+package com.bootcamp.varios;
+
 public class Ejercicio2 {
 
     /*

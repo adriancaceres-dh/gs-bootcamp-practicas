@@ -1,3 +1,5 @@
+package com.bootcamp.varios;
+
 import java.util.Scanner;
 
 public class Ejercicio3 {

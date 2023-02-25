@@ -1,3 +1,5 @@
+package com.bootcamp.varios;
+
 public class EjercicioVectorMatriz {
     public static void main(String[] args) {
 
