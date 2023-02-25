@@ -26,7 +26,8 @@ public abstract class Animal {
         this.tipo = tipo;
     }
 
-    public abstract void emitirSonido();
+    public abstract String emitirSonido();
+
 
     @Override
     public String toString() {

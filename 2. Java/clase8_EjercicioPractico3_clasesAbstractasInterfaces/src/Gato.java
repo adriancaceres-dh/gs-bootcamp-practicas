@@ -4,11 +4,17 @@ public class Gato extends Animal implements Carnivoro{
     }
 
     public Gato(String nombre, String tipo) {
+
         super(nombre, tipo);
     }
 
     @Override
-    public void emitirSonido() {
-        System.out.println("Miauuuuu miauuuuuu");
+    public String comerCarne() {
+        return "El gatito esta comiendo carne.";
+    }
+
+    @Override
+    public String emitirSonido() {
+        return "Miauuuuu miauuuuuu";
     }
 }
