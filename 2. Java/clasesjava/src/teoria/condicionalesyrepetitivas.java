@@ -1,6 +1,6 @@
 package teoria;
 
-public class teoriac2 {
+public class condicionalesyrepetitivas {
     public static void main(String[] args) {
         int [] numeros = {3,4,5,-2,-5}; //declaramos un array ya con valores
         //System.out.println(numeros[4]); imprime en consola la posición 4

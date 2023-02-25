@@ -1,4 +1,4 @@
-package teoria.teoriac4;
+package teoria.poo;
 
 public class Libro {
     String titulo;

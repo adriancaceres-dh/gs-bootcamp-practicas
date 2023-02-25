@@ -1,4 +1,4 @@
-package teoria.teoriac4;
+package teoria.poo;
 import java.util.List;
 import java.util.ArrayList;
 public class Biblioteca {

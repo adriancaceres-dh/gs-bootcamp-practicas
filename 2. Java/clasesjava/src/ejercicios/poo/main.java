@@ -27,8 +27,5 @@ public class main {
         System.out.println(persona2);
 
 
-
-
-
     }
 }
