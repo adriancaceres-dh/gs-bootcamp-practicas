@@ -1,5 +1,5 @@
 //EJERCICIO N° 3 --> crear main y su metodo
-package ejercicios.ejercicioc4;
+package ejercicios.poo;
 
 public class main {
     public static void main(String[] args){

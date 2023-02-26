@@ -1,6 +1,7 @@
-package ejercicios.ejercicioc4;
+package ejercicios.poo;
 //EJERCICIO N° 1 --> crear la clase persona
 public class persona {
+    //atributos:
     String nombre;
     int edad;
     String dni;

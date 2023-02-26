@@ -1,6 +1,6 @@
 //EJERCICIO CLASE N° 3
 
-package ejercicios;
+package ejercicios.collections;
 
 import java.util.ArrayList;
 import java.util.List;

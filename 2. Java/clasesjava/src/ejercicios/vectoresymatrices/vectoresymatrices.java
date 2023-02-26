@@ -1,4 +1,4 @@
-package ejercicios.condicionalesyrepetitivas;
+package ejercicios.vectoresymatrices;
 
 public class vectoresymatrices {
     public static void main(String[] args) {

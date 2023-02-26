@@ -1,4 +1,4 @@
-package ejercicios;
+package ejercicios.collections;
 
 public class savetheropa {
 }
