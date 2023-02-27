@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Clase27-02.iml" filepath="$PROJECT_DIR$/.idea/Clase27-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/ejClases/ejClases.iml" filepath="$PROJECT_DIR$/HelloWorld/ejClases/ejClases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumerosRomanos/numerosRomanos/numerosRomanos.iml" filepath="$PROJECT_DIR$/NumerosRomanos/numerosRomanos/numerosRomanos.iml" />
+    </modules>
+  </component>
+</project>
