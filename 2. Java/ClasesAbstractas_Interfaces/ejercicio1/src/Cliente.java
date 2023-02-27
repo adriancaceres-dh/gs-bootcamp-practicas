@@ -1,13 +1,9 @@
-package com.bootcamp.encapsulamiento.entidades;
+public abstract class Cliente {
 
-public abstract class Persona {
-    public final static int cantidadCorazones = 1;
     private String nombre;
     private String dni;
 
-    public Persona() {}
-
-    public Persona(String nombre, String dni) {
+    public Cliente(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
     }
@@ -28,19 +24,14 @@ public abstract class Persona {
         this.dni = dni;
     }
 
+    public abstract void tareasPosibles();
+    public abstract void tareasNoPosibles();
+
     @Override
     public String toString() {
-        return "com.bootcamp.encapsulamiento.entidades.Persona{" +
+        return "Cliente{" +
                 "nombre='" + nombre + '\'' +
                 ", dni='" + dni + '\'' +
                 '}';
     }
-
-    public String enviarMensaje() {
-        return "Esta es una persona";
-    }
-
-    public abstract void caminar();
-
-
 }

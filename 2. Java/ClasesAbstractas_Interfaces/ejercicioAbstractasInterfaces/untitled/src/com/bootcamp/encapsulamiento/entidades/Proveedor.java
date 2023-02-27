@@ -1,6 +1,6 @@
 package com.bootcamp.encapsulamiento.entidades;
 
-public abstract class Proveedor extends Persona{
+public class Proveedor extends Persona{
 
     private String codigoProveedor;
 
@@ -12,10 +12,5 @@ public abstract class Proveedor extends Persona{
     @Override
     public String enviarMensaje() {
         return "Enviar email con una carta de recomendacion";
-    }
-
-    @Override
-    public void caminar() {
-
     }
 }

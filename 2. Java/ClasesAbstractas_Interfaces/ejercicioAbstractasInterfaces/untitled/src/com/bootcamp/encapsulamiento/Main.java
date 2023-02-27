@@ -10,17 +10,13 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        /*List<Persona> personas = new ArrayList<>();
+        List<Persona> personas = new ArrayList<>();
         personas.add(new Cliente("Carlos","34555"));
         personas.add(new Proveedor("Arcor","345325","dd"));
 
         for (Persona persona: personas ) {
             System.out.println(persona.enviarMensaje());
-        }*/
-
-        Cliente cliente = new Cliente("Juan", "74632");
-        cliente.setNumeroCliente("22222222");
-        cliente.caminar();
+        }
 
 
         /*
@@ -37,7 +33,9 @@ public class Main {
         System.out.println(cliente);
 
         */
-        
+
+
+
 
     }
 }

@@ -21,13 +21,9 @@ public class Cliente extends Persona{
                 "numeroCliente='" + numeroCliente + '\'' +
                 '}';
     }
+
     @Override
     public String enviarMensaje() {
         return "Enviar email con promociones";
-    }
-
-    @Override
-    public void caminar() {
-
     }
 }
