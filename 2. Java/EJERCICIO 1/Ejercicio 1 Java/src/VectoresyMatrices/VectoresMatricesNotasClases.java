@@ -3,8 +3,9 @@ package VectoresyMatrices;
 import java.util.Scanner;
 
 public class VectoresMatricesNotasClases {
-    public static void main(String[] args) {
       /*
+    public static void main(String[] args) {
+
       //Ejemplo en clase SWITCH
 
         System.out.println("menu");
@@ -96,6 +97,7 @@ public class VectoresMatricesNotasClases {
 
             }
         }
-*/
+
     }
+    */
 }

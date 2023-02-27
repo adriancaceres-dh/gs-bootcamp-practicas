@@ -3,7 +3,7 @@ package ExcepcionesyClasesUtilitarias;
 import java.time.LocalDate;
 
 public class EjercicioClasesUtilitarias {
-
+/*
     public static void main(String[] args){
 /*
         //metodos estaticos
@@ -22,8 +22,8 @@ public class EjercicioClasesUtilitarias {
             System.out.println("No es anteior");
         }
 
- */
-    }
 
+    }
+*/
 
 }

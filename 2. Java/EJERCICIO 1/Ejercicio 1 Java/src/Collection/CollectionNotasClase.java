@@ -4,6 +4,7 @@ import java.util.*;
 
 
 public class CollectionNotasClase {
+    /*
     public static void main(String[] args){
 /*
      //ARRAYLISTS
@@ -79,4 +80,3 @@ public class CollectionNotasClase {
         }
  */
     }
-}

@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class EjerciciosPlaygroundExcepcionesYClasesUtilitarias {
-
+/*
     public static void main(String[] args) {
         /*
         String mensajeFinal = "Este es el último mensaje";
@@ -49,8 +49,8 @@ public class EjerciciosPlaygroundExcepcionesYClasesUtilitarias {
             }
         }
 
-*/
+
     }
 
-
+*/
 }

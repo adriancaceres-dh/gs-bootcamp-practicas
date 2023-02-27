@@ -1,6 +1,7 @@
 package ClasesAbstractaseInterfaces;
 
 public class App {
+    /*
     public static void main(String[] args) {
         /*
         System.out.println("Ejemplo aeroparque");
@@ -11,6 +12,7 @@ public class App {
         aeroparque.administrarAeronaves(new AvionPasajeros("Chi",5,""));
 
         aeroparque.despeganNaves();
+        }
+
 */
-    }
 }

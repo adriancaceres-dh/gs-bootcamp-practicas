@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Distribuidora {
+    /*
     public static void main(String[] args) {
         Producto[] productos = new Producto[3];
         productos[0] = new Producto("Producto 1", 10.0);
@@ -18,5 +19,7 @@ public class Distribuidora {
         }
         System.out.println("El precio final es " + precioFinal);
     }
+
+     */
     }
 

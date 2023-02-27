@@ -1,6 +1,7 @@
 package IntroJava;
 
 public class MainNotasClases {
+    /*
     public static void main(String[] args) {
         /*
         //consigna adrian
@@ -38,6 +39,7 @@ public class MainNotasClases {
         int i = 0;
         System.out.println(i);
 
-       */
+
     }
+     */
 }

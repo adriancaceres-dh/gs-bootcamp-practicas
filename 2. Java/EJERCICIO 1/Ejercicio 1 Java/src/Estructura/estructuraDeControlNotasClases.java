@@ -1,6 +1,7 @@
 package Estructura;
 
 public class estructuraDeControlNotasClases {
+    /*
     public static void main(String[] args){
        /*
         //if Nota Clases
@@ -38,17 +39,17 @@ public class estructuraDeControlNotasClases {
 
          */
 
-       //EstructuraRepetitiva   con For nota clase
+    //EstructuraRepetitiva   con For nota clase
 
-        //System.out.println("numero 1"); para evitar hacer esto
-        //System.out.println("numero 2");
-        //System.out.println("numero 3");
+    //System.out.println("numero 1"); para evitar hacer esto
+    //System.out.println("numero 2");
+    //System.out.println("numero 3");
         /*
         for (int i = 1; i <=7; i++){
             System.out.println("numero " + i);
         }
         */
-        // con while
+    // con while
         /* int j = 0;
         while (j <=7){
             System.out.println("numero " + j);
@@ -64,5 +65,6 @@ public class estructuraDeControlNotasClases {
         }while (f <= 7);
         
          */
-    }
 }
+
+

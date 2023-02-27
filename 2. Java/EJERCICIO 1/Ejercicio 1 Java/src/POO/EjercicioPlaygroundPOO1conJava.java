@@ -1,7 +1,7 @@
 package POO;
 
 public class EjercicioPlaygroundPOO1conJava {
-
+/*
     public static void main(String[] args) {
 
         //EJERCICIO 1 :
@@ -36,4 +36,6 @@ public class EjercicioPlaygroundPOO1conJava {
         System.out.println("La persona " + personaPooEjercicios4.nombre + " su imc es " + imc);
         System.out.println("Es mayor de edad? " + esMayorDeEdad);
     }
+
+ */
 }

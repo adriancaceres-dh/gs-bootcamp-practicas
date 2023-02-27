@@ -106,7 +106,7 @@ public String toString() {
 */
 
 public class EjercicioPLaygroundCollections {
-
+/*
     public static void main(String[] args) {
 /*
         //Resulto en clase Version 1
@@ -368,7 +368,7 @@ public class EjercicioPLaygroundCollections {
          return importeCirtuito;
        */
 
-
+/*
 
         // MI VERSION:
 
@@ -481,4 +481,5 @@ public class EjercicioPLaygroundCollections {
         }
 
     }
+  */
 }

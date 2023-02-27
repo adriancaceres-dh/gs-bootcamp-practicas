@@ -2,7 +2,8 @@ package ClasesAbstractaseInterfaces;
 
 import java.util.Arrays;
 
-public class MainCvLibroInformes {
+public class Main{
+    /*
     public static void main(String[] args){
 
         Curriculums curriculums = new Curriculums();
@@ -12,4 +13,6 @@ public class MainCvLibroInformes {
 
 
     }
+
+     */
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MainPersona {
     //ExpresionesLambday
-
+/*
     public static void main(String[] args) {
         List<Persona> personas = new ArrayList<>();
         personas.add(new Persona("valentina", 34343));
@@ -38,4 +38,6 @@ public class MainPersona {
         System.out.println(personas.stream().mapToInt(p-> p.getDni()).sum());
 
     }
+
+ */
 }

@@ -1,6 +1,7 @@
 package EncapsulamientoHerenciayPolimorfismo;
 
 public class EjercicioPlayground {
+    /*
     public static void main(String[] args) {
         Producto producto = new Producto("Pan", 120);
         System.out.println(producto);
@@ -14,4 +15,6 @@ public class EjercicioPlayground {
         System.out.println(noPerecederos.calcular(4));
 
     }
+
+     */
 }

@@ -4,8 +4,9 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Ejerciciosplayground {
+     /*
     public static void main(String[] args) {
-       /* //ejercicio 1
+      //ejercicio 1
 
         String apellido = "Gomez";// lleva comillas dobles al ser string "Gomez"
         int edad = 35; // va sin comillas
@@ -60,7 +61,7 @@ public class Ejerciciosplayground {
         String montoNetoPremioDecimal = formatoDecimal.format(totalNeto);
 
         System.out.println("El monto neto del premio es " + montoNetoPremioDecimal);
-*/
-    }
 
+    }
+*/
 }

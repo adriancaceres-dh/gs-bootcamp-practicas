@@ -3,6 +3,7 @@ package Estructura;
 import java.util.Scanner;
 
 public class EjerciciosPlaygroundEstructurasCondicionalesRepetitivas {
+    /*
     public static void main(String[] args) {
         /*
         //ejercicio 1
@@ -117,5 +118,10 @@ public class EjerciciosPlaygroundEstructurasCondicionalesRepetitivas {
         System.out.println("los suscriptores al diario Ason: " + cantSuscriptoresA );
         */
 
+/*
     }
+
+ */
 }
+
+
