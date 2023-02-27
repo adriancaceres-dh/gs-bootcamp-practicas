@@ -20,7 +20,8 @@ public class Calculos {
     }
 
     public double raiz(double num){
-        return Math.sqrt(num)
+        return Math.sqrt(num);
+
     }
 
     public  int numeroAleatorio() {
