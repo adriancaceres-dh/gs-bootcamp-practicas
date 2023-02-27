@@ -2,27 +2,13 @@ package Ejercicio3;
 
 public abstract class Animal {
 
-    public Animal() {
+    protected String sonido;
+    public Animal(String sonido) {
+        this.sonido = sonido;
     }
-
-
-    public void emitirSonidoPerro() {
-        System.out.println("¡Guau!");
-    }
-
-    public void emitirSonidoGato() {
-        System.out.println("¡Miau!");
-    }
-
-    public void emitirSonidoVaca() {
-        System.out.println("¡Muuu!");
+    public void emitirSonido() {
     }
 
 
 
-
-    @Override
-    public String toString() {
-        return "Animal{}";
-    }
 }

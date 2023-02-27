@@ -1,8 +1,15 @@
 package Ejercicio3;
 
-public class Gato extends Animal implements Comida{
+public class Gato extends Animal implements Carnivoro {
+
     @Override
-    public void Comida(GustosAlimenticios e) {
-        Comida.super.Comida(e);
+    public void emitirSonido() {
+        System.out.println("Miau");
     }
+
+    @Override
+    public void comerCarne() {
+        System.out.println("Come carne");
+    }
+}
 }

@@ -1,8 +1,15 @@
 package Ejercicio3;
 
-public class Vaca extends Animal implements Comida{
+public class Vaca extends Animal implements Herviboro{
+
     @Override
-    public void Comida(GustosAlimenticios e) {
-        Comida.super.Comida(e);
+    public void emitirSonido() {
+        System.out.println(this.getSonido());
+    }
+
+    @Override
+    public void comerHierba() {
+        System.out.println("Come hierba");
     }
 }
+
