@@ -4,7 +4,7 @@ public class Gato extends Animal implements Carnivoro {
 
     @Override
     public void emitirSonido() {
-        System.out.println("Miau");
+        System.out.println(this.getSonido());
     }
 
     @Override
@@ -12,4 +12,4 @@ public class Gato extends Animal implements Carnivoro {
         System.out.println("Come carne");
     }
 }
-}
+

@@ -4,7 +4,7 @@ public class Perro extends Animal implements Carnivoro{
 
     @Override
     public void emitirSonido() {
-        System.out.println("Perro");
+        System.out.println(this.getSonido());
     }
 
     @Override
