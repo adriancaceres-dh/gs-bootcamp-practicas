@@ -1,8 +1,8 @@
 package com.bootcamp.animales;
 
-public class Gato extends Animal implements ComerAnimal{
+public class Gato extends Animal implements Carnivoro{
     @Override
-    public void ComerAnimals(GustosAlimenticios e) {
-        e.comerCarne();
+    public void comerCarne() {
+        System.out.println("Come carne");
     }
 }

@@ -12,7 +12,9 @@ public class Main {
         vaca.emitirSonidoVaca();
 
 
-
+        perro.comerCarne();
+        gato.comerCarne();
+        vaca.comerHierva();
 
     }
 
