@@ -8,6 +8,7 @@ public class LibroPDF extends Documentos implements Imprimible {  //extends es p
     private String genero;
 
     public LibroPDF(String titulo, String autor, String genero, int cantidadPaginas) {
+        super();
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
