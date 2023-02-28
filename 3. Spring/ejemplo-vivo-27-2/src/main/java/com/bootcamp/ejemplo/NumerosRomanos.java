@@ -20,6 +20,7 @@ public class NumerosRomanos {
                 i++;
             }
         }
+        System.out.println(romanNumeral.toString());
         return romanNumeral.toString();
     }
 }
