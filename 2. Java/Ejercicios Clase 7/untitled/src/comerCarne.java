@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface comerCarne {
+public interface comerCarne {
+
+    public void comerCarne();
 }

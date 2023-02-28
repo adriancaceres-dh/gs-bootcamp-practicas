@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public interface comerHierba {
+public interface comerHierba {
+
+    public void comerHierba();
+
 }
