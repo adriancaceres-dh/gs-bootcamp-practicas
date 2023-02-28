@@ -1,4 +1,4 @@
-public class Informe implements Imprimir{
+public class Informe implements Imprimir, DocImprimible{
     private int cantidadPalabras;
     private int cantidadPaginas;
     private String revisor;
@@ -51,5 +51,10 @@ public class Informe implements Imprimir{
                 ", revisor='" + revisor + '\'' +
                 ", autor='" + autor + '\'' +
                 '}';
+    }
+
+    @Override
+    public void imprimir() {
+        System.out.println("Imprimir Informe");
     }
 }

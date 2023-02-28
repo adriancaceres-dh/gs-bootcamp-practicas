@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface DocImprimible {
+public interface DocImprimible {
+    public void imprimir();
 }

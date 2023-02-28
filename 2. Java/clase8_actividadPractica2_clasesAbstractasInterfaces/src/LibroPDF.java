@@ -1,4 +1,4 @@
-public class LibroPDF implements Imprimir{
+public class LibroPDF implements Imprimir, DocImprimible{
     private String titulo;
     private String autor;
     private String genero;
@@ -51,5 +51,10 @@ public class LibroPDF implements Imprimir{
                 ", genero='" + genero + '\'' +
                 ", cantidadPaginas=" + cantidadPaginas +
                 '}';
+    }
+
+    @Override
+    public void imprimir() {
+        System.out.println("Imprimir el LibroPDF");
     }
 }

@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Curriculum implements Imprimir{
+public class Curriculum implements Imprimir, DocImprimible{
     private String nombre;
     private String apellido;
     private String dni;
@@ -68,5 +68,10 @@ public class Curriculum implements Imprimir{
                 ", edad=" + edad +
                 ", habilidades=" + habilidades +
                 '}';
+    }
+
+    @Override
+    public void imprimir() {
+        System.out.println("Imprimir el CV");
     }
 }
