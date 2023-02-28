@@ -24,12 +24,16 @@ public class CalculadoraEdadController implements ICalculadorEdadController{
     }
 
     private Integer calcularFecha(Integer dia, Integer mes, Integer anio) {
-        LocalDate fechaActual = LocalDate.now();
-        LocalDate fechaNacimiento = LocalDate.of(anio,mes,dia);
-        // Period periodo = Period.between(fechaNacimiento, fechaActual);
-        // return fechaActual.getYear() - fechaNacimiento.getYear(); // tiene un margen de error de un año aprox.
-        Long respuesta = ChronoUnit.YEARS.between(fechaNacimiento, fechaActual);
-        return respuesta.intValue();
+        try {
+            LocalDate fechaActual = LocalDate.now();
+            LocalDate fechaNacimiento = LocalDate.of(anio, mes, dia);
+            // Period periodo = Period.between(fechaNacimiento, fechaActual);
+            // return fechaActual.getYear() - fechaNacimiento.getYear(); // tiene un margen de error de un año aprox.
+            Long respuesta = ChronoUnit.YEARS.between(fechaNacimiento, fechaActual);
+            return respuesta.intValue();
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
 }
