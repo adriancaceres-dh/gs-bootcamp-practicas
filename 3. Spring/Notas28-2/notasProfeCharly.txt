@@ -1,0 +1,26 @@
+[
+{
+   "nombre": "Emiliano",
+   "apellido": "Martines",
+   "edad":30,
+   "equipos":["Independiente",
+              "Arsenal FC",
+              "Oxford United,
+              "Getafe",
+              "Aston Villa"]
+},//Constituye un objeto//
+{
+   "nombre": "Lionel",
+   "apellido": "Messi",
+   "edad":35,
+   "equipos":["Newells",
+              "Barcelona",
+              "PSG"]
+
+}
+]
+
+
+// Ejemplo un libro es la clase//
+// si digo estoy leyendo el señor de los anillos del autor ... que es de la editorial y que me costo//
+//este ya es un objeto//
