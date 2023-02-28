@@ -1,4 +1,4 @@
-package com.example.IntroSpring.clase1_ejercicioCodigoMorse;
+package com.example.IntroSpring.clase1_ejercicioCodigoMorse.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
