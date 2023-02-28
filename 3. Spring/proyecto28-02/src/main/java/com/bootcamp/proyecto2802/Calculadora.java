@@ -12,14 +12,15 @@ public class Calculadora {
 
     @GetMapping("/")
     public String incio(){
-        return "Hola, para calcular tu edad, coloca en la URL tu fecha de nacimiento en el siguiente formato: año, mes, dia";
+        return "Hola, para calcular tu edad, coloca en la URL tu fecha de nacimiento";
     }
 
-    @GetMapping("/{año}/{mes}/{dia}")
+    @GetMapping("/{dia}/{mes}/{año}")
     public String calcularEdad(@PathVariable Integer dia, @PathVariable Integer mes, @PathVariable Integer año){
         Period age;
-        LocalDate date = LocalDate.of(año, mes, dia);
-        age = Period.between(date, LocalDate.now());
+        LocalDate fechaActual = LocalDate.now();
+        LocalDate cumpleaños = LocalDate.of(año, mes, dia);
+        age = Period.between(cumpleaños, fechaActual);
 
         return "Tu cumpleaños es el " + dia + " del mes " + mes + ". Y tenes " + age.getYears() + " años";
     }
