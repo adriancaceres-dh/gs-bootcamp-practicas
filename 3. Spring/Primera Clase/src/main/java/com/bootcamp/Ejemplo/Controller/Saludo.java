@@ -1,4 +1,4 @@
-package com.bootcamp.Ejemplo;
+package com.bootcamp.Ejemplo.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,4 +23,5 @@ public class Saludo {
     public String saludar2(@PathVariable String nombre, @PathVariable  String apellido , @PathVariable int edad) {
         return "Hola mundo " + nombre + " " + apellido + " " + edad;
     }
+
 }
