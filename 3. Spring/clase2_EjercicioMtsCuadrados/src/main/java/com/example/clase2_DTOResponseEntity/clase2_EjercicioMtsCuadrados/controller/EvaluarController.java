@@ -17,6 +17,7 @@ public class EvaluarController {
         response.setPrecio(calculos.calcularValor(casa));
         response.setHabGrande(calculos.habMasGrande(casa));
         response.setMtsCuadrados(calculos.calcularMtsCuadrados(casa));
+        response.setHabitaciones(casa.getHabitaciones());
 
 
         return response;
