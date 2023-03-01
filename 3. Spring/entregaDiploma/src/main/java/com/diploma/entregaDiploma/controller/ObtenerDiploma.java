@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ObtenerDiploma {
 @PostMapping("/obtenerDiploma")
     public String calcularNota(AlumnoDto alumnoDto) {
-        String respuesta = "";
-        try {
+        String respuesta = "nada";
+        /*try {
             double acuNotas = 0.0;
             for (MateriasDto materiasDto : alumnoDto.getMaterias()) {
                 acuNotas += materiasDto.getNota();
@@ -19,7 +19,7 @@ public class ObtenerDiploma {
             respuesta = "El promedio es " + promedio;
         } catch (Exception e) {
             respuesta = "No hay materias para calcular el promedio";
-        }
+        }*/
         return respuesta;
     }
 
