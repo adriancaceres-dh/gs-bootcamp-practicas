@@ -1,4 +1,4 @@
-package com.bootcamp.DTO.ResponseEntity;
+package com.bootcamp.IoC.DI;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.bootcamp.DTO.ResponseEntity;
+package com.bootcamp.IoC.DI;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

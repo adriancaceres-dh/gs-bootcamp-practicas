@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bootcamp</groupId>
-	<artifactId>DTO-ResponseEntity</artifactId>
+	<artifactId>IoC-DI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DTO-ResponseEntity</name>
-	<description>Clase 28-2 Segunda Parte</description>
+	<name>IoC-DI</name>
+	<description>IoC &amp; DI Clase 1-3</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -22,6 +22,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
