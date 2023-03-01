@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class MateriaDto {
+public class AlumnoConPromedioDto {
     private String nombre;
-    private Double nota;
-
-
+    private Double promedio;
 }
