@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class obtenerDiploma{
 
-    @PostMapping
+    @PostMapping("/obtenerdiploma")
     public ResponseEntity<String> calcularNota(@RequestBody AlumnoDto alumnoDto){
         //TODOS LOS CALCULOS VAN EN LA PARTE DE SERVICIO
 
