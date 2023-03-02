@@ -54,6 +54,7 @@ public class BlogRepository {
     }
 
     public List<EntradaBlog> listBlogs(){
+
         return blogs;
     }
 

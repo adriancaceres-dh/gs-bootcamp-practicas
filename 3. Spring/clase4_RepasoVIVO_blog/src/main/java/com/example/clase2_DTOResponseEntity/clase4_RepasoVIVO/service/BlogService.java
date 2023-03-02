@@ -2,6 +2,8 @@ package com.example.clase2_DTOResponseEntity.clase4_RepasoVIVO.service;
 
 import com.example.clase2_DTOResponseEntity.clase4_RepasoVIVO.dto.request.BlogRequestDto;
 import com.example.clase2_DTOResponseEntity.clase4_RepasoVIVO.dto.response.BlogResponseDto;
+import com.example.clase2_DTOResponseEntity.clase4_RepasoVIVO.exception.SinBlogsException;
+import com.example.clase2_DTOResponseEntity.clase4_RepasoVIVO.exception.TituloRepetidoException;
 import com.example.clase2_DTOResponseEntity.clase4_RepasoVIVO.model.EntradaBlog;
 import com.example.clase2_DTOResponseEntity.clase4_RepasoVIVO.repository.BlogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +25,7 @@ public class BlogService {
     public BlogResponseDto creatingBlog(BlogRequestDto blogRequestDto){
         //Objetivo: cortar la ejecucion normal cuando un titulo es repetido.//LANZAMOS LA ECEPTION - Para manejarla vamos a crear paq exception y capturarla
         if(blogRepository.existBlogWithTitle(blogRequestDto.getTitle())){
-            throw new RuntimeException("El título ya existe");
+            throw new TituloRepetidoException("El título ya existe");
         }
 
         EntradaBlog blog = new EntradaBlog();
@@ -45,6 +47,11 @@ public class BlogService {
     }
 
     public List<EntradaBlog> listBlogs(){
-        return blogRepository.listBlogs();
+        List<EntradaBlog> blogs = blogRepository.listBlogs();
+
+        if(blogs.isEmpty()){
+            throw new SinBlogsException("La lista esta vacía."); //SIEMPRE DEVOLVER DTO Y NO STRING
+        }
+        return blogs;
     }
 }

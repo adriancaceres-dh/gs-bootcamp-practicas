@@ -10,15 +10,19 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class GlobalHandler {
 
     //@ResponseStatus(value=HttpStatus.BAD_REQUEST, reason="Lo hiciste aca Sergio")
-    @ExceptionHandler(RuntimeException.class)//Spring sabe que si sale una exception de este tipo, se ejecuta el metodo abajo.
+   /* @ExceptionHandler(RuntimeException.class)//Spring sabe que si sale una exception de este tipo, se ejecuta el metodo abajo.
     public ResponseEntity<String> handlerRuntime(RuntimeException exception){
+        return new ResponseEntity<>(exception.getMessage(), HttpStatus.BAD_REQUEST);
+    }*/
+
+    @ExceptionHandler(TituloRepetidoException.class)
+    public ResponseEntity<String> handlerRuntime(TituloRepetidoException exception){
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.BAD_REQUEST);
     }
 
-    @ExceptionHandler(NoSuchFieldException.class)
-    public ResponseEntity<String> handlerNoSouc(NoSuchFieldException exception){
+    @ExceptionHandler(SinBlogsException.class)
+    public ResponseEntity<String> SinBlogsException(SinBlogsException exception){
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_FOUND);
     }
-
 
 }

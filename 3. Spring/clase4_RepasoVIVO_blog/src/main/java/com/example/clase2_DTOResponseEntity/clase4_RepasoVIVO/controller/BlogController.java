@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController //INDICAMOS A SPRING QUE ESTO ES UN CONTROLLER
 public class BlogController {
-    @Autowired//Comunicacion con el service BlogService.
+    @Autowired//Comunicacion con el service BlogService - a su vez crea un objeto en memoria listo para ser utilizado cuando se levanta la app. Por eso puedo acceder a los metodos de dicho objeto.
     BlogService blogService;
 
     @GetMapping("/")//Una app externa nos solicita la ruta. (postman)
