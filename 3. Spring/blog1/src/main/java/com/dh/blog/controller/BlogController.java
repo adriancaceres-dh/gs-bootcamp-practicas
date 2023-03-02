@@ -26,7 +26,7 @@ public class BlogController {
     }
 
     @GetMapping("/blogs/{id}")
-    public EntradaBlog sarchBlog(@PathVariable Integer id){
+    public EntradaBlog searchBlog(@PathVariable Integer id){
         return blogService.searchBlog(id);
     }
 
