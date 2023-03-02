@@ -19,7 +19,7 @@ public class PlatoServiceImpl implements PlatoService{
 
     @Override
     public String caloriasIngrediente(ComidaDto c) {
-        String ingredientes = "La comida " + c.getNombre() + ":\n";
+        String ingredientes = "La comida es " + c.getNombre() + ":\n";
         for (IngredienteDto ingredienteDto : c.getIngrediente()) {
             ingredientes += "El ingrediente " + ingredienteDto.getNombre() + " tiene " +  ingredienteDto.getCalorias() + " calorias. \n";
         }
