@@ -23,8 +23,10 @@ public class Main {
 
         System.out.println(nombres);
 
-        System.out.println((nombres.get(1));
-                System.out.println((nombres.indexOf("Jose"));
+        System.out.println(nombres.get(1));
+        System.out.println(nombres.indexOf("Jose"));
+        System.out.println(nombres.remove(nombres.indexOf("Jonatan")));
+
 
 
     }

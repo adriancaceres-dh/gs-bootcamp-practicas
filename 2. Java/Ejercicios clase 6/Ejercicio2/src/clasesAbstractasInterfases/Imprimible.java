@@ -1,2 +1,6 @@
-package clasesAbstractasInterfases;public interface Imprimible {
+package clasesAbstractasInterfases;
+
+public interface Imprimible {
+
+    public void imprimir();
 }

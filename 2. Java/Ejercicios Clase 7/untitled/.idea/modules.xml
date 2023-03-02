@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GenericsWrapperLambdaStreams/GenericsWrapperLambdaStreams.iml" filepath="$PROJECT_DIR$/GenericsWrapperLambdaStreams/GenericsWrapperLambdaStreams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Ejercicio Juego Asteroides/JuegoAsteroides/JuegoAsteroides.iml" filepath="$PROJECT_DIR$/../Ejercicio Juego Asteroides/JuegoAsteroides/JuegoAsteroides.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled.iml" filepath="$PROJECT_DIR$/untitled.iml" />
     </modules>
   </component>
