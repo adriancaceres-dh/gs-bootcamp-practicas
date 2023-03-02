@@ -1,15 +1,27 @@
 package com.bootcamp.EjercicioObtenerDiploma.Controller;
 
 import com.bootcamp.EjercicioObtenerDiploma.dto.AlumnoDto;
+import com.bootcamp.EjercicioObtenerDiploma.dto.AlumnoPromedioDto;
 import com.bootcamp.EjercicioObtenerDiploma.dto.MateriaDto;
+import com.bootcamp.EjercicioObtenerDiploma.service.AlumnoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class ObtenerDiploma {
+    @Autowired
+    AlumnoService alumnoService;
+    @GetMapping("/alumnos")
+    public ResponseEntity<List<AlumnoPromedioDto>> getAlumnosPromedio() {
+        return new ResponseEntity<>(alumnoService.getAlumnoPromedio(), HttpStatus.OK);
+    }
     @PostMapping("/obtenerdiploma")
     public ResponseEntity<String> calcularNota(@RequestBody AlumnoDto alumnoDto) {
 
