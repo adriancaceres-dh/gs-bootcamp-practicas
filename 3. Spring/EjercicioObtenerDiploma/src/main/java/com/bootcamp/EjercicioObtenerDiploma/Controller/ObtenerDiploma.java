@@ -19,8 +19,8 @@ public class ObtenerDiploma {
     @Autowired
     AlumnoService alumnoService;
     @GetMapping("/alumnos")
-    public ResponseEntity<List<AlumnoPromedioDto>> getAlumnosPromedio() {
-        return new ResponseEntity<>(alumnoService.getAlumnoPromedio(), HttpStatus.OK);
+    public ResponseEntity<List<AlumnoPromedioDto>> getAlumnosConPromedio() {
+        return new ResponseEntity<>(alumnoService.getAlumnosConPromedio(),HttpStatus.OK);
     }
     @PostMapping("/obtenerdiploma")
     public ResponseEntity<String> calcularNota(@RequestBody AlumnoDto alumnoDto) {
