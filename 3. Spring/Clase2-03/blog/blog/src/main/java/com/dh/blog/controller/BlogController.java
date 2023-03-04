@@ -34,4 +34,6 @@ public class BlogController {
     public List<EntradaBlog> blogList() {
         return blogService.Listblog();
     }
+
+
 }
