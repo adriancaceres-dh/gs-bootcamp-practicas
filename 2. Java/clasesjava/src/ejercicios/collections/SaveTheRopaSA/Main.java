@@ -27,7 +27,7 @@ public class Main {
         prendas1.add(prenda3);
 
 
-        //creamos un nuevo guardaropa --> con los atributos de la clase GuardaRopa
+        //creamos un nuevo guardaropa --> con los atributos de la clase GuardaRopa y usando el metodo guardarPRendas las agregamos al MAP
         GuardaRopa miGuardaRopa = new GuardaRopa();
         miGuardaRopa.guadarPrendas(prendas);
         miGuardaRopa.guadarPrendas(prendas1);
