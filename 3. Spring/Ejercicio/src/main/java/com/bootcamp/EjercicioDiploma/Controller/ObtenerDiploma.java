@@ -1,6 +1,6 @@
 package com.bootcamp.EjercicioDiploma.Controller;
 
-import dto.AlumnoDto;
+import com.bootcamp.EjercicioDiploma.dto.AlumnoDto;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

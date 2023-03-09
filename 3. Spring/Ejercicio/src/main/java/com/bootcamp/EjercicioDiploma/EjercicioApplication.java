@@ -1,11 +1,9 @@
 package com.bootcamp.EjercicioDiploma;
 
-import dto.MateriaDto;
+import com.bootcamp.EjercicioDiploma.dto.MateriaDto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
-
-import java.sql.SQLOutput;
 
 @SpringBootApplication
 public class EjercicioApplication {

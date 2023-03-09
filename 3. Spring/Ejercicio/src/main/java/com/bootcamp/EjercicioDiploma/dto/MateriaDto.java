@@ -1,4 +1,4 @@
-package dto;
+package com.bootcamp.EjercicioDiploma.dto;
 
 
 import lombok.AllArgsConstructor;

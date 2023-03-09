@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "brand": "Chevrolet",
+    "model": "Camaro",
+    "manufacturingDate": "2020-12-31T15:53:16",
+    "numberOfKilometers": 1000,
+    "doors": 2,
+    "price": 100000,
+    "currency": "USD",
+    "services": [
+      {
+        "id": 1,
+        "kilometers": 1000,
+        "description": "Oil change"
+      },
+      {
+        "id": 2,
+        "kilometers": 2000,
+        "description": "Tire change"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "brand": "Ford",
+    "model": "Mustang",
+    "manufacturingDate": "2012-12-31T15:53:16",
+    "numberOfKilometers": 2000,
+    "doors": 2,
+    "price": 200000,
+    "currency": "USD",
+    "services": [
+      {
+        "id": 3,
+        "kilometers": 1000,
+        "description": "Oil change"
+      },
+      {
+        "id": 4,
+        "kilometers": 2000,
+        "description": "Tire change"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "brand": "Dodge",
+    "model": "Challenger",
+    "manufacturingDate": "2010-12-31T15:53:16",
+    "numberOfKilometers": 3000,
+    "doors": 2,
+    "price": 600000,
+    "currency": "USD",
+    "services": [
+      {
+        "id": 5,
+        "kilometers": 1000,
+        "description": "Oil change"
+      },
+      {
+        "id": 6,
+        "kilometers": 2000,
+        "description": "Tire change"
+      }
+    ]
+  }
+]
