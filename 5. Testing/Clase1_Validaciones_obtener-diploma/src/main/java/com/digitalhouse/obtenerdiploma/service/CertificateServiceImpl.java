@@ -3,6 +3,7 @@ package com.digitalhouse.obtenerdiploma.service;
 import com.digitalhouse.obtenerdiploma.dto.StudentDTO;
 import com.digitalhouse.obtenerdiploma.dto.CertificateDTO;
 import com.digitalhouse.obtenerdiploma.dto.SubjectDTO;
+import com.digitalhouse.obtenerdiploma.excepciones.NoSuffucientNoteExecption;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -21,6 +22,11 @@ public class CertificateServiceImpl implements CertificateService {
   }
 
   private Double calculateAverage(StudentDTO notes) {
+
+    if(notes.getSubjects().size() < 2){
+      throw new NoSuffucientNoteExecption("No se puede sacar un promedio con menos de 2 materias.");
+    }
+
     int sum = notes.getSubjects().stream().mapToInt(SubjectDTO::getNote).sum();
     return sum / (double) notes.getSubjects().size();
   }

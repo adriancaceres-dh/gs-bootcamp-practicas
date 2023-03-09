@@ -15,8 +15,7 @@ public class StudentDTO {
     private String name;
 
     @NotEmpty(message = "La lista no puede ser vacía.")
-    @Valid
-    private List<SubjectDTO> subjects;
+    private List<@Valid SubjectDTO> subjects;
 
     public StudentDTO() {
     }
