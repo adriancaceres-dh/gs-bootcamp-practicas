@@ -1,7 +1,5 @@
 package com.digitalhouse.obtenerdiploma.dto;
 
-import java.util.List;
-
 public class CertificateDTO extends StudentDTO {
   private String message;
   private Double average;

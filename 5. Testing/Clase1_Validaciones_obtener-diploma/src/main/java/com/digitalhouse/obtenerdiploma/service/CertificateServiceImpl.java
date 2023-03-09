@@ -6,12 +6,6 @@ import com.digitalhouse.obtenerdiploma.dto.SubjectDTO;
 import com.digitalhouse.obtenerdiploma.excepciones.NoSuffucientNoteExecption;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
-//import static java.util.stream.Nodes.collect;
-
 @Service
 public class CertificateServiceImpl implements CertificateService {
   public CertificateDTO analyzeNotes(StudentDTO notes) {
