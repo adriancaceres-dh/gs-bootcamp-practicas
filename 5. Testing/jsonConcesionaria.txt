@@ -1,0 +1,25 @@
+{
+    "id": -1,
+    "brand": " ",
+    "numberOfKilometers": 1000.0,
+    "model": "Camaro",
+    "manufacturingDate": "2020-12-31T15:53:16.000.00.0",
+    "price": 100000.0,
+    "currency": "USD",
+    "services": [
+        {
+            "id": 1,
+            "date": null,
+            "kilometers": 1000.0,
+            "description": "Oil change"
+        },
+        {
+            "id": 2,
+            "date": null,
+            "kilometers": 2000.0,
+            "description": "Tire change"
+        }
+    ],
+    "countOfOwners": null
+}
+Con ese json, deberian obtener la siguiente fotaza
