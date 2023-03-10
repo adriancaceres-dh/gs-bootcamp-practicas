@@ -11,7 +11,8 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentDTO {
+public class
+StudentDTO {
 
     //Que el campo no esté vacío.
     @NotBlank(message = "El nombre del alumno no puede estar vacío.")
