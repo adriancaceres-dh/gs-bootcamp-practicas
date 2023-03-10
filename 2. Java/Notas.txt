@@ -1,0 +1,8 @@
+https://dev.java/learn/
+https://www.w3schools.com/java/default.asp
+Charly  a  Todos 15:44
+https://www.baeldung.com/
+Esta paginita tiene muchas cosas de Java y Spring
+Usted  a  Todos 15:44
+Documentación oficial de java: https://docs.oracle.com/en/java/javase/11/docs/api/
+Para el Period: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html

@@ -17,3 +17,10 @@ private List<UserRepo> loadDataBase() {
     return users;
   }
 Esto es para convertir un json en una lista de objetos de model
+
+
+
+@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss", shape = JsonFormat.Shape.STRING)
+
+
+Por si lo necesitan, pueden usar @RequestParam(required = false) si hay algún parámetro opcional .
