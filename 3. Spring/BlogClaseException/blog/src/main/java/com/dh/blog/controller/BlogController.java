@@ -5,16 +5,14 @@ import com.dh.blog.dto.response.BlogResponseDTO;
 import com.dh.blog.model.EntradaBlog;
 import com.dh.blog.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.PositiveOrZero;
 import java.util.List;
 
 @RestController
-@Validated
 public class BlogController {
 
     @Autowired
@@ -25,20 +23,13 @@ public class BlogController {
         return blogService.greeting();
     }
 
-    @PostMapping("/blog")
+    @PostMapping("/blogs")
     public BlogResponseDTO createBlog(@RequestBody BlogRequestDTO blogRequestDTO){
         return blogService.creatingBlog(blogRequestDTO);
     }
 
-    @GetMapping("/blog/{id}") //validaciones (@Min()
-    public EntradaBlog requestBlog(@PathVariable @Min(value = 1) Integer id){
-        return blogService.requestingBlog(id);
+    @GetMapping("/blogs/list")
+    public List<EntradaBlog> listBlogs(){
+        return blogService.blogsList();
     }
-
-    @GetMapping("/blogs")
-    public List<EntradaBlog> blogList() {
-        return blogService.Listblog();
-    }
-
-
 }
