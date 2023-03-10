@@ -1,5 +1,14 @@
-package com.dh.blog.dto.request.response;
+package com.dh.blog.dto.response;
 
-public class BlogResponseDto {
-    private int id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+public class BlogResponseDTO {
+    private int idBlog;
 }

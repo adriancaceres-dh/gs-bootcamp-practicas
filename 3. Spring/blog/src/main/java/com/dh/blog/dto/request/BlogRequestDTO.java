@@ -10,6 +10,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class BlogRequestDTO {
-    private String title;
-    private String nameAuthor;
+    private String title; // hace falta que lo envien
+    private String nameAuthor; // hace falta que lo envien
 }
