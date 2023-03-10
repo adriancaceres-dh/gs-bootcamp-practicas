@@ -2,6 +2,7 @@ package com.dh.blog.service;
 
 import com.dh.blog.dto.request.BlogRequestDTO;
 import com.dh.blog.dto.response.BlogResponseDTO;
+import com.dh.blog.exception.SinBlogsException;
 import com.dh.blog.model.EntradaBlog;
 import com.dh.blog.repository.BlogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+
 
 @Service
 public class BlogService {
@@ -45,8 +47,18 @@ public class BlogService {
         }
         return  blogRepository.getBlogWhitId(id);
     }
-
+/*
     public List<EntradaBlog> Listblog(){
         return blogRepository.getBlogs();
+    }
+*/
+    public List<EntradaBlog>Listblog(){
+        List<EntradaBlog> blogs = blogRepository.getBlogs();
+
+        if(blogs.isEmpty()){
+            throw new SinBlogsException("No hay Blogs :(");
+        }
+
+        return blogs;
     }
 }

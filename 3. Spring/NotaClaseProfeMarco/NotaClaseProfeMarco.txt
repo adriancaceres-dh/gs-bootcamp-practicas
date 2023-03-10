@@ -1,0 +1,19 @@
+private List<UserRepo> loadDataBase() {
+    List<UserRepo> users = null;
+
+    File file;
+    ObjectMapper objectMapper = new ObjectMapper()
+      .configure(SerializationFeature.WRAP_ROOT_VALUE, false)
+      .registerModule(new JavaTimeModule());
+    TypeReference<List<UserRepo>> typeRef = new TypeReference<>() {};
+
+    try {
+      file = ResourceUtils.getFile("classpath:json/users.json");
+      users = objectMapper.readValue(file, typeRef);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    return users;
+  }
+Esto es para convertir un json en una lista de objetos de model

@@ -4,6 +4,7 @@ import com.dh.blog.model.EntradaBlog;
 import lombok.Data;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -18,6 +19,13 @@ public class BlogRepository {
         autoIncrement = 1;
         blogs = new ArrayList<>();
         data = "Hello World";
+    }
+    private List<EntradaBlog> agregar() {
+        List<EntradaBlog> lista = new ArrayList<>();
+        EntradaBlog blog = new EntradaBlog(1,"nombre", "apellido", LocalDate.now());
+        lista.add(blog);
+        return lista;
+
     }
 
     public String getData() {
