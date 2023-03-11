@@ -17,3 +17,30 @@
         </dependency>
 
 Todas las validaciones: https://docs.jboss.org/hibernate/stable/validator/reference/en-US/html_single/#section-builtin-constraints
+
+
+
+exceptions:
+
+ @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ValidationDTO> validationException(MethodArgumentNotValidException e){
+        return ResponseEntity.ok(
+                new ValidationDTO(
+                        e.getAllErrors().stream().map(error -> error.getDefaultMessage()).collect(Collectors.toList())
+                )
+        );
+    }
+
+    @ExceptionHandler(ConstraintViolationException.class)
+    public ResponseEntity<ValidationDTO> validationException(ConstraintViolationException e){
+        return ResponseEntity.ok(
+                new ValidationDTO(
+                        e.getConstraintViolations().stream().map(ConstraintViolation::getMessage).collect(Collectors.toList())
+                )
+        );
+    }
+
+
+Para que la validation empiece con mayuscula:
+ //Que empiece con mayúscula.
+    @Pattern(regexp = "^[A-Z].*", message = "El nombre del alumno debe comenzar con mayúscula.")
