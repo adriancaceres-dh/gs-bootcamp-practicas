@@ -38,9 +38,9 @@ public class KitchenService implements IKitchenService {
     @Override
     public RecipeDTO createDish (String name ) {
 
-        Optional<Recipe> optionalRecipe = recipeRepository.getRecipe(name); // () -> Optional.of(new Recipe());
-                                                                            // () -> Optional.empty()
-        Recipe           recipe         = optionalRecipe.orElseThrow(() -> new RecipeNotFoundException(name));
+        Optional<Recipe> optionalRecipe = recipeRepository.getRecipe(name);
+
+        Recipe recipe = optionalRecipe.orElseThrow(() -> new RecipeNotFoundException(name));
 
         this.updateIngredientsOf(recipe);
 
@@ -64,9 +64,9 @@ public class KitchenService implements IKitchenService {
         List<Ingredient> ingredients = recipe.getIngredients()
           .stream()
           .map(ing -> {
-                String               name               = ing.getName();
+                String name = ing.getName();
                 Optional<Ingredient> optionalIngredient = storehouseRepository.getIngredient(name); // () -> Optional.of(new Ingredient())
-                Ingredient           ingredient         = optionalIngredient.orElseThrow(() -> new IngredientNotFoundException(name));
+                Ingredient ingredient = optionalIngredient.orElseThrow(() -> new IngredientNotFoundException(name));
                 ingredient.setQuantity(ing.getQuantity());
                 return ingredient;
             }
@@ -75,7 +75,6 @@ public class KitchenService implements IKitchenService {
 
         recipe.setIngredients(ingredients);
     }
-
 
     private double getTotalCaloriesOf ( Recipe recipe ) {
         Double           totalCalories = 0D;
@@ -87,12 +86,6 @@ public class KitchenService implements IKitchenService {
         }
 
         return totalCalories;
-        /*
-            return recipe.getIngredients()
-              .stream()
-              .mapToDouble(Ingredient::calcTotalCalories)
-              .sum();
-        */
     }
 
     private double getQualityOf ( Recipe recipe ) {
@@ -109,13 +102,6 @@ public class KitchenService implements IKitchenService {
         }
 
         return totalQuality;
-        /*
-            return recipe.getIngredients()
-              .stream()
-              .mapToDouble(Ingredient::getQuality)
-              .average()
-              .orElse(0D);
-        */
     }
 
 }

@@ -12,6 +12,8 @@ public class RecipeFactory {
         return  Recipe.builder().name("burger")
                     .description("lorem ipsum")
                     .ingredients(List.of(getBread(),getMeal()))
+                    .quality(4.5)
+                    .calories(13.0)
                     .build();
     }
 
@@ -26,6 +28,8 @@ public class RecipeFactory {
         return Ingredient.builder()
                 .name("bread")
                 .quantity(1)
+                .quality(4)
+                .calories(300)
                 .build();
     }
 
@@ -33,6 +37,8 @@ public class RecipeFactory {
         return  Ingredient.builder()
                 .name("meal")
                 .quantity(2)
+                .quality(5)
+                .calories(500)
                 .build();
     }
 
