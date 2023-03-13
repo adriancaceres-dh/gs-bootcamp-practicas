@@ -15,7 +15,6 @@ public class HabitacionDto {
     private Double largo;
 
     private Double ancho;
-    
 
     //metodo para calcular la superficie de la habitacion
     public double calculoSuperficie(){
