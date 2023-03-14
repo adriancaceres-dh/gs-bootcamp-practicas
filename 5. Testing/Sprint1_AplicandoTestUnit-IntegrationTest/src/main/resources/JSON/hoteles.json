@@ -1,0 +1,121 @@
+[
+  {
+    "codigoHotel": "CH-0002",
+    "nombre": "Cataratas Hotel",
+    "lugar": "Puerto Iguazú",
+    "tipoHabitacion": "Doble",
+    "precioNoche": 6300.0,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-20",
+    "reservado": false
+  },
+  {
+    "codigoHotel": "CH-0003",
+    "nombre": "Cataratas Hotel 2",
+    "lugar": "Puerto Iguazú",
+    "tipoHabitacion": "Triple",
+    "precioNoche": 8200.0,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-23",
+    "reservado": false
+  },
+  {
+    "codigoHotel": "HB-0001",
+    "nombre": "Hotel Bristol",
+    "lugar": "Buenos Aires",
+    "tipoHabitacion": "Single",
+    "precioNoche": 5435.0,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-19",
+    "reservado": false
+  },
+  {
+    "codigoHotel": "BH-0002",
+    "nombre": "Hotel Bristol 2",
+    "lugar": "Buenos Aires",
+    "tipoHabitacion": "Doble",
+    "precioNoche": 7200.0,
+    "disponibleDesde": "2022-02-12",
+    "disponibleHasta": "2022-04-17",
+    "reservado": false
+  },
+  {
+    "codigoHotel": "SH-0002",
+    "nombre": "Sheraton",
+    "lugar": "Tucumán",
+    "tipoHabitacion": "Doble",
+    "precioNoche": 5790.0,
+    "disponibleDesde": "2022-04-17",
+    "disponibleHasta": "2022-05-23",
+    "reservado": false
+  },
+{
+    "codigoHotel": "SH-0001",
+    "nombre": "Sheraton 2",
+    "lugar": "Tucumán",
+    "tipoHabitacion": "Single",
+    "precioNoche": 4150.0,
+    "disponibleDesde": "2022-01-02",
+    "disponibleHasta": "2022-02-19",
+    "reservado": false
+},
+{
+    "codigoHotel": "SE-0001",
+    "nombre": "Selina",
+    "lugar": "Bogotá",
+    "tipoHabitacion": "Single",
+    "precioNoche": 3900.0,
+    "disponibleDesde": "2022-01-23",
+    "disponibleHasta": "2022-11-23",
+    "reservado": false
+},
+{
+    "codigoHotel": "SE-0002",
+    "nombre": "Selina 2",
+    "lugar": "Bogotá",
+    "tipoHabitacion": "Doble",
+    "precioNoche": 5840.0,
+    "disponibleDesde": "2022-01-23",
+    "disponibleHasta": "2022-10-15",
+    "reservado": false
+},
+{
+    "codigoHotel": "EC-0003",
+    "nombre": "El Campín",
+    "lugar": "Bogotá",
+    "tipoHabitacion": "Triple",
+    "precioNoche": 7020.0,
+    "disponibleDesde": "2022-02-15",
+    "disponibleHasta": "2022-03-27",
+    "reservado": false
+},
+{
+    "codigoHotel": "CP-0004",
+    "nombre": "Central Plaza",
+    "lugar": "Medellín",
+    "tipoHabitacion": "Múltiple",
+    "precioNoche": 8600.0,
+    "disponibleDesde": "2022-03-01",
+    "disponibleHasta": "2022-04-17",
+    "reservado": false
+},
+{
+    "codigoHotel": "CP-0002",
+    "nombre": "Central Plaza 2",
+    "lugar": "Medellín",
+    "tipoHabitacion": "Doble",
+    "precioNoche": 6400.0,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-20",
+    "reservado": false
+},
+{
+    "codigoHotel": "BG-0004",
+    "nombre": "Bocagrande",
+    "lugar": "Cartagena",
+    "tipoHabitacion": "Múltiple",
+    "precioNoche": 9370.0,
+    "disponibleDesde": "2022-04-17",
+    "disponibleHasta": "2022-06-22",
+    "reservado": false
+}]
