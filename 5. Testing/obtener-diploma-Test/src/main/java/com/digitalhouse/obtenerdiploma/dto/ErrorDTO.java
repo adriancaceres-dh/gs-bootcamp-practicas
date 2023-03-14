@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@Data
+@Data //loombok genera sus propios test
 @NoArgsConstructor
 @AllArgsConstructor
 public class ErrorDTO {

@@ -19,15 +19,15 @@ public class SubjectDTO {
 
   //longitud maxima de 50 caracteres
   @Size(max = 30, message= "La longitud del nombre no puede superar los 30 caracteres.")
-  private String subject;
+  private String name;
 
-  //aplica a numeros y todo lo demas --> Not Empty y Not Blank son para String
+  //@Not Null aplica a numeros y todo lo demas --> Not Empty y Not Blank son solo para String
   @NotNull(message = "La nota no puede estar vacía.")
 
   //nota maxima y minima
-  @DecimalMax(value= "0.0", message= "La mínima nota es 0.0")
-  @DecimalMin(value= "10.0", message= "La máxima nota es 10.0.")
-  private Double note;
+  @DecimalMax(value= "10.0", message= "La maxima nota es 10.0")
+  @DecimalMin(value= "0.0", message= "La minima nota es 10.0.")
+  private Double score;
 
 
 }

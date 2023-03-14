@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
+
+//------DEFINICIONES ------
+//@Validates indica que las validaciones de los parametros tienen efecto sobre los mismos parametros
+//@Valid indica que hay algunas validaciones dentro del objeto
 @RestController
 public class AnalyzeNotesRestController {
   //Recomendaciones:

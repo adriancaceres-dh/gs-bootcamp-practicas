@@ -16,11 +16,11 @@ public class CertificateServiceImpl implements CertificateService {
   }
 
   private Double calculateAverage(StudentDTO notes) {
-    if(notes.getSubjects().size() < 2){
+    if(notes.getSubjects().size() < 2){ //si hay menos de dos notas arroja excepcion
       throw new NotSufficientNotes("Deben haber al menos dos materias para poder realizar el promedio");
     }
 
-    Double sum = notes.getSubjects().stream().mapToDouble(SubjectDTO::getNote).sum();
+    Double sum = notes.getSubjects().stream().mapToDouble(SubjectDTO::getScore).sum();
     return sum / (double) notes.getSubjects().size();
   }
 
