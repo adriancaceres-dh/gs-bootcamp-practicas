@@ -1,5 +1,6 @@
 package com.practica.romannumerals;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -16,32 +17,83 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 class RomanNumeralsApplicationTests {
   @Autowired
-  private MockMvc mockMvc;
+  RomanNumeralsRestController romanNumeralsRestController;
 
   @Test
-  void oneShouldBeI() throws Exception {
-    performTest("1", "I");
+  void numero1 () {
+    // Arrange
+    int numero = 1;
+    String expected = "I";
+
+    // Act
+    var result = romanNumeralsRestController.toRoman(numero);
+
+    // Assert
+    Assertions.assertEquals(expected, result);
   }
 
   @Test
-  void tenShouldBeX() throws Exception {
-    performTest("10", "X");
+  void numero3 () {
+    // Arrange
+    int numero = 3;
+    String expected = "III";
+
+    // Act
+    var result = romanNumeralsRestController.toRoman(numero);
+
+    // Assert
+    Assertions.assertEquals(expected, result);
   }
 
   @Test
-  void sevenShouldBeVII() throws Exception {
-    performTest("7", "VII");
+  void numero5 () {
+    // Arrange
+    int numero = 5;
+    String expected = "V";
+
+    // Act
+    var result = romanNumeralsRestController.toRoman(numero);
+
+    // Assert
+    Assertions.assertEquals(expected, result);
   }
 
   @Test
-  void fifteenShouldBeXV() throws Exception {
-    performTest("15", "XV");
+  void numero7 () {
+    // Arrange
+    int numero = 7;
+    String expected = "VII";
+
+    // Act
+    var result = romanNumeralsRestController.toRoman(numero);
+
+    // Assert
+    Assertions.assertEquals(expected, result);
   }
 
-  private void performTest(String decimal, String roman) throws Exception {
-    this.mockMvc.perform(get("/" + decimal))
-        .andDo(print())
-        .andExpect(status().isOk())
-        .andExpect(content().string(containsString(roman)));
+  @Test
+  void numero10 () {
+    // Arrange
+    int numero = 10;
+    String expected = "X";
+
+    // Act
+    var result = romanNumeralsRestController.toRoman(numero);
+
+    // Assert
+    Assertions.assertEquals(expected, result);
+  }
+
+  @Test
+  void numero50 () {
+    // Arrange
+    int numero = 50;
+    String expected = "L";
+
+    // Act
+    var result = romanNumeralsRestController.toRoman(numero);
+
+    // Assert
+    Assertions.assertEquals(expected, result);
   }
 }
