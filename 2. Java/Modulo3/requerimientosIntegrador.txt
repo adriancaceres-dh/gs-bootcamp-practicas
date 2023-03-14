@@ -1,0 +1,7 @@
+Req 1.
+Cada participante puede inscribirse únicamente a una categoría y necesita, 
+para dicha inscripción, proporcionar los siguientes datos: dni, nombre, apellido, 
+edad, celular, número de emergencia y grupo sanguíneo. A cada inscripto, a la vez, 
+se le asigna un número de participante consecutivo con respecto a la inscripción anterior; 
+por ejemplo, si un participante se inscribe y el anterior fue el número 36, 
+se le va a asignar el número 37.

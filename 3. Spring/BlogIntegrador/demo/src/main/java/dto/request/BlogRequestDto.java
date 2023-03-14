@@ -1,4 +1,4 @@
-package dto;
+package dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-
-public class BlogRequestDto {
+public class BlogRequestDTO {
+    private String title; // hace falta que lo envien
+    private String nameAuthor; // hace falta que lo envien
 }
