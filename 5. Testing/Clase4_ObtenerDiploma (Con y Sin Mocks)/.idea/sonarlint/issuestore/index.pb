@@ -37,3 +37,5 @@ aObtenerDiploma/src/main/java/com/practica/obtenerdiploma/controller/ObtenerDipl
 UObtenerDiploma/src/test/java/com/practica/obtenerdiploma/utils/StudentDTOFactory.java,d\e\de5ab80b703ba7462ef0ef3e2bbb4e1b00296b86
 Š
 ZObtenerDiploma/src/main/java/com/practica/obtenerdiploma/controller/StudentController.java,f\a\fa93e377748087d60a64e53ab231f05ff77832ee
+š
+jObtenerDiploma/src/test/java/com/practica/obtenerdiploma/integration/StudentControllerIntegrationTest.java,5\1\51f7b469f98751aad3da27d17b824586c601190d
