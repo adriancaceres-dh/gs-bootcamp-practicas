@@ -19,6 +19,9 @@ public class BlogController {
         return blogService.greeting();
     }
 
+    @GetMapping("/blog/{id}")
+
+
     @PostMapping("/blogs")
     public BlogResponseDto createBlog(@RequestBody BlogRequestDto blogRequestDto) {
         return blogService.creatingBlog(blogRequestDto);

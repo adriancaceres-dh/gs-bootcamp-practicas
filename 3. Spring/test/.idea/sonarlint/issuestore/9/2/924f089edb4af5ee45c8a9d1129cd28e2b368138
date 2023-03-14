@@ -1,0 +1,10 @@
+
+7
+java:S1220""Move this file to a named package.8ÓÕÅ¯í0
+V
+java:S1118":Add a private constructor to hide the implicit public one.(ŒÅüg8ÏÖÅ¯í0
+]	java:S125!"<This block of commented-out lines of code should be removed.(ïĞÿâúÿÿÿÿ8ÒÖÅ¯í0
+]	java:S125#"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ÒÖÅ¯í0
+X	java:S125)"<This block of commented-out lines of code should be removed.(šÓãš8ÒÖÅ¯í0
+]	java:S125+"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ÓÖÅ¯í0
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(ÉÕŠÍúÿÿÿÿ8ÓÖÅ¯í0
