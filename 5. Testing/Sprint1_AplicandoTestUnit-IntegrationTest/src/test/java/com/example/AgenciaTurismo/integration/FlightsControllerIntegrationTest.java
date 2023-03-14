@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultMatcher;
@@ -17,6 +18,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @SpringBootTest
@@ -67,12 +70,18 @@ public class FlightsControllerIntegrationTest {
         List<FlightsAvailableDto> expected = List.of(FlightAvailableDtoFactory.getBapi());
         String origin = FlightAvailableDtoFactory.getBapi().getOrigen();
         String destin = FlightAvailableDtoFactory.getBapi().getDestino();
+        LocalDate fechaIda = FlightAvailableDtoFactory.getBapi().getFechaIda();
+        LocalDate fechaVuelta = FlightAvailableDtoFactory.getBapi().getFechaVuelta();
 
 
         //REQUEST CON MockHttpServletRequestBuilder & MockMvcRequestBuilders (librerias)
         //Declaramos la request que vamos a llamar o hacer
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/api/v1/flight")
-                .param()
+                .param("origin", origin)
+                .param("destination", destin)
+                .param("dateFrom", String.valueOf(fechaIda))
+                .param("dateTo", String.valueOf(fechaVuelta));
+
 
         //Los 3 EXPECTED con ResultMatcher & MockMvcResultMatchers
         //StatusExpected
