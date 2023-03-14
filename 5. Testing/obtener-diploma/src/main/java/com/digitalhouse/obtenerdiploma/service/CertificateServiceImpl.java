@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CertificateServiceImpl implements CertificateService {
   public CertificateDTO analyzeNotes(StudentDTO notes) {
-    CertificateDTO response = new CertificateDTO(notes);
+    CertificateDTO response = new CertificateDTO();
     response.setAverage(calculateAverage(notes));
     response.setMessage(writeDiploma(notes));
     return response;

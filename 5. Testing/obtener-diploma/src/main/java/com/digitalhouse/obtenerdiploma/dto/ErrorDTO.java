@@ -14,4 +14,7 @@ public class ErrorDTO {
 
     List<String> messages;
 
+    public <R> ErrorDTO(Object collect) {
+
+    }
 }
