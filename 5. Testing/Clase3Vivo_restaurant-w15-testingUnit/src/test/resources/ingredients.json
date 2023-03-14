@@ -22,21 +22,21 @@
   {
     "name": "meal",
     "quality": 5,
-    "calories": 700
+    "calories": 500
   },
   {
     "name": "meal",
-    "quality": 1,
-    "calories": 700
-  },
-  {
-    "name": "bread",
     "quality": 5,
-    "calories": 320
+    "calories": 500
   },
   {
     "name": "bread",
-    "quality": 1,
-    "calories": 320
+    "quality": 4,
+    "calories": 300
+  },
+  {
+    "name": "bread",
+    "quality": 4,
+    "calories": 300
   }
 ]
