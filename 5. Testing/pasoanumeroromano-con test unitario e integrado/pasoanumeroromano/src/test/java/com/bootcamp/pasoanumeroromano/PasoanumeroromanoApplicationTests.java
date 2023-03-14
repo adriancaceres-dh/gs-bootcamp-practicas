@@ -13,8 +13,8 @@ import org.springframework.test.web.servlet.MockMvc;
 class PasoanumeroromanoApplicationTests {
 
 	@Autowired
-	private MockMvc mockMvc;
-
+	//private MockMvc mockMvc; no se utiliza (porque es test unitario)
+	NumeroRomano numeroRomano;
 	@Test
 	void numero1Test() {
 		//Arrange - ordena y crea los datos necesarios
@@ -22,7 +22,51 @@ class PasoanumeroromanoApplicationTests {
 		int numero = 1;
 		String romanNumberExpected = "I";
 		//Act - corre el metodo que corresponde
-		var resultado = romanNumberExpected;
+		var resultado = numeroRomano.pasarARomano(numero);
+		//Asert - Fijamos si es verdadero o falso el assertion
+		Assertions.assertEquals(romanNumberExpected,resultado);
+	}
+	@Test
+	void numero5Test() {
+		//Arrange - ordena y crea los datos necesarios
+
+		int numero = 5;
+		String romanNumberExpected = "V";
+		//Act - corre el metodo que corresponde
+		var resultado = numeroRomano.pasarARomano(numero);
+		//Asert - Fijamos si es verdadero o falso el assertion
+		Assertions.assertEquals(romanNumberExpected,resultado);
+	}
+	@Test
+	void numero7Test() {
+		//Arrange - ordena y crea los datos necesarios
+
+		int numero = 7;
+		String romanNumberExpected = "VII";
+		//Act - corre el metodo que corresponde
+		var resultado = numeroRomano.pasarARomano(numero);
+		//Asert - Fijamos si es verdadero o falso el assertion
+		Assertions.assertEquals(romanNumberExpected,resultado);
+	}
+	@Test
+	void numero10Test() {
+		//Arrange - ordena y crea los datos necesarios
+
+		int numero = 10;
+		String romanNumberExpected = "X";
+		//Act - corre el metodo que corresponde
+		var resultado = numeroRomano.pasarARomano(numero);
+		//Asert - Fijamos si es verdadero o falso el assertion
+		Assertions.assertEquals(romanNumberExpected,resultado);
+	}
+	@Test
+	void numero50Test() {
+		//Arrange - ordena y crea los datos necesarios
+
+		int numero = 50;
+		String romanNumberExpected = "L";
+		//Act - corre el metodo que corresponde
+		var resultado = numeroRomano.pasarARomano(numero);
 		//Asert - Fijamos si es verdadero o falso el assertion
 		Assertions.assertEquals(romanNumberExpected,resultado);
 	}
