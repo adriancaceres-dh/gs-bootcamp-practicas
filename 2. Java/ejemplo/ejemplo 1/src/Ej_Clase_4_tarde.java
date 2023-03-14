@@ -11,10 +11,11 @@ public class Ej_Clase_4_tarde {
 
         for (int i = 0; i < temperatura.length; i++) {
             for (int j = 0; j < temperatura[i].length; j++) {
-                if(tempraturaMenor > temperatura[i][j]) {
+                if (tempraturaMenor > temperatura[i][j]) {
                     tempraturaMenor = temperatura[i][j];
                     posicionMenor = i;
-                } if (tempraturaMayor < temperatura[i][j]) {
+                }
+                if (tempraturaMayor < temperatura[i][j]) {
                     tempraturaMayor = temperatura[i][j];
                     posicionMayor = i;
                 }
@@ -22,7 +23,12 @@ public class Ej_Clase_4_tarde {
         }
         System.out.println("La ciudad con menor temperatura es " + ciudades[posicionMenor] + " con " + tempraturaMenor + "º");
         System.out.println("La ciudad con mayor temperatura es " + ciudades[posicionMayor] + " con " + tempraturaMayor + "º");
+
+
     }
-    }
+}
+
+
+
 
 
