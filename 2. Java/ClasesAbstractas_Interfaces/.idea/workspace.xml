@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d0eb9e2-aae9-4266-bc5e-2e232e061800" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/entidades/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/entidades/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/entidades/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/entidades/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/entidades/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Encapsulamiento_Herencia_Polimorfismo/ejercicioExplicacion/src/com/bootcamp/encapsulamiento/entidades/Proveedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/calculadoraCalorias/src/main/resources/4. food.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Dto/Request/BlogRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Dto/Response/BlogResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Exception/GlobalHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Exception/SinBlogsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Exception/TituloRepetidoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Model/EntryBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. Spring/practicaIntegradora/src/main/java/com/bootcamp/practicaIntegradora/Service/BlogService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Programación/gs-bootcamp-practicas/2. Java/ClasesAbstractas_Interfaces/ejercicio2"
   }
 }]]></component>
   <component name="RunManager">
