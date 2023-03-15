@@ -34,18 +34,18 @@ class DeparmentServiceTest {
 
     @Test
     void saveDepartment() {
-        //arrange
-        DepartmentDTO department = DepartmentDTOFactory.getDepartamentDTO2();
-        CrudDTO expected = CrudDTOFactory.crudDTOCreationWithId2();
-        Department entity = DepartmentFactory.getDepartament2();
+            //arrange
+            DepartmentDTO department = DepartmentDTOFactory.getDepartamentDTO2();
+            CrudDTO expected = CrudDTOFactory.crudDTOCreationWithId2();
+            Department entity = DepartmentFactory.getDepartament2();
 
-        //act
-        Mockito.when(departmentRepository.save(entity)).thenReturn(2);
-        var result = deparmentService.saveDepartment(department);
+            //act
+            Mockito.when(departmentRepository.save(entity)).thenReturn(2);
+            var result = deparmentService.saveDepartment(department);
 
-        //assert
-        Assertions.assertEquals(expected,result);
-    }
+            //assert
+            Assertions.assertEquals(expected,result);
+        }
 
     @Test
     void deleteDeparment() {

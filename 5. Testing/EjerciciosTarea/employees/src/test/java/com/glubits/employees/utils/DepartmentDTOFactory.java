@@ -16,7 +16,7 @@ public class DepartmentDTOFactory {
     public static DepartmentDTO getDepartamentDTO1(){
         return DepartmentDTO.builder()
                 .id(1)
-                .name("Departamento de Historia de la Magia de Springboots")
+                .name("Departamento de Historia de la Magia de Springboot ")
                 .employees(List.of(EmployeeFactory.getMarco()))
                 .build();
     }
