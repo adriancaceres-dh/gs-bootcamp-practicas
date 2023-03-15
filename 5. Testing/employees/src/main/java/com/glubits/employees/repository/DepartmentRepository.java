@@ -35,13 +35,15 @@ public class DepartmentRepository implements ICrudRepository<Department>{
         return newId;
     }
 
+    // El metodo permite eliminar un departamento si y solo si no tiene empleados a cargo, es decir
+    // que la lista tiene un size de 0
     @Override
     public Integer delete(Integer id) {
         var department = findById(id).orElseThrow(
                 () -> {throw new NotFoundException("No pudo encontrarse el departamento con id " + id);}
         );
 
-        if(department.getEmployees().size() > 0){
+        if(!department.getEmployees().isEmpty()){
             throw new CouldNotDeleteException("El departamento no puede eliminarse porque tiene empleados asignados");
         }
 
@@ -55,8 +57,8 @@ public class DepartmentRepository implements ICrudRepository<Department>{
     }
 
     @Override
-    public Optional<Department> findByName(String name) {
-        return departments.stream().filter(department -> department.getName().contains(name)).findFirst();
+    public List<Department> findByName(String name) {
+        return departments.stream().filter(department -> department.getName().contains(name)).collect(Collectors.toList());
     }
 
     public List<Department> findBySize(Integer size) {
@@ -81,8 +83,7 @@ public class DepartmentRepository implements ICrudRepository<Department>{
         try {
             file = ResourceUtils.getFile("classpath:department.json");
             departmentList = objectMapper.readValue(file, typeRef);
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException e) {e.printStackTrace();
         }
 
         return departmentList;
