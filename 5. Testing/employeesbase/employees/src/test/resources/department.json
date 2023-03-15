@@ -14,7 +14,7 @@
   },
   {
     "id": 1,
-    "name": "Departamento de Historia de la Magia de Springboot",
+    "name": "Departamento de Historia de la Magia de Springboot ",
     "employees": [
       {
         "id": 1,
@@ -33,10 +33,9 @@
         "id": 2,
         "name": "Jean",
         "age": 25,
-        "email": "jeancardo@digitalhouse.com",
+        "email": "",
         "address": "Andén 9 y 3/4"
       }
     ]
   }
-
 ]

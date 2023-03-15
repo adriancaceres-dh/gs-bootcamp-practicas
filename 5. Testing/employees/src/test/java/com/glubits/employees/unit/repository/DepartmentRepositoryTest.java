@@ -7,8 +7,11 @@ import com.glubits.employees.repository.DepartmentRepository;
 import com.glubits.employees.repository.EmployeeRepository;
 import com.glubits.employees.utils.DepartmentFactory;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.Description;
 
+import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,51 +19,66 @@ public class DepartmentRepositoryTest {
 
     DepartmentRepository departmentRepository;
 
-    void setup(){ //ver por qué va esto
+    @BeforeEach
+    void setup() { //ver por qué va esto
         departmentRepository = new DepartmentRepository();
     }
 
     @Test
-    void save(){
+    @Description("Esperamos crear/guardar un nuevo departamento, al haber 3 (ID 0-2) el próximo en guardar es el 3")
+    void save() {
         //arrange
-        Department entity = DepartmentFactory.defenseAntiPedagogicalArts();
-        Integer expected = 0;
+        Department entity = DepartmentFactory.annotationSpellPractices();
+        Integer expected = 3;
 
         //act
         var result = departmentRepository.save(entity);
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
     }
 
-       @Test
-    void deleteWhitExistenteId(){
+    @Test
+    @Description("Borramos el Id de un departamento siempre que no contenga empleados")
+    void deleteWhitExistenteId() {
         //arrange
-        Integer id = 0;
-        Integer expected = 0;
+        Integer id = 1;
+        Integer expected = 1;
 
         //act
         var result = departmentRepository.delete(id);
 
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
 
     }
 
     @Test
-    void deleteWithNotExistentId(){
+    @Description("Borramos el Id de un departamento que NO existe y evaluamos la excepción que debe arrojar")
+    void deleteWithNotExistentIdNFE() {
         //arrange
-        Integer id = 3;
+        Integer id = 5;
 
         // act & assert
         Assertions.assertThrows(NotFoundException.class,
                 () -> departmentRepository.delete(id));
+
+    }
+
+    @Test
+    @Description("Borramos el Id de un departamento que NO existe y evaluamos la excepción que debe arrojar")
+    void deleteWithNotExistentIdCNE() {
+        //arrange
+        Integer id = 2;
+
+        // act & assert
         Assertions.assertThrows(CouldNotDeleteException.class,
                 () -> departmentRepository.delete(id));
 
     }
 
     @Test
-    void findByExistentId(){
+    @Description("Buscamos el Id de un departamento que exista y contenga la misma info que la DB(Json)")
+    void findByExistentId() {
         //arrange
         Integer id = 1;
         Optional<Department> expected = Optional.of(DepartmentFactory.historySpringbootMagic());
@@ -69,54 +87,65 @@ public class DepartmentRepositoryTest {
         var result = departmentRepository.findById(id);
 
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
     }
+
     @Test
-    void findByNotExistentId(){
+    @Description("Buscamos el Id de un departamento que No exista")
+    void findByNotExistentId() {
         //arrange
-        Integer id = 4;
+        Integer id = 5;
         Optional<Department> expected = Optional.empty();
 
         //act
         var result = departmentRepository.findById(id);
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
-    void findByExistedName(){
+    @Description("Buscamos el nombre de un departamento que exista y contenga la misma info que la DB(Json)")
+    void findByExistedName() {
         //arrange
-        String name = "Gabi";
+        String name = "Departamento de Defensa contra las Artes Antipedagogicas";
         List<Department> expected = List.of(DepartmentFactory.defenseAntiPedagogicalArts());
 
         //act
         var result = departmentRepository.findByName(name);
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
     }
+
     @Test
-    void findByNotExistedName(){
+    @Description("Buscamos el nombre de un departamento que NO exista")
+    void findByNotExistedName() {
         //arrange
         String name = "Barby";
-        List<Department> expected = List.of(); //¿cómo pongo el isEmpty sin error?
+        List<Department> expected = List.of();
         //act
         var result = departmentRepository.findByName(name);
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
     }
+
     @Test
-    void findByWhitSize(){
+    @Description("Buscamos la cantidad de departamentos que exista y contenga la misma info que la DB(Json)")
+    void findByWhitSize() {
         //arrange
-        Integer size = 2;
-        List<Department> expected = List.of(DepartmentFactory.defenseAntiPedagogicalArts(), DepartmentFactory.historySpringbootMagic());
+        Integer size = 3;
+        List<Department> expected = List.of(DepartmentFactory.defenseAntiPedagogicalArts(),
+                DepartmentFactory.historySpringbootMagic(),
+                DepartmentFactory.magicalCreaturesTraining());
         //act
         var result = departmentRepository.findBySize(size);
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
 
     }
+
     @Test
-    void findByNotSize(){
+    @Description("Buscamos la cantidad de departamentos que NO existe")
+    void findByNotSize() {
         Integer size = 1;
         List<Department> expected = List.of();
 
@@ -124,22 +153,25 @@ public class DepartmentRepositoryTest {
         var result = departmentRepository.findBySize(size);
 
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
     }
+
     @Test
-    void listAll(){
+    @Description("Listamos todos los departamentos que contenga toda la info de la DB")
+    void listAll() {
         //arrange
         List<Department> expected = List.of(
-                                            DepartmentFactory.defenseAntiPedagogicalArts(),
-                                            DepartmentFactory.historySpringbootMagic(),
-                                            DepartmentFactory.MagicalCreaturesTraining());
+                DepartmentFactory.defenseAntiPedagogicalArts(),
+                DepartmentFactory.historySpringbootMagic(),
+                DepartmentFactory.magicalCreaturesTraining());
         //act
         var result = departmentRepository.listAll();
         //assert
-        Assertions.assertEquals(expected,result);
+        Assertions.assertEquals(expected, result);
     }
+
     @Test
-    void loadDataBase(){
+    void loadDataBase() {
         //arrange
 
         //act

@@ -33,9 +33,10 @@
         "id": 2,
         "name": "Jean",
         "age": 25,
-        "email": "",
+        "email": "jeancardo@digitalhouse.com",
         "address": "Andén 9 y 3/4"
       }
     ]
+
   }
 ]

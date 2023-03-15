@@ -89,7 +89,7 @@ class EmployeeRepositoryTest {
     void findByName() {
         // arrange
         String name = "Gabi";
-        Optional<Employee> expected = Optional.of(EmployeeFactory.getGabi());
+        List<Employee> expected = List.of(EmployeeFactory.getGabi());
 
         // act
         var result = employeeRepository.findByName(name);
@@ -102,7 +102,7 @@ class EmployeeRepositoryTest {
     void findByNameNotExistent() {
         // arrange
         String name = "Mati";
-        Optional<Employee> expected = Optional.empty();
+        List<Employee> expected = List.of();
 
         // act
         var result = employeeRepository.findByName(name);

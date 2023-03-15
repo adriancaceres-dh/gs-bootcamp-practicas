@@ -7,6 +7,16 @@ import java.util.List;
 
 public class DepartmentFactory {
 
+    public static Department magicOfTesting() {
+        return Department.builder()
+                .name("Departamento de la Magia del Testing")
+                .employees(
+                        List.of(
+                                EmployeeFactory.getTincho()
+                        )
+                )
+                .build();
+    }
     public static Department defenseAntiPedagogicalArts() {
         return Department.builder()
                 .id(0)
@@ -29,10 +39,10 @@ public class DepartmentFactory {
                 )
                 .build();
     }
-    public static Department MagicalCreaturesTraining() {
+    public static Department magicalCreaturesTraining() {
         return Department.builder()
                 .id(2)
-                .name("Departamento de Historia de la Magia de Springboot")
+                .name("Departamento de Cuidado de Criaturas Magicas en capacitacion")
                 .employees(
                         List.of(
                                 EmployeeFactory.getJean()
@@ -40,4 +50,12 @@ public class DepartmentFactory {
                 )
                 .build();
     }
+
+    public static Department annotationSpellPractices() {
+        return Department.builder()
+                .id(3)
+                .name("Departamento de Prácticas de Hechizos de Anotación")
+                .build();
+    }
+
 }
