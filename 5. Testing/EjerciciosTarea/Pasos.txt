@@ -1,0 +1,95 @@
+1- Agregamos dependencias
+
+2-En test/java/com.glubits.employees crear las siguientes carpetas:
+    integration
+    unit
+    utils
+
+3- La carpeta unit contendra las carpetas:
+    repository
+    service
+
+4- La carpeta utils contendra:
+    DTOSFACTORYS
+    FACTORYS
+
+5-Ir a classRepository.java hacer : alt insert/test para que genere los test de los metodos (colocarlo en la carpeta unit/repository)
+  Instanciar la clase que voy a usar ejemplo: DepartmentRepository departmentRepository = new DepartmentRepository(); (no va el autowired porque no hay contexto de spring)
+  Luego:
+     @Test
+    void save(){
+        // arrange
+        Department entity = ;
+        Integer expected = ;
+
+        // act
+        var result = departmentRepository.save(entity);
+
+        // assert
+        Assertions.assertEquals(expected,result);
+    }
+
+6- Setear entidad para eso crear json: En test/directory/resources/(ej: department.json)
+
+7- Ir al factory :
+   
+  public class DepartmentFactory {
+    public static Department getDepartament(){
+        return Department.builder()
+                .id(0)
+                .name("Departamento de Defensa contra las Artes Antipedagogicas")
+                .employees(List.of(EmployeeFactory.getGabi()))
+                .build();
+    }
+    public static Department getDepartament1(){
+        return Department.builder()
+                .id(1)
+                .name("Departamento de Historia de la Magia de Springboots")
+                .employees(List.of(EmployeeFactory.getMarco()))
+                .build();
+    }
+    public static Department getDepartament2(){
+        return Department.builder()
+                .id(2)
+                .name("Departamento de Cuidado de Criaturas Magicas en capacitacions")
+                .employees(List.of(EmployeeFactory.getJean()))
+                .build();
+    }
+
+}
+
+8- @Test
+    void save(){
+        // arrange
+        Department entity = DepartmentFactory.getDepartament();
+        Integer expected = 3;// debe coincidir con la cantidad de datos iniciales más 1
+
+        // act
+        var result = departmentRepository.save(entity);
+
+        // assert
+        Assertions.assertEquals(expected,result);
+    }
+
+9-  @Test
+    void delete() {
+        // arrange
+        Integer id = 2;
+        Integer expected = 2;
+
+        // act
+        var result = departmentRepository.delete(id);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void deleteWithNotExistentId() {
+        // arrange
+        Integer id = 2;
+
+        // act & assert
+        Assertions.assertThrows(NotFoundException.class,
+                () -> departmentRepository.delete(id));
+    }
