@@ -12,6 +12,13 @@ public class CrudDTOFactory {
                 .build();
     }
 
+    public static CrudDTO crudDTOCreationWithId(){
+        return CrudDTO.builder()
+                .message("Se creo el empleado con id: " + 3)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
     public static CrudDTO crudDTODeletationWithId1(){
         return CrudDTO.builder()
                 .message("Se elimino el empleado con id " +1)
