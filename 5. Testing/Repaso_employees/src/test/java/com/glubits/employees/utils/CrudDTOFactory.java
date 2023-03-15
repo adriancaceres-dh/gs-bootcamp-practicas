@@ -14,7 +14,7 @@ public class CrudDTOFactory {
 
     public static CrudDTO crudDTOCreationWithId(){
         return CrudDTO.builder()
-                .message("Se creo el empleado con id: " + 3)
+                .message("Se creo el empleado con id: " + 2)
                 .action(CrudEnum.CREATION)
                 .build();
     }
@@ -28,8 +28,15 @@ public class CrudDTOFactory {
 
     public static CrudDTO crudDTOCreationWithId5(){
         return CrudDTO.builder()
-                .message("Se creo el departamento con id: " + 5)
+                .message("Se creo el departamento con id: " + 4)
                 .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTODeletationWithId3(){
+        return CrudDTO.builder()
+                .message("Se elimino el departamento con id " + 3)
+                .action(CrudEnum.DELETATION)
                 .build();
     }
 

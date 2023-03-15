@@ -38,6 +38,21 @@ public class DepartmentDTOFactory {
                 .build();
     }
 
+    public static DepartmentDTO getDepartment4(){
+        return DepartmentDTO.builder()
+                .name("Departamento de Cuidado contra la contaminación ambiental")
+                .employees(List.of())
+                .build();
+    }
+
+    public static DepartmentDTO getDepartment6(){
+        return DepartmentDTO.builder()
+                .id(6)
+                .name("Departamento de Lavado de dinero.")
+                .employees(List.of())
+                .build();
+    }
+
     public static List<DepartmentDTO> listDepartment(){
         return List.of(getDepartament(),
                 getDepartament1(),
