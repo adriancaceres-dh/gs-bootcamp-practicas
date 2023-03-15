@@ -4,6 +4,7 @@ import com.glubits.employees.dto.CrudDTO;
 import com.glubits.employees.dto.DepartmentDTO;
 import com.glubits.employees.dto.ErrorDTO;
 import com.glubits.employees.entity.Department;
+import com.glubits.employees.exception.NotFoundException;
 import com.glubits.employees.repository.DepartmentRepository;
 import com.glubits.employees.service.DeparmentService;
 import com.glubits.employees.service.IDepartmentService;
@@ -19,6 +20,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @ExtendWith(MockitoExtension.class)
@@ -75,6 +77,73 @@ public class DeparmentServiceTest {
 
         //assert
         Assertions.assertEquals(expected,result);
+    }
+    //public DepartmentDTO findOneDeparment(Integer id)
+
+    @Test
+    public void findOneDepartmentTest(){
+        //arrange
+        Integer id = 2;
+        DepartmentDTO expected = DepartmentDTOFactory.getDepartment2();
+        Department department = DepartmentFactory.getDepartment2();
+
+        //act
+        Mockito.when(departmentRepository.findById(id)).thenReturn(Optional.of(department));
+        var result = departmentService.findOneDeparment(id);
+
+        //assert
+        Assertions.assertEquals(expected,result);
+    }
+
+    @Test
+    public void findOneNotExistentDepartmentTest(){
+        //arrange
+        Integer id = 5;
+
+        //mockeo
+        Mockito.when(departmentRepository.findById(id)).thenReturn(Optional.empty());
+
+        //act && assert
+        Assertions.assertThrows(NotFoundException.class,
+                ()-> departmentService.findOneDeparment(id));
+    }
+
+    @Test
+    public void findByDepartmentSizeTest(){
+        //arrange
+        Integer size = 1;
+        List<DepartmentDTO> expected = List.of(
+                DepartmentDTOFactory.getDepartament(),
+                DepartmentDTOFactory.getDepartament1(),
+                DepartmentDTOFactory.getDepartment3());
+
+        List<Department> shouldReturn = List.of(
+                DepartmentFactory.getDepartament(),
+                DepartmentFactory.getDepartament1(),
+                DepartmentFactory.getDepartment3());
+
+        //act
+        Mockito.when(departmentRepository.findBySize(size)).thenReturn(shouldReturn);
+        var result = departmentService.findByDepartmentSize(size);
+
+        //assert
+        Assertions.assertEquals(expected,result);
+    }
+    @Test
+    public void findByNameTest(){
+        //arrange
+        String name = DepartmentFactory.getDepartment2().getName();
+        List<DepartmentDTO> expected = List.of(DepartmentDTOFactory.getDepartment2());
+        List<Department> department = List.of(DepartmentFactory.getDepartment2());
+
+        //act
+        Mockito.when(departmentRepository.findByName(name)).thenReturn(department);
+        var result = departmentService.findByName(name);
+
+        //assert
+        Assertions.assertEquals(expected,result);
 
     }
+
+
 }
