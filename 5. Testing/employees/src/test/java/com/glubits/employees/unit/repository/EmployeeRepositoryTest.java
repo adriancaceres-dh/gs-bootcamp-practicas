@@ -90,7 +90,7 @@ class EmployeeRepositoryTest {
     void findByName() {
         // arrange
         String name = "Gabi";
-        Optional<Employee> expected = Optional.ofNullable(EmployeeFactory.getGabi());
+        List<Employee> expected = List.of(EmployeeFactory.getGabi());
 
         // act
         var result = employeeRepository.findByName(name);

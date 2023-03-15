@@ -18,4 +18,18 @@ public class CrudDTOFactory {
                 .action(CrudEnum.DELETATION)
                 .build();
     }
+    public static CrudDTO crudDTOCreationDepartamentWithId0(){
+        return CrudDTO.builder()
+                .message("Se creo el departamento con id: " + 0)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTODeletationDepartamentWithId1(){
+        return CrudDTO.builder()
+                .message("Se elimino el departamento con id " + 1)
+                .action(CrudEnum.DELETATION)
+                .build();
+    }
+
 }
