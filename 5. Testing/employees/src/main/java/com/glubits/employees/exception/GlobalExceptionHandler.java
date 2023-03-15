@@ -37,10 +37,10 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<CrudDTO> crudErrorException(NotFoundException e){
-        return ResponseEntity.ok(
+        return ResponseEntity.status(404).body(
                 CrudDTO.builder()
-                    .message(e.getMessage())
-                    .action(CrudEnum.DELETATION)
+                        .message(e.getMessage())
+                        .action(e.action)
                         .build()
         );
     }

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.glubits.employees.entity.Employee;
 import com.glubits.employees.exception.NotFoundException;
+import com.glubits.employees.utils.enums.CrudEnum;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ResourceUtils;
 
@@ -35,7 +36,7 @@ public class EmployeeRepository implements ICrudRepository<Employee>{
     @Override
     public Integer delete(Integer id) {
         if(!employees.removeIf(employee -> Objects.equals(employee.getId(), id))){
-            throw new NotFoundException("No pudo encontrarse el empleado con id " + id);
+            throw new NotFoundException("No pudo encontrarse el empleado con id " + id, CrudEnum.DELETATION);
         }
         return id;
     }

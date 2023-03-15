@@ -52,7 +52,7 @@ public class EmployeeService implements IEmployeeService{
         var employee = employeeRepository.findById(id)
                 .orElseThrow(
                         () -> {
-                            throw new NotFoundException("No se pudo encontrar el empleado con id " + id);
+                            throw new NotFoundException("No se pudo encontrar el empleado con id " + id, CrudEnum.READING);
                         }
                 );
 

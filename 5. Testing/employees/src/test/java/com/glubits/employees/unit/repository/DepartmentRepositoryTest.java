@@ -7,6 +7,7 @@ import com.glubits.employees.repository.DepartmentRepository;
 import com.glubits.employees.utils.DepartmentFactory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -24,11 +25,40 @@ class DepartmentRepositoryTest {
     @Test
     void save() {
         Department entity = DepartmentFactory.getDepartmentNew();
-        Integer expected = 3;
+        Integer expected = 4;
 
         var result = departmentRepository.save(entity);
 
         Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Verificar que un departamento que existe y no tiene empleados puede eliminarse")
+    void delete(){
+        Integer id = 3;
+        Integer expected = 3;
+
+        var result = departmentRepository.delete(id);
+
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Verificar que se lanza una exception cuando el id no existe")
+    void deleteNotExistentId(){
+        Integer id = 10;
+
+        Assertions.assertThrows(NotFoundException.class,
+                () -> departmentRepository.delete(id));
+    }
+
+    @Test
+    @DisplayName("Verificar que se lanza una exception cuando el id exista pero en el departamento hay empleados")
+    void deleteDepartmentWhitEmployees(){
+        Integer id = 1;
+
+        Assertions.assertThrows(CouldNotDeleteException.class,
+                () -> departmentRepository.delete(id));
     }
 
 
@@ -65,7 +95,7 @@ class DepartmentRepositoryTest {
     @Test
     void findByNameNotExistent() {
         String name = "Departamento de Testing";
-        List<Department> expected = new ArrayList<>();
+        List<Department> expected = List.of();
 
         var result = departmentRepository.findByName(name);
 
@@ -89,7 +119,8 @@ class DepartmentRepositoryTest {
         List<Department> expected = List.of(
                 DepartmentFactory.getDepartment0(),
                 DepartmentFactory.getDepartment1(),
-                DepartmentFactory.getDepartment2());
+                DepartmentFactory.getDepartment2(),
+                DepartmentFactory.getEmptyDepartment());
 
         var result = departmentRepository.listAll();
 

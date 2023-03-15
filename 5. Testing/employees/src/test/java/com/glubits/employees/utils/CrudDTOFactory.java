@@ -33,4 +33,18 @@ public class CrudDTOFactory {
                 .build();
     }
 
+    public static CrudDTO crudDTOCreationWithI3(){
+        return CrudDTO.builder()
+                .message("Se creo el empleado con id: " + 3)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTOReadingNotFoundWithId999(){
+        return CrudDTO.builder()
+                .message("No se pudo encontrar el empleado con id " + 999)
+                .action(CrudEnum.READING)
+                .build();
+    }
+
 }

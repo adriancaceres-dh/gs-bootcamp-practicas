@@ -4,6 +4,7 @@ import com.glubits.employees.entity.Department;
 import com.glubits.employees.entity.Employee;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class DepartmentFactory {
 
@@ -69,5 +70,15 @@ public class DepartmentFactory {
                 .name("Departamento de Cuidado de Criaturas Magicas en capacitacion")
                 .employees(Arrays.asList(employee))
                 .build();
+    }
+
+    public static Department getEmptyDepartment(){
+
+        return Department.builder()
+                .id(3)
+                .name("Departamento sin empleados")
+                .employees(List.of(new Employee[0]))
+                .build();
+
     }
 }

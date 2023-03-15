@@ -16,10 +16,7 @@ class EmployeeRepositoryTest {
 
     EmployeeRepository employeeRepository;
 
-    @BeforeEach // antes de cada
-    // @BeforeAll // antes de todos
-    // @AfterEach // despues de cada
-    // @AfterAll // despues de todos
+    @BeforeEach
     void setup(){
         employeeRepository = new EmployeeRepository();
     }
@@ -103,7 +100,7 @@ class EmployeeRepositoryTest {
     void findByNameNotExistent() {
         // arrange
         String name = "Mati";
-        List<Employee> expected = new ArrayList<Employee>();
+        List<Employee> expected = List.of();
 
         // act
         var result = employeeRepository.findByName(name);
