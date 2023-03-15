@@ -22,59 +22,7 @@ class DepartmentRepositoryTest {
 
     DepartmentRepository departmentRepository;
 
-    @BeforeEach // ejecuta el setup, que tenga departRepo desde cero
-        // antes de cada
-        // @BeforeAll // antes de todos
-        // @AfterEach // despues de cada
-        // @AfterAll // despues de todos
-    void setup(){
-        departmentRepository = new DepartmentRepository();
-    }
-    /*
-        @Test
-        public void saveTest(){
-            // arrange
-            Department department = DepartmentFactory.getDepartament();
-            Integer  expected = 4;
 
-            // act
-            var result = departmentRepository.save(department);
-
-            // assert
-            Assertions.assertEquals(expected,result);
-        }
-
-        @Test
-        public void deleteTest(){
-            //arrange
-            Integer id = 3;
-            Integer expected = 3;
-
-            //act
-            var result = departmentRepository.delete(id);
-
-            //assert
-            Assertions.assertEquals(expected,result);
-        }
-        @Test
-        public void deleteDepartmentWithEmployee(){
-            //arrange
-            Integer id = 0;
-
-            //act & assert
-            Assertions.assertThrows(CouldNotDeleteException.class,
-                    ()->departmentRepository.delete(id));
-        }
-
-        @Test
-        public void deleteNotExistentDepartment(){
-            //arrange
-            Integer id = 4;
-
-            //act & assert
-            Assertions.assertThrows(NotFoundException.class,
-                    ()->departmentRepository.delete(id));
-        }*/
     @Test
     void save(){
         // arrange
