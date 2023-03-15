@@ -1,0 +1,10 @@
+[{
+  "name": "burger",
+  "description": "lorem ipsum",
+  "ingredients": [
+    { "name": "bread",    "quantity": 1 },
+    { "name": "meal",     "quantity": 2 }
+  ],
+  "quality": null,
+  "calories": null
+}]

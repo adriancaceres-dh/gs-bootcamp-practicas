@@ -22,10 +22,9 @@ public class EjercicioPlayground {
                     posicionMenor=j;
                 }
             }
-
-            }
+        }
         System.out.println("La temperatura mayor es de "+mayor+" grados, de la ciudad de "+ciudades[posicionMayor]);
         System.out.println("La temperatura menor es de "+menor+" grados, de la ciudad de "+ciudades[posicionMenor]);
-        }
     }
+}
 

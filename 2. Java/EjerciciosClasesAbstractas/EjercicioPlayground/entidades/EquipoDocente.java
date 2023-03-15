@@ -1,2 +1,5 @@
-package entidades;public interface EquipoDocente {
+package entidades;
+
+public interface EquipoDocente {
+    public void enseniar();
 }

@@ -1,2 +1,5 @@
-public class PersonalMantenimiento {
+package entidades;
+
+public class PersonalMantenimiento extends Persona {
+
 }

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="258b6784-7b32-450b-9b2f-c6732b40fa5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjemplosEncapYmas/EjercicioPlayground/Distribuidora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjemplosEncapYmas/EjercicioPlayground/Distribuidora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjemplosEncapYmas/EjercicioPlayground/Perecedero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjemplosEncapYmas/EjercicioPlayground/Perecedero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjemplosEncapYmas/EjercicioPlayground/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjemplosEncapYmas/EjercicioPlayground/Productos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosArray/EjercicioPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosArray/EjercicioPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/.idea/EjercicioPlayground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/.idea/EjercicioPlayground.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Curriculum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Curriculum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Documento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Documento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Imprimible.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Imprimible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Informe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/Informe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/LibroEnPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/Ejercicio2/LibroEnPDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/EquipoDocente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/EquipoDocente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/EquipoTecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/EquipoTecnico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/EstudianteTecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/EstudianteTecnico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/PersonalMantenimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/PersonalMantenimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/PersonalSoporteTecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/PersonalSoporteTecnico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Profesor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Tutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosClasesAbstractas/EjercicioPlayground/entidades/Tutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/EjemploMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/EjemploMapa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/EjercicioCarreraSelva.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/EjercicioCarreraSelva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/EjercicioCarreraSelva2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/EjercicioCarreraSelva2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/MainColeccioens.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosColecciones/MainColeccioens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/.idea/EjercicioGuardarropas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/Guardarropa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/Prenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/.idea/EjerciciosExcepcionesYClasesUtilitarias.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/Guardarropa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYClasesUtilitarias/out/production/EjerciciosExcepcionesYClasesUtilitarias/Prenda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYUtilitarias/EjercicioPlayground/EjercicioPlayground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosExcepcionesYUtilitarias/EjercicioPlayground/EjercicioPlayground/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/EjemploWrpper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/EjemploWrpper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/ExprecionesLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/ExprecionesLambda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/MainPersona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/MainPersona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosLambdaYWra/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/out/production/EjerciciosPlayground/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/out/production/EjerciciosPlayground/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/out/production/EjerciciosPlayground/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/EjerciciosPlayground/out/production/EjerciciosPlayground/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/src/Biblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/src/Configuracion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/src/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/EjerciciosObjetos/untitled/untitled.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MPjd6kXn5BjmKuFykfuWylOVrK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="258b6784-7b32-450b-9b2f-c6732b40fa5f" name="Changes" comment="" />
+      <created>1677676199994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677676199994</updated>
+    </task>
+    <servers />
+  </component>
+</project>

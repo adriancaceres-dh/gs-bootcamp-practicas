@@ -1,22 +1,14 @@
 public class Persona {
     //Ejercicio 1
-    String nombre;
-    int edad;
-    String dni;
-    int peso;
-    double altura;
+    String nombre; int edad; String dni; int peso; double altura;
 
     //Ejercicio 2
-    public Persona() {
-
-    }
-
+    public Persona() {}
     public Persona(String nombre, int edad, String dni) {
         this.nombre = nombre;
         this.edad = edad;
         this.dni = dni;
     }
-
     public Persona(String nombre, int edad, String dni, int peso, double altura) {
         this.nombre = nombre;
         this.edad = edad;
@@ -31,14 +23,14 @@ public class Persona {
 
         if(imc<20){
             return -1;
-        } else if (imc>=20&&imc<=25) {
+        } else if (imc<=25) {
             return 0;
         }else{
             return 1;
         }
     }
     public boolean esMayorDeEdad(){
-        return edad > 18;
+        return edad >= 18;
     }
 
     @Override

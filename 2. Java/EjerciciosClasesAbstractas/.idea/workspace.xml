@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1c1fc30-da3f-4ee3-82e7-00f2da584395" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/EjerciciosClasesAbstractas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades/Aeronave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades/Aeroparque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades/AvionCarga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades/AvionPasajeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades/AvionPrivado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades/Volador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades/Vuelo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EjemplosEncapYmas/EjercicioPlayground/Distribuidora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjemplosEncapYmas/EjercicioPlayground/Distribuidora.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EjemplosEncapYmas/EjercicioPlayground/Perecedero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjemplosEncapYmas/EjercicioPlayground/Perecedero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EjemplosEncapYmas/EjercicioPlayground/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjemplosEncapYmas/EjercicioPlayground/Productos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EjerciciosArray/EjercicioPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjerciciosArray/EjercicioPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EjerciciosColecciones/EjemploMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjerciciosColecciones/EjemploMapa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EjerciciosColecciones/EjercicioCarreraSelva.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjerciciosColecciones/EjercicioCarreraSelva.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EjerciciosColecciones/EjercicioCarreraSelva2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjerciciosColecciones/EjercicioCarreraSelva2.java" afterDir="false" />
@@ -89,7 +78,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Salvador/Desktop/CURSO JAVA/RAMAadrian/2. Java/EjerciciosClasesAbstractas"
+    "last_opened_file_path": "C:/Users/Salvador/Desktop/CURSO JAVA/RAMAadrian/2. Java/EjerciciosLambdaYWra"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

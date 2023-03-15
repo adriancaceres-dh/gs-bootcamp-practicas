@@ -1,2 +1,7 @@
-public class Estudiante {
+package entidades;
+
+public class Estudiante extends Persona{
+
+
+
 }

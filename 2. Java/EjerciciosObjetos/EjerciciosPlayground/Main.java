@@ -4,7 +4,7 @@ public class Main {
 
         //Ejercicio 4
         Persona persona = new Persona();
-        Persona persona1 = new Persona("Salvador", 24, "40115878");
+        Persona persona1 = new Persona("Raquel", 24, "40115879");
         Persona persona2 = new Persona("Salvador", 27, "40115878", 75, 1.80);
 
         //Ejercicio 6

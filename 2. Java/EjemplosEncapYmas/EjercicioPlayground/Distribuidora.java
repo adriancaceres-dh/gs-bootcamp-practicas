@@ -6,9 +6,6 @@ public class Distribuidora {
         productos[0] = new Productos("Manteca", 200);
         productos[1] = new Perecedero("Atún", 200, 1);
         productos[2] = new NoPerecedero("Queso", 200, "lacteo");
-      /*  productos[3] = new Productos("Arroz", 200);
-        productos[4] = new Productos("Harina", 200);
-        productos[5] = new Productos("Queso", 100);*/
 
         double totalProductos=0;
 
@@ -19,6 +16,6 @@ public class Distribuidora {
         }
         System.out.println(totalProductos);
 
-        
+
     }
 }

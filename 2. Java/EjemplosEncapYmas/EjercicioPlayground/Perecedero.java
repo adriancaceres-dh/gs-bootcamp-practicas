@@ -40,8 +40,6 @@ public class Perecedero extends Productos{
                 precioFinal /= 2;
                 break;
         }
-
-
         return precioFinal;
     }
 }

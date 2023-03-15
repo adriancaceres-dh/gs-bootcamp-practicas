@@ -1,2 +1,5 @@
-package entidades;public interface EquipoTecnico {
+package entidades;
+
+public interface EquipoTecnico {
+    public void darSoporteTecnico();
 }
