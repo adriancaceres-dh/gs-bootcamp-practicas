@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de60c002-76e0-4df0-937d-4534d178d890" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/BlogApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/dto/request/BlogRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/dto/response/BlogResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/exception/GlobalHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/model/EntradaBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/java/com/dh/blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjPracticaClasesMarco/blogClase/blog/src/test/java/com/dh/blog/BlogApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej2_SpringBJson/src/main/java/com/bootcamp/ejClases/controller/CalcularEdad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/controller/ObtenerDiploma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/dto/AlumnoConPormedioDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/dto/AlumnoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/dto/MateriaDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/models/AlumnoModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/models/MateriaModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/repository/AlumnoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej3_SpringBJson/obtenerdiploma/src/main/java/com/bootcamp/obtenerdiploma/service/AlumnoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej_PracticaSpring_Marco/ejercicioblog/ejercicioblog/src/main/java/com/bootcamp/ejercicioblog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej_PracticaSpring_Marco/ejercicioblog/ejercicioblog/src/main/java/com/bootcamp/ejercicioblog/exeption/GlobalHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej_PracticaSpring_Marco/ejercicioblog/ejercicioblog/src/main/java/com/bootcamp/ejercicioblog/model/EntradaBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej_PracticaSpring_Marco/ejercicioblog/ejercicioblog/src/main/java/com/bootcamp/ejercicioblog/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../3. Spring/SPRING_SPRINGBOOT/EjSpringSpringboot/Ej_PracticaSpring_Marco/ejercicioblog/ejercicioblog/src/main/java/com/bootcamp/ejercicioblog/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/EjCondicRepetitivas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/src/Ej1_CyR_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/src/Ej2_CyR_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/src/Ej3_CyR_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjCondicRepetitivas/src/Ej4_cyR_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/BarEjClases1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/out/production/BarEjClases1/Ej1_PlayG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/out/production/BarEjClases1/Ej2_PlayG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/out/production/BarEjClases1/Ej3_PlayG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/out/production/BarEjClases1/Ej4_PLayG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/out/production/BarEjClases1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/src/Ej1_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/src/Ej2_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/src/Ej3_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/src/Ej4_PLayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjIntroJava/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/EjVectoresyMatrices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/out/production/EjVectoresyMatrices/EjMatrizClase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/out/production/EjVectoresyMatrices/EjPracticaClases.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/out/production/EjVectoresyMatrices/EjVectoresClases.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/out/production/EjVectoresyMatrices/EjVectoresPosyNeg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/out/production/EjVectoresyMatrices/Ej_VecMatr_PlayG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/out/production/EjVectoresyMatrices/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/src/EjMatrizClase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/src/EjPracticaClases.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/src/EjVectoresClases.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/src/EjVectoresPosyNeg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/src/Ej_VecMatr_PlayG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. Java/JAVA/EjVectoresyMatrices/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nJlrYU1mvmac5v77Enx3uzFKIy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.All in roman-numerals (2)">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in roman-numerals (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roman-numerals" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in roman-numerals (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roman-numerals" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in roman-numerals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roman-numerals" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumeralsApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="roman-numerals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.practica.romannumerals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.practica.romannumerals" />
+      <option name="MAIN_CLASS_NAME" value="com.practica.romannumerals.RomanNumeralsApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumeralsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="roman-numerals" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.practica.romannumerals.RomanNumeralsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in roman-numerals (2)" />
+        <item itemvalue="JUnit.All in roman-numerals (1)" />
+        <item itemvalue="JUnit.All in roman-numerals" />
+        <item itemvalue="JUnit.RomanNumeralsApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de60c002-76e0-4df0-937d-4534d178d890" name="Default Changelist" comment="" />
+      <created>1611116276665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611116276665</updated>
+      <workItem from="1611116278068" duration="1400000" />
+      <workItem from="1611153323680" duration="796000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
