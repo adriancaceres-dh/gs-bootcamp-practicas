@@ -1,0 +1,10 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åö‡¨þÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÊŠð
+f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô—íý
+0
+java:S1220""Move this file to a named package.
+c	java:S116"NRename this field "DNI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž£ó 
+Q	java:S125"<This block of commented-out lines of code should be removed.(ç‡è³
+W
+java:S11263"AReplace this if-then-else statement by a single return statement.(éº©í

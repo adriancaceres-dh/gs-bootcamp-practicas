@@ -1,0 +1,31 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊªÚé
+0
+java:S1220""Move this file to a named package.
+W
+java:S1854"<Remove this useless assignment to local variable "persona1".(çÄåƒøÿÿÿÿ
+H
+java:S1481"-Remove this unused "persona1" local variable.(çÄåƒøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(”×Üžûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‘²Š…
+M	java:S106"9Replace this use of System.out or System.err by a logger.(»‘€	
+g
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ï«¨°
+;
+java:S3457"%String contains no format specifiers.(ï«¨°
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ï«¨°
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¸äÖ×ýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(«¢ôþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²¸¹¦ýÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(´—Ö‘
+S	java:S106"9Replace this use of System.out or System.err by a logger.(íý¬îýÿÿÿÿ
+g
+java:S3457 "Q%n should be used in place of \n to produce the platform-specific line separator.(ï«¨°
+;
+java:S3457 "%String contains no format specifiers.(ï«¨°
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(ï«¨°
+M	java:S106#"9Replace this use of System.out or System.err by a logger.(«¸äz
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(¶ÞÔ®þÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(Ùëúÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(¹×Ì’ùÿÿÿÿ
+M	java:S1060"9Replace this use of System.out or System.err by a logger.(Ýú¯
