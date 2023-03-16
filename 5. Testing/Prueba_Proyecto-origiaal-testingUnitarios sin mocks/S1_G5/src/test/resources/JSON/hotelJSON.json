@@ -1,0 +1,12 @@
+[
+  {
+    "codigoHotel": "CH-0002",
+    "nombre": "Cataratas Hotel",
+    "lugarCiudad": "Puerto Iguazú",
+    "tipoDeHabitacion": "Doble",
+    "precioPorNoche": 6300,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-20",
+    "reservado": false
+  }
+  ]

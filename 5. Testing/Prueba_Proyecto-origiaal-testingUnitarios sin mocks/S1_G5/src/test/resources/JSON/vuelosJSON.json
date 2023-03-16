@@ -1,0 +1,11 @@
+[
+  {
+    "nroVuelo": "BAPI-1235",
+    "origen": "Buenos Aires",
+    "destino": "Puerto Iguazú",
+    "tipoAsiento": "Economy",
+    "precioPorPersona": 6500,
+    "fechaIda": "2022-02-10",
+    "fechaVuelta": "2022-02-15"
+  }
+]

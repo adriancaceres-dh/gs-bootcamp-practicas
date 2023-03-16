@@ -1,0 +1,7 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(è¸¼Ãüÿÿÿÿ
+o
+java:S1128	"TRemove this unused import 'org.springframework.web.client.HttpClientErrorException'.(ğ»òøÿÿÿÿ
+j
+java:S1128
+"TRemove this unused import 'org.springframework.web.servlet.NoHandlerFoundException'.(Ëş¥³
