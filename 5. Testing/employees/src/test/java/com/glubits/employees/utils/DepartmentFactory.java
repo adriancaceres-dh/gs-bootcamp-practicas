@@ -1,12 +1,17 @@
 package com.glubits.employees.utils;
 
 import com.glubits.employees.entity.Department;
+import org.springframework.context.annotation.Description;
 
 
 import java.util.List;
 
 public class DepartmentFactory {
 
+    /**
+     * Este Department se construyó con la finalidad de crear un nuevo Id, pero como lo crea el método testeado,
+     * nosotros en el building NO le colocamos el ID así el método funciona.
+     */
     public static Department magicOfTesting() {
         return Department.builder()
                 .name("Departamento de la Magia del Testing")

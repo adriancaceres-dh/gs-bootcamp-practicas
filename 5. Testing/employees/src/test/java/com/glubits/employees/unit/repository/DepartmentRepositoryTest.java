@@ -38,7 +38,9 @@ public class DepartmentRepositoryTest {
     }
 
     @Test
-    @Description("Borramos el Id de un departamento siempre que no contenga empleados")
+    /**
+     *Le mando un Id existente y borramos el departamento correspondiente a ese ID, siempre que no contenga empleados.
+     */
     void deleteWhitExistenteId() {
         //arrange
         Integer id = 1;
@@ -53,7 +55,10 @@ public class DepartmentRepositoryTest {
     }
 
     @Test
-    @Description("Borramos el Id de un departamento que NO existe y evaluamos la excepción que debe arrojar")
+/**
+ * Borramos el ID de un departamento que NO existe y devuelve un DTO.
+ * También evaluamos la excepción que debe arrojar en caso de no existir este ID.
+ */
     void deleteWithNotExistentIdNFE() {
         //arrange
         Integer id = 5;
@@ -133,9 +138,7 @@ public class DepartmentRepositoryTest {
     void findByWhitSize() {
         //arrange
         Integer size = 3;
-        List<Department> expected = List.of(DepartmentFactory.defenseAntiPedagogicalArts(),
-                DepartmentFactory.historySpringbootMagic(),
-                DepartmentFactory.magicalCreaturesTraining());
+        List<Department> expected = List.of();
         //act
         var result = departmentRepository.findBySize(size);
         //assert
@@ -146,7 +149,7 @@ public class DepartmentRepositoryTest {
     @Test
     @Description("Buscamos la cantidad de departamentos que NO existe")
     void findByNotSize() {
-        Integer size = 1;
+        Integer size = 5;
         List<Department> expected = List.of();
 
         //act

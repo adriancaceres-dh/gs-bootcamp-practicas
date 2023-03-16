@@ -22,12 +22,16 @@ import org.springframework.context.annotation.Description;
 import java.util.List;
 import java.util.Optional;
 
-@ExtendWith(MockitoExtension.class)
+@ExtendWith(MockitoExtension.class) //Ponemos esto p/activar las anotaciones p/usar Mock
 public class DeparmentServiceTest {
 
+
+    //Puede ser la clase o la interfaz
+    //Aplicamos mock a la dependencia del service (autowired)
     @Mock
     DepartmentRepository departmentRepository;
 
+    //Todos los mock que creamos con @Mocks se lo inyectamos, así separamos el service de la dependencia.
     @InjectMocks
     DeparmentService deparmentService;
 
@@ -45,8 +49,6 @@ public class DeparmentServiceTest {
 
         // assert
         Assertions.assertEquals(expected, result);
-
-
     }
 
     @Test
@@ -62,7 +64,6 @@ public class DeparmentServiceTest {
 
         // assert
         Assertions.assertEquals(expected, result);
-
     }
 
     @Test
