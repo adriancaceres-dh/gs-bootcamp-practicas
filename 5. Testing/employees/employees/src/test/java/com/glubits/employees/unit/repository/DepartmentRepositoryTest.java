@@ -1,5 +1,6 @@
 package com.glubits.employees.unit.repository;
 
+import com.glubits.employees.dto.DepartmentDTO;
 import com.glubits.employees.entity.Department;
 import com.glubits.employees.exception.CouldNotDeleteException;
 import com.glubits.employees.exception.NotFoundException;
