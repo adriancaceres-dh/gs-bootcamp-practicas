@@ -3,8 +3,8 @@ package com.glubits.employees.exception;
 import com.glubits.employees.dto.CrudDTO;
 import com.glubits.employees.dto.ValidationDTO;
 import com.glubits.employees.utils.enums.CrudEnum;
-import jakarta.validation.ConstraintViolation;
-import jakarta.validation.ConstraintViolationException;
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -39,8 +39,8 @@ public class GlobalExceptionHandler {
     public ResponseEntity<CrudDTO> crudErrorException(NotFoundException e){
         return ResponseEntity.ok(
                 CrudDTO.builder()
-                    .message(e.getMessage())
-                    .action(CrudEnum.DELETATION)
+                        .message(e.getMessage())
+                        .action(CrudEnum.DELETATION)
                         .build()
         );
     }

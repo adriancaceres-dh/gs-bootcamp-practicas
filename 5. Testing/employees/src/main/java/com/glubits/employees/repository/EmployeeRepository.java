@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Repository
 public class EmployeeRepository implements ICrudRepository<Employee>{
@@ -45,8 +46,8 @@ public class EmployeeRepository implements ICrudRepository<Employee>{
     }
 
     @Override
-    public Optional<Employee> findByName(String name) {
-        return employees.stream().filter(employee -> employee.getName().contains(name)).findFirst();
+    public List<Employee> findByName(String name) {
+        return employees.stream().filter(employee -> employee.getName().contains(name)).collect(Collectors.toList());
     }
 
     @Override

@@ -11,7 +11,7 @@ public interface ICrudRepository<T> {
 
     Optional<T> findById(Integer id);
 
-    Optional<T> findByName(String name);
+    List<T> findByName(String name);
 
     List<T> listAll();
 }
