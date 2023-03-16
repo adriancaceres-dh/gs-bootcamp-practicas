@@ -33,9 +33,16 @@
         "id": 2,
         "name": "Jean",
         "age": 25,
-        "email": "",
+        "email": "jeancardo@digitalhouse.com",
         "address": "Andén 9 y 3/4"
       }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Departamento para eliminar",
+    "employees": [
+
     ]
   }
 ]

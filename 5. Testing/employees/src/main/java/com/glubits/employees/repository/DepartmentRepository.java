@@ -60,7 +60,8 @@ public class DepartmentRepository implements ICrudRepository<Department>{
     }
 
     public List<Department> findBySize(Integer size) {
-        return departments.stream().filter(department -> department.getEmployees().size() >= size).collect(Collectors.toList());
+        return departments.stream()
+                .filter(department -> department.getEmployees().size() >= size).collect(Collectors.toList());
     }
 
     @Override
