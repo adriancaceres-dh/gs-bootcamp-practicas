@@ -1,0 +1,10 @@
+
+7
+java:S1220""Move this file to a named package.8¹ı•î0
+i
+java:S2095!"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÌøÎî8Èı•î0
+n
+java:S2095""LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ğ¢Å–şÿÿÿÿ8Èı•î0
+V
+java:S1118":Add a private constructor to hide the implicit public one.(ŒÅüg8Ìı•î0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÎÊüé8×ı•î0
