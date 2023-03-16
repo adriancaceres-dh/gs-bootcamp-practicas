@@ -1,17 +1,0 @@
-
-0
-java:S1220""Move this file to a named package.
-N	java:S106"9Replace this use of System.out or System.err by a logger.(„—Æï
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(é»õìùÿÿÿÿ
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(é»õìùÿÿÿÿ
-S	java:S106("9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
-S	java:S106,"9Replace this use of System.out or System.err by a logger.(é»õìùÿÿÿÿ
-S	java:S106-"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
-U
-java:S16122"?Replace this lambda with method reference 'Vehiculo::getCosto'.(ä“­Ê
-N	java:S1063"9Replace this use of System.out or System.err by a logger.(–ı‡
-S	java:S1064"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
-W
-java:S1128"5Remove this unused import 'java.util.OptionalDouble'.(‰ÀÕÿøÿÿÿÿ8¨ñó¸í0
