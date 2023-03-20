@@ -20,7 +20,7 @@ public class DepartmentController {
     IDepartmentService departmentService;
 
     @PostMapping("/save")
-    public ResponseEntity<CrudDTO> saveDepartment(@RequestBody DepartmentDTO dto){
+    public ResponseEntity<CrudDTO> saveDepartments(@RequestBody DepartmentDTO dto){
         return ResponseEntity.ok(departmentService.saveDepartment(dto));
     }
 
