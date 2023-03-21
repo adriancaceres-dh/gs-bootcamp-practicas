@@ -1,5 +1,5 @@
 # Glubits Sancor - Bootcamp prácticas  🚀
-by Digital House 💗
+by Digital House 💗.
 
 way to work 🎯
 
