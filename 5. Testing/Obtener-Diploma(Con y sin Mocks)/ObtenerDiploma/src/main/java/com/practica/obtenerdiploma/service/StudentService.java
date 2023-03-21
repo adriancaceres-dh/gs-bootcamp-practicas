@@ -24,6 +24,7 @@ public class StudentService implements IStudentService {
 
     @Override
     public StudentDTO read(Long id) {
+
         return studentDAO.findById(id);
     }
 

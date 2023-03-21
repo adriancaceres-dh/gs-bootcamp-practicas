@@ -19,6 +19,7 @@ public class ObtenerDiplomaService implements IObtenerDiplomaService {
     public StudentDTO analyzeScores(Long studentId) {
         StudentDTO stu = studentDAO.findById(studentId);
 
+        //usamos los metodos que creamos abajo
         stu.setAverageScore(calculateAverage(stu.getSubjects()));
         stu.setMessage(getGreetingMessage(stu.getStudentName(), stu.getAverageScore()));
 

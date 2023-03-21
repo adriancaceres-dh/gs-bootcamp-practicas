@@ -19,7 +19,7 @@ public class StudentRepositoryTest {
 
     @Test //siempre tenemos que anotar el test para poder correrlo
     @DisplayName("Testeamos el metodo que lista todos los alumnos")
-    public void findAllTest(){
+    public void findAllTest(){ //los test siempre se hacen con void
         // arrange - ordenar y crear los datos necesarios (parametros y metodos de devolucion -return)
         Set<StudentDTO> expected = StudentDTOFactory.listStudent(); //lo que espero que devuelva el metodo
 
