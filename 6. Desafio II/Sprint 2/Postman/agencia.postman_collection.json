@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "1a4d71ff-ef7a-4748-abe9-ab532ed96402",
+		"name": "agencia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23937392"
+	},
+	"item": [
+		{
+			"name": "HotelesDisponibles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/hotel?dateFrom=11/02/2022&dateTo=12/02/2022&destination=Buenos Aires",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"hotel"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "11/02/2022"
+						},
+						{
+							"key": "dateTo",
+							"value": "12/02/2022"
+						},
+						{
+							"key": "destination",
+							"value": "Buenos Aires"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListaHoteles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/hotels",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reserva",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\" : \"luchofesta@gmail.com\",\r\n    \"booking\" : {\r\n        \"dateFrom\" : \"2022-02-12\",\r\n        \"datoTo\" : \"2022-03-20\",\r\n        \"destination\" : \"Buenos Aires\",\r\n        \"hotelCode\" : \"BH-0002\",\r\n        \"peopleAmount\" : 2,\r\n        \"roomType\" : \"Double\",\r\n        \"people\" : [\r\n            {\r\n                \"dni\" : \"36365939\",\r\n                \"name\" : \"Luciano\",\r\n                \"lastName\" : \"Festa\",\r\n                \"birthDate\" : \"1992-01-24\",\r\n                \"email\" : \"luchofesta@gmail.com\"\r\n            },\r\n            {\r\n                \"dni\" : \"38884160\",\r\n                \"name\" : \"Sofia\",\r\n                \"lastName\" : \"Ramos Dietmair\",\r\n                \"birthDate\" : \"1995-07-12\",\r\n                \"email\" : \"sofiramos@gmail.com\"\r\n            }\r\n        ],\r\n        \"paymentMethod\" : {\r\n            \"type\" : \"CreditCard\",\r\n            \"number\" : \"4545 8585 9696 6565\",\r\n            \"dues\" : 6\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListaVuelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/flights",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VuelosDisponibles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/flight?dateFrom=09/02/2022&dateTo=15/02/2022&origin=Buenos Aires&destination=Puerto Iguazú",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"flight"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "09/02/2022"
+						},
+						{
+							"key": "dateTo",
+							"value": "15/02/2022"
+						},
+						{
+							"key": "origin",
+							"value": "Buenos Aires"
+						},
+						{
+							"key": "destination",
+							"value": "Puerto Iguazú"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReservaVuelos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\" : \"luchofesta@gmail.com\",\r\n    \"flightReservation\" : {\r\n        \"dateFrom\" : \"2022-02-10\",\r\n        \"datoTo\" : \"2022-02-15\",\r\n        \"origin\" : \"Buenos Aires\",\r\n        \"destination\" : \"Puerto Iguazú\",\r\n        \"flightNumber\" : \"PIBA-1420\",\r\n        \"seats\" : 2,\r\n        \"seatType\" : \"BUSINESS\",\r\n        \"people\" : [\r\n            {\r\n                \"dni\" : \"36365939\",\r\n                \"name\" : \"Luciano\",\r\n                \"lastName\" : \"Festa\",\r\n                \"birthDate\" : \"1992-01-24\",\r\n                \"email\" : \"luchofesta@gmail.com\"\r\n            },\r\n            {\r\n                \"dni\" : \"38884160\",\r\n                \"name\" : \"Sofia\",\r\n                \"lastName\" : \"Ramos Dietmair\",\r\n                \"birthDate\" : \"1995-07-12\",\r\n                \"email\" : \"sofiramos@gmail.com\"\r\n            }\r\n        ],\r\n        \"paymentMethod\" : {\r\n            \"type\" : \"CreditCard\",\r\n            \"number\" : \"4545 8585 9696 6565\",\r\n            \"dues\" : 6\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/flight-reservation",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"flight-reservation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

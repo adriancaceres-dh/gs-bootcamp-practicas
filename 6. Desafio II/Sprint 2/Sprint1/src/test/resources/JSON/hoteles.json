@@ -1,0 +1,42 @@
+[
+  {
+    "codigoHotel": "CH-0002",
+    "nombre": "Cataratas Hotel",
+    "lugar": "Puerto Iguazú",
+    "tipoHabitacion": "Doble",
+    "precioNoche": 6300.0,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-20",
+    "reservado": false
+  },
+  {
+    "codigoHotel": "CH-0003",
+    "nombre": "Cataratas Hotel 2",
+    "lugar": "Puerto Iguazú",
+    "tipoHabitacion": "Triple",
+    "precioNoche": 8200.0,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-23",
+    "reservado": false
+  },
+  {
+    "codigoHotel": "HB-0001",
+    "nombre": "Hotel Bristol",
+    "lugar": "Buenos Aires",
+    "tipoHabitacion": "Single",
+    "precioNoche": 5435.0,
+    "disponibleDesde": "2022-02-10",
+    "disponibleHasta": "2022-03-19",
+    "reservado": false
+  },
+  {
+    "codigoHotel": "CP-0004",
+    "nombre": "Central Plaza",
+    "lugar": "Medellín",
+    "tipoHabitacion": "Múltiple",
+    "precioNoche": 8600.0,
+    "disponibleDesde": "2022-03-01",
+    "disponibleHasta": "2022-04-17",
+    "reservado": false
+  }
+]

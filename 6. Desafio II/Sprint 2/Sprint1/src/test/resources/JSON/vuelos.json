@@ -1,0 +1,20 @@
+[
+  {
+    "nroVuelo": "BAPI-1235",
+    "origen": "Buenos Aires",
+    "destino": "Puerto Iguazú",
+    "tipoAsiento": "Economy",
+    "precioPersona": 6500.0,
+    "fechaIda": "2022-02-10",
+    "fechaVuelta": "2022-02-15"
+  },
+  {
+    "nroVuelo": "PIBA-1420",
+    "origen": "Puerto Iguazú",
+    "destino": "Bogotá",
+    "tipoAsiento": "Business",
+    "precioPersona": 43200.0,
+    "fechaIda": "2022-02-10",
+    "fechaVuelta": "2022-02-20"
+  }
+]
