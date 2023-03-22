@@ -1,0 +1,27 @@
+
+g
+java:S11921"LDefine a constant instead of duplicating this literal "MatemÃ¡tica" 3 times.(³ğ¥Ìûÿÿÿÿ
+q
+java:S1192&"VDefine a constant instead of duplicating this literal "/resources/users.json" 3 times.(£ÀèÛıÿÿÿÿ
+b
+java:S1192&"GDefine a constant instead of duplicating this literal "./src/" 3 times.(£ÀèÛıÿÿÿÿ
+]
+java:S11922"GDefine a constant instead of duplicating this literal "Lengua" 3 times.(¼‘×
+^
+java:S11923"HDefine a constant instead of duplicating this literal "FÃ­sica" 3 times.(ïñìë
+P
+java:S1141z"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+`
+java:S2259Š"DA "NullPointerException" could be thrown; "writer" is nullable here.(ÄËªŸÿÿÿÿÿ
+k
+java:S3008"PRename this field "SCOPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀıÀĞşÿÿÿÿ
+k
+java:S1450"URemove the "mapper" field and declare it as a local variable in the relevant methods.(Ìˆ‡ï
+P
+java:S1118":Add a private constructor to hide the implicit public one.(¢øË¸
+B
+java:S3599l",Use another way to initialize this instance.(İ²ò‡
+o
+java:S1171l"YMove the contents of this initializer to a standard constructor or to field initializers.(İ²ò‡
+\
+java:S2147†"ECombine this catch with the one at line 132, which has the same body.(ï­£Ä

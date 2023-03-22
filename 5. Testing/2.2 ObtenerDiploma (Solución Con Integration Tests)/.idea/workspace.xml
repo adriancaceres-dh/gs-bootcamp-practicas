@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8215d34f-701e-4034-89d9-8e6308802b4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../obtener-diploma/src/test/java/com/digitalhouse/obtenerdiploma/unit/repository/RecipeRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../obtener-diploma/src/test/java/com/digitalhouse/obtenerdiploma/unit/repository/StorehouseRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../obtener-diploma/src/test/java/com/digitalhouse/obtenerdiploma/unit/service/CertifiacteServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../obtener-diploma/src/test/java/com/digitalhouse/obtenerdiploma/utils/RecipeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obtener-diploma/src/main/java/com/digitalhouse/obtenerdiploma/dto/ErrorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../obtener-diploma/src/main/java/com/digitalhouse/obtenerdiploma/dto/ErrorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obtener-diploma/src/main/java/com/digitalhouse/obtenerdiploma/service/CertificateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../obtener-diploma/src/main/java/com/digitalhouse/obtenerdiploma/service/CertificateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../employees/src/test/java/com/glubits/employees/unit/repository/EmployeeRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../employees/src/test/java/com/glubits/employees/utils/EmployeeDTOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../employees/src/test/java/com/glubits/employees/utils/EmployeeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47991127508ec9fa33e294cb9652dfaa5f042d9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/881be6a4fbbb7d6f9c0d9d32e95fa3edb5081330" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/47991127508ec9fa33e294cb9652dfaa5f042d9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/881be6a4fbbb7d6f9c0d9d32e95fa3edb5081330" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/ejercitaciones/gs-bootcamp-practicas/5. Testing/2.2 ObtenerDiploma (Solución Con Integration Tests)"
+    "last_opened_file_path": "C:/ejercitaciones/gs-bootcamp-practicas/5. Testing/restaurant-w15-testing"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

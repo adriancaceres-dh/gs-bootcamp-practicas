@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "name": "Gabi",
+    "age": 19,
+    "email": "gabimonzon@digitalhouse.com",
+    "address": "Av. Siempreviva 742"
+  },
+  {
+    "id": 1,
+    "name": "Marco",
+    "age": 24,
+    "email": "marcoavila@digitalhouse.com",
+    "address": "221B Baker Street"
+  },
+  {
+    "id": 2,
+    "name": "Jean",
+    "age": 25,
+    "email": "jeancardo@digitalhouse.com",
+    "address": "Andén 9 y 3/4"
+  }
+]
