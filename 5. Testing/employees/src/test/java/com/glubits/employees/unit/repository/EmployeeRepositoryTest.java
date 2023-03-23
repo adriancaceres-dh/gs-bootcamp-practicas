@@ -6,7 +6,6 @@ import com.glubits.employees.repository.EmployeeRepository;
 import com.glubits.employees.utils.EmployeeFactory;
 import org.junit.jupiter.api.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -103,7 +102,7 @@ class EmployeeRepositoryTest {
     void findByNameNotExistent() {
         // arrange
         String name = "Mati";
-        List<Employee> expected =  new ArrayList<>();
+        List<Employee> expected = List.of();
 
         // act
         var result = employeeRepository.findByName(name);

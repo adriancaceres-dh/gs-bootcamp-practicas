@@ -8,6 +8,7 @@ import com.glubits.employees.entity.Department;
 import com.glubits.employees.entity.Employee;
 import com.glubits.employees.exception.CouldNotDeleteException;
 import com.glubits.employees.exception.NotFoundException;
+import com.glubits.employees.utils.enums.CrudEnum;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ResourceUtils;
 
@@ -40,7 +41,7 @@ public class DepartmentRepository implements ICrudRepository<Department>{
     @Override
     public Integer delete(Integer id) {
         var department = findById(id).orElseThrow(
-                () -> {throw new NotFoundException("No pudo encontrarse el departamento con id " + id);}
+                () -> {throw new NotFoundException("No pudo encontrarse el departamento con id " + id, CrudEnum.DELETATION);}
         );
 
         if(!department.getEmployees().isEmpty()){
@@ -83,7 +84,8 @@ public class DepartmentRepository implements ICrudRepository<Department>{
         try {
             file = ResourceUtils.getFile("classpath:department.json");
             departmentList = objectMapper.readValue(file, typeRef);
-        } catch (IOException e) {e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         return departmentList;

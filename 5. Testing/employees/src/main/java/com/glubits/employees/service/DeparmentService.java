@@ -54,7 +54,7 @@ public class DeparmentService implements IDepartmentService{
         var department = departmentRepository.findById(id)
                 .orElseThrow(
                         () -> {
-                            throw new NotFoundException("No se pudo encontrar el departamento con id " + id);
+                            throw new NotFoundException("No se pudo encontrar el departamento con id " + id, CrudEnum.READING);
                         }
                 );
 

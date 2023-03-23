@@ -5,9 +5,16 @@ import com.glubits.employees.utils.enums.CrudEnum;
 
 public class CrudDTOFactory {
 
-    public static CrudDTO crudDTOCreationWithId1(){
+    public static CrudDTO crudDTOCreationWithId0(){
         return CrudDTO.builder()
                 .message("Se creo el empleado con id: " + 0)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTOCreationWithId3(){
+        return CrudDTO.builder()
+                .message("Se creo el empleado con id: " + 3)
                 .action(CrudEnum.CREATION)
                 .build();
     }
@@ -18,18 +25,11 @@ public class CrudDTOFactory {
                 .action(CrudEnum.DELETATION)
                 .build();
     }
-    public static CrudDTO crudDTOCreationDepartamentWithId0(){
+
+    public static CrudDTO crudDTOReadingNotFoundWithId999999(){
         return CrudDTO.builder()
-                .message("Se creo el departamento con id: " + 0)
-                .action(CrudEnum.CREATION)
+                .message("No se pudo encontrar el empleado con id " + 999999)
+                .action(CrudEnum.READING)
                 .build();
     }
-
-    public static CrudDTO crudDTODeletationDepartamentWithId1(){
-        return CrudDTO.builder()
-                .message("Se elimino el departamento con id " + 1)
-                .action(CrudEnum.DELETATION)
-                .build();
-    }
-
 }

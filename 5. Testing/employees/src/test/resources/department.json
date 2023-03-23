@@ -29,25 +29,7 @@
     "id": 2,
     "name": "Departamento de Cuidado de Criaturas Magicas en capacitacion",
     "employees": [
-      {
-        "id": 2,
-        "name": "Jean",
-        "age": 25,
-        "email": "jeancardo@digitalhouse.com",
-        "address": "Andén 9 y 3/4"
-      },
-      {
-        "id": 0,
-        "name": "Gabi",
-        "age": 19,
-        "email": "gabimonzon@digitalhouse.com",
-        "address": "Av. Siempreviva 742"
-      }
+
     ]
-  },
-  {
-    "id": 6,
-    "name": "Departamento de defensa numero 5",
-    "employees": []
   }
 ]
