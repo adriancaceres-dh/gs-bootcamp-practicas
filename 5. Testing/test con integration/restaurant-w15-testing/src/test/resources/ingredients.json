@@ -1,0 +1,42 @@
+[
+  {
+    "name": "tomato",
+    "quality": 5,
+    "calories": 200
+  },
+  {
+    "name": "tomato",
+    "quality": 2,
+    "calories": 200
+  },
+  {
+    "name": "cheese",
+    "quality": 5,
+    "calories": 500
+  },
+  {
+    "name": "cheese",
+    "quality": 1,
+    "calories": 500
+  },
+  {
+    "name": "meal",
+    "quality": 5,
+    "calories": 500
+  },
+  {
+    "name": "meal",
+    "quality": 5,
+    "calories": 500
+  },
+  {
+    "name": "bread",
+    "quality": 4,
+    "calories": 300
+  },
+  {
+    "name": "bread",
+    "quality": 4,
+    "calories": 300
+  }
+]

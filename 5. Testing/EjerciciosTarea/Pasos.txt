@@ -1,3 +1,5 @@
+¡¡¡TEST UNITARIOS SIN MOCKS!!!
+
 1- Agregamos dependencias
 
 2-En test/java/com.glubits.employees crear las siguientes carpetas:
@@ -15,7 +17,12 @@
 
 5-Ir a classRepository.java hacer : alt insert/test para que genere los test de los metodos (colocarlo en la carpeta unit/repository)
   Instanciar la clase que voy a usar ejemplo: DepartmentRepository departmentRepository = new DepartmentRepository(); (no va el autowired porque no hay contexto de spring)
-  Luego:
+  EJEMPLOS:
+
+class EmployeeRepositoryTest {
+
+    EmployeeRepository employeeRepository;
+
      @Test
     void save(){
         // arrange
@@ -29,36 +36,7 @@
         Assertions.assertEquals(expected,result);
     }
 
-6- Setear entidad para eso crear json: En test/directory/resources/(ej: department.json)
-
-7- Ir al factory :
-   
-  public class DepartmentFactory {
-    public static Department getDepartament(){
-        return Department.builder()
-                .id(0)
-                .name("Departamento de Defensa contra las Artes Antipedagogicas")
-                .employees(List.of(EmployeeFactory.getGabi()))
-                .build();
-    }
-    public static Department getDepartament1(){
-        return Department.builder()
-                .id(1)
-                .name("Departamento de Historia de la Magia de Springboots")
-                .employees(List.of(EmployeeFactory.getMarco()))
-                .build();
-    }
-    public static Department getDepartament2(){
-        return Department.builder()
-                .id(2)
-                .name("Departamento de Cuidado de Criaturas Magicas en capacitacions")
-                .employees(List.of(EmployeeFactory.getJean()))
-                .build();
-    }
-
-}
-
-8- @Test
+@Test
     void save(){
         // arrange
         Department entity = DepartmentFactory.getDepartament();
@@ -71,7 +49,8 @@
         Assertions.assertEquals(expected,result);
     }
 
-9-  @Test
+
+  @Test
     void delete() {
         // arrange
         Integer id = 2;
@@ -93,3 +72,375 @@
         Assertions.assertThrows(NotFoundException.class,
                 () -> departmentRepository.delete(id));
     }
+
+
+  @Test
+    void findById() {
+        // arrange
+        Integer id = 1;
+        Optional<Employee> expected = Optional.of(EmployeeFactory.getMarco());
+
+        // act
+        var result = employeeRepository.findById(id);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+
+    @Test
+    void findByIdNotExistent() {
+        // arrange
+        Integer id = 3;
+        Optional<Employee> expected = Optional.empty();
+
+        // act
+        var result = employeeRepository.findById(id);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+
+  @Test
+    void findByName() {
+        // arrange
+        String name = "Gabi";
+        List<Employee> expected = List.of(EmployeeFactory.getGabi());
+
+        // act
+        var result = employeeRepository.findByName(name);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+   @Test
+    void findByNameNotExistent() {
+        // arrange
+        String name = "Mati";
+        List<Employee> expected =List.of();
+
+        // act
+        var result = employeeRepository.findByName(name);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+
+    @Test
+    void listAll() {
+        // arrange
+        List<Employee> expected = List.of(//los que estan agregados en el json y deben estar en el orden del json
+                EmployeeFactory.getGabi(),
+                EmployeeFactory.getMarco(),
+                EmployeeFactory.getJean());
+        // act
+        var result = employeeRepository.listAll();
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+}
+
+
+6- Setear entidad para eso crear json: En test/directory/resources/(ej: department.json):
+
+[
+  {
+    "id": 0,
+    "name": "Gabi",
+    "age": 19,
+    "email": "gabimonzon@digitalhouse.com",
+    "address": "Av. Siempreviva 742"
+  },
+  {
+    "id": 1,
+    "name": "Marco",
+    "age": 24,
+    "email": "marcoavila@digitalhouse.com",
+    "address": "221B Baker Street"
+  },
+  {
+    "id": 2,
+    "name": "Jean",
+    "age": 25,
+    "email": "jeancardo@digitalhouse.com",
+    "address": "Andén 9 y 3/4"
+  }
+]
+
+
+
+7-Ir a la carpeta utils y cread Factory :
+   
+ public class EmployeeFactory {
+
+    public static Employee getTincho(){
+        return Employee.builder()
+                .name("Tincho")
+                .age(30)
+                .address("Av. BuenaVista 222")
+                .email("martinmarquez@digitalhouse.com")
+                .build();
+    }
+
+    public static Employee getMarco(){
+        return Employee.builder()
+                .id(1)
+                .name("Marco")
+                .age(24)
+                .email("marcoavila@digitalhouse.com")
+                .address("221B Baker Street")
+                .build();
+    }
+
+    public static Employee getGabi(){
+        return Employee.builder()
+                .id(0)
+                .name("Gabi")
+                .age(19)
+                .email("gabimonzon@digitalhouse.com")
+                .address("Av. Siempreviva 742")
+                .build();
+    }
+
+    public static Employee getJean(){
+        return Employee.builder()
+                .id(2)
+                .name("Jean")
+                .age(25)
+                .email("jeancardo@digitalhouse.com")
+                .address("Andén 9 y 3/4")
+                .build();
+    }
+}
+
+
+
+
+
+
+
+
+
+¡¡¡TEST UNITARIOS CON MOCKS!!!
+
+1- La carpeta unit contendra las carpetas:
+Dentro de service vamos a crear la clases de los servicio que corresponden:alt insert/test para que genere los test de los metodos (colocarlo en la carpeta unit/service)
+  
+  EJEMPLOS:
+
+@ExtendWith(MockitoExtension.class) //SIEMPRE SE PONE
+class EmployeeServiceTest {
+
+    @Mock
+    EmployeeRepository employeeRepository; //dependencia instanciada
+
+    @InjectMocks
+    EmployeeService employeeService; // a quien le inyectamos los test con mocks
+
+ @Test
+    void saveEmployee() {
+          // arrange
+        EmployeeDTO employeeDTO = EmployeeDTOFactory.getTinchoDTO(); //LO ESPERADO
+        CrudDTO expected = CrudDTOFactory.crudDTOCreationWithId1(); //LLAMAMOS AL CRUD QUE CREAMOS
+        Employee entity = EmployeeFactory.getTincho(); //MANDAR LO DE LA FACTORY, EN ESTE CASO LA ENTITY ES LO QUE DEBERIAMOS MANDAR AL SERVICIO EN LA CONVERSION
+          // act
+            // whens
+        Mockito.when(employeeRepository.save(entity)).thenReturn(0); //CUANDO SE EJECUTE ESTO DEVOLVEME ESTE VALOR
+        var result = employeeService.saveEmployee(employeeDTO);
+
+          // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void deleteEmployee() {
+        // arrange
+        Integer id = 1;
+        CrudDTO expected = CrudDTOFactory.crudDTODeletationWithId1();
+        // act con mocks
+        Mockito.when(employeeRepository.delete(1)).thenReturn(1);
+        var result = employeeService.deleteEmployee(id);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void listAllEmployees() {
+        // arrange
+        List<EmployeeDTO> expected = List.of(EmployeeDTOFactory.getGabiDTO(),
+                EmployeeDTOFactory.getMarcoDTO(),
+                EmployeeDTOFactory.getJeanDTO());
+
+        List<Employee> shouldReturn = List.of(EmployeeFactory.getGabi(),
+                EmployeeFactory.getMarco(),
+                EmployeeFactory.getJean());
+
+        // act
+        Mockito.when(employeeRepository.listAll()).thenReturn(shouldReturn);
+        var result = employeeService.listAllEmployees();
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void findOneEmployee() {
+        // arrange
+        Integer id = 1;
+        EmployeeDTO expected = EmployeeDTOFactory.getMarcoDTO();
+        Employee marco = EmployeeFactory.getMarco();
+        // act
+        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.of(marco));
+        var result = employeeService.findOneEmployee(id);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void findOneEmployeeWithNotExistentId() {
+        // arrange
+        Integer id = 999999;
+
+        // mockeos
+
+        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.empty());
+
+        // act & assert
+        Assertions.assertThrows(
+                NotFoundException.class,
+                () -> employeeService.findOneEmployee(id)
+        );
+    }
+
+    @Test
+    void findByName() {
+        // arrange
+        String name = "Jean";
+        List<EmployeeDTO> expected = List.of(EmployeeDTOFactory.getJeanDTO());
+        Employee jean = EmployeeFactory.getJean();
+
+        // act
+        Mockito.when(employeeRepository.findByName(name)).thenReturn(List.of(jean));
+        var result = employeeService.findByName(name);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    void findByNameNotFound() {
+        // arrange
+        String name = "Amarancio";
+        List<EmployeeDTO> expected = List.of();
+
+        // act
+        Mockito.when(employeeRepository.findByName(name)).thenReturn(List.of());
+        var result = employeeService.findByName(name);
+
+        // assert
+        Assertions.assertEquals(expected, result);
+    }
+}
+
+
+2- En la carpeta utils crear la clase CrudDTOFactory: es un mensaje y una accion.
+EJEMPLOS:
+
+public class CrudDTOFactory {
+
+    public static CrudDTO crudDTOCreationWithId1(){
+        return CrudDTO.builder()
+                .message("Se creo el empleado con id: " + 0)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTODeletationWithId1(){
+        return CrudDTO.builder()
+                .message("Se elimino el empleado con id " + 1)
+                .action(CrudEnum.DELETATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTOCreationWithId2(){
+        return CrudDTO.builder()
+                .message("Se creo el departamento con id: " + 2)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTODeletationWithId2(){
+        return CrudDTO.builder()
+                .message("Se elimino el departamento con id " + 2)
+                .action(CrudEnum.DELETATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTOCreationWithId3(){
+        return CrudDTO.builder()
+                .message("Se creo el empleado con id: " + 3)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTOReadingNotFoundWithId7(){
+        return CrudDTO.builder()
+                .message("No se pudo encontrar el empleado con id " + 7)
+                .action(CrudEnum.READING)
+                .build();
+    }
+}
+
+3- Ir a la carpeta utils y cread Factory :
+EJEMPLO:
+
+public class EmployeeDTOFactory {
+
+    public static EmployeeDTO getTinchoDTO(){ //SIN ID PORQUE NOS LO DEVUELVE EL METODO saveEmployee
+        return EmployeeDTO.builder()
+                .name("Tincho")
+                .age(30)
+                .address("Av. BuenaVista 222")
+                .email("martinmarquez@digitalhouse.com")
+                .build();
+    }
+
+    public static EmployeeDTO getMarcoDTO(){
+
+        return EmployeeDTO.builder()
+                .id(1)
+                .name("Marco")
+                .age(24)
+                .email("marcoavila@digitalhouse.com")
+                .address("221B Baker Street")
+                .build();
+    }
+
+    public static EmployeeDTO getGabiDTO(){
+
+        return EmployeeDTO.builder()
+                .id(0)
+                .name("Gabi")
+                .age(19)
+                .email("gabimonzon@digitalhouse.com")
+                .address("Av. Siempreviva 742")
+                .build();
+    }
+
+    public static EmployeeDTO getJeanDTO(){
+        return EmployeeDTO.builder()
+                .id(2)
+                .name("Jean")
+                .age(25)
+                .email("jeancardo@digitalhouse.com")
+                .address("Andén 9 y 3/4")
+                .build();
+    }
+
+}
