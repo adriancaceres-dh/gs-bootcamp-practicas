@@ -1,4 +1,4 @@
-¡¡¡TEST UNITARIOS SIN MOCKS!!!
+-------------------------------------------------------¡¡¡TEST UNITARIOS SIN MOCKS!!!-------------------------------------------------------
 
 1- Agregamos dependencias
 
@@ -225,7 +225,7 @@ class EmployeeRepositoryTest {
 
 
 
-¡¡¡TEST UNITARIOS CON MOCKS!!!
+-------------------------------------------------------¡¡¡TEST UNITARIOS CON MOCKS!!!-------------------------------------------------------
 
 1- La carpeta unit contendra las carpetas:
 Dentro de service vamos a crear la clases de los servicio que corresponden:alt insert/test para que genere los test de los metodos (colocarlo en la carpeta unit/service)
@@ -247,7 +247,8 @@ class EmployeeServiceTest {
         EmployeeDTO employeeDTO = EmployeeDTOFactory.getTinchoDTO(); //LO ESPERADO
         CrudDTO expected = CrudDTOFactory.crudDTOCreationWithId1(); //LLAMAMOS AL CRUD QUE CREAMOS
         Employee entity = EmployeeFactory.getTincho(); //MANDAR LO DE LA FACTORY, EN ESTE CASO LA ENTITY ES LO QUE DEBERIAMOS MANDAR AL SERVICIO EN LA CONVERSION
-          // act
+          
+         // act
             // whens
         Mockito.when(employeeRepository.save(entity)).thenReturn(0); //CUANDO SE EJECUTE ESTO DEVOLVEME ESTE VALOR
         var result = employeeService.saveEmployee(employeeDTO);
@@ -259,30 +260,34 @@ class EmployeeServiceTest {
     @Test
     void deleteEmployee() {
         // arrange
-        Integer id = 1;
-        CrudDTO expected = CrudDTOFactory.crudDTODeletationWithId1();
+        Integer id = 1; // necesita un entero
+        CrudDTO expected = CrudDTOFactory.crudDTODeletationWithId1(); // se debe crear el factory. lo que  espera es.
+        
         // act con mocks
-        Mockito.when(employeeRepository.delete(1)).thenReturn(1);
-        var result = employeeService.deleteEmployee(id);
+        var result = employeeService.deleteEmployee(id); //Llamo al metodo y le paso el id que le corresponde
+        Mockito.when(employeeRepository.delete(1)).thenReturn(1);// mockeo la llamada al repository(puede haber varios when), luego de esto que retorne el valor que corresponde.
+        // debe llegar el valor que le corresponde al metodo.
 
         // assert
         Assertions.assertEquals(expected, result);
     }
 
     @Test
-    void listAllEmployees() {
+    void listAllEmployees() { // los empleados los pasos a un factoryDto porque en el metodo los pasa a una lista dto.
         // arrange
-        List<EmployeeDTO> expected = List.of(EmployeeDTOFactory.getGabiDTO(),
+        List<EmployeeDTO> expected = List.of(EmployeeDTOFactory.getGabiDTO(),//Lista de los empleados e la factory, por orden que fueron creados.
                 EmployeeDTOFactory.getMarcoDTO(),
                 EmployeeDTOFactory.getJeanDTO());
 
-        List<Employee> shouldReturn = List.of(EmployeeFactory.getGabi(),
+        List<Employee> shouldReturn = List.of(EmployeeFactory.getGabi(),//Lista de la entidad.La factory comun
                 EmployeeFactory.getMarco(),
                 EmployeeFactory.getJean());
 
         // act
-        Mockito.when(employeeRepository.listAll()).thenReturn(shouldReturn);
-        var result = employeeService.listAllEmployees();
+         var result = employeeService.listAllEmployees();//Llamada 
+        Mockito.when(employeeRepository.listAll()).thenReturn(shouldReturn);// Llamada al repository en el metodo no tiene parametro por eso es listAll(). siempre que
+//que se llame a esto retorname la lista de la entidad
+       
 
         // assert
         Assertions.assertEquals(expected, result);
@@ -291,13 +296,14 @@ class EmployeeServiceTest {
     @Test
     void findOneEmployee() {
         // arrange
-        Integer id = 1;
-        EmployeeDTO expected = EmployeeDTOFactory.getMarcoDTO();
-        Employee marco = EmployeeFactory.getMarco();
-        // act
-        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.of(marco));
-        var result = employeeService.findOneEmployee(id);
+        Integer id = 1;//Buscamos el empleado 1
+        EmployeeDTO expected = EmployeeDTOFactory.getMarcoDTO();//Lo que devuelve , se espera.
+        Employee marco = EmployeeFactory.getMarco();//Devolver una entidad en este caso 
 
+        // act
+        var result = employeeService.findOneEmployee(id);
+        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.of(marco));
+                                                     // aca devuelve a marco. esta en un optional porque findById devuelve un optional. se puede ver en employeerepository
         // assert
         Assertions.assertEquals(expected, result);
     }
@@ -305,29 +311,29 @@ class EmployeeServiceTest {
     @Test
     void findOneEmployeeWithNotExistentId() {
         // arrange
-        Integer id = 999999;
+        Integer id = 999999;// id que no existe
 
         // mockeos
 
-        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.empty());
+        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.empty()); // es empty porque esta vacio, no existe.
 
         // act & assert
-        Assertions.assertThrows(
-                NotFoundException.class,
-                () -> employeeService.findOneEmployee(id)
+        Assertions.assertThrows(   // Este seria nuestro expected, es una excepcion
+                NotFoundException.class, // ver la excepcion que da el servicio
+                () -> employeeService.findOneEmployee(id) // el ejecutable 
         );
     }
 
     @Test
     void findByName() {
         // arrange
-        String name = "Jean";
-        List<EmployeeDTO> expected = List.of(EmployeeDTOFactory.getJeanDTO());
-        Employee jean = EmployeeFactory.getJean();
+        String name = "Jean"; //como parametro
+        List<EmployeeDTO> expected = List.of(EmployeeDTOFactory.getJeanDTO());// lo esperado , en la lista lo que tiene que encontrar en este caso es un empleado 
+        Employee jean = EmployeeFactory.getJean(); // Entidad 
 
         // act
-        Mockito.when(employeeRepository.findByName(name)).thenReturn(List.of(jean));
-        var result = employeeService.findByName(name);
+        Mockito.when(employeeRepository.findByName(name)).thenReturn(List.of(jean));// retorno una entidad
+        var result = employeeService.findByName(name); 
 
         // assert
         Assertions.assertEquals(expected, result);
@@ -336,11 +342,11 @@ class EmployeeServiceTest {
     @Test
     void findByNameNotFound() {
         // arrange
-        String name = "Amarancio";
-        List<EmployeeDTO> expected = List.of();
+        String name = "Amarancio"; // El parametro que busca
+        List<EmployeeDTO> expected = List.of(); // Lo esperado una lista vacia en este caso.Porque no tiene una excepcion el EmployeeService
 
         // act
-        Mockito.when(employeeRepository.findByName(name)).thenReturn(List.of());
+        Mockito.when(employeeRepository.findByName(name)).thenReturn(List.of());//Retorna una lista vacia
         var result = employeeService.findByName(name);
 
         // assert
@@ -444,3 +450,182 @@ public class EmployeeDTOFactory {
     }
 
 }
+
+
+
+
+
+-------------------------------------------------------¡¡¡TEST DE INTEGRACION!!!-------------------------------------------------------
+//TESTEAR EL CONTROLADOR EN ESTE CASO DE EMPLOYEE//
+ 
+1- crear Carpeta integration. Dentro de el creamos una class en este caso EmployeeControllerIntegrationTest.
+
+@SpringBootTest //Anotacion levanta el contexto de la aplicacion.
+                // Al contenedor de spring y a las aplicaciones le llamamos contexto . Aca queremos todo el contexto.
+@AutoConfigureMockMvc //Levanta a las config, autoconfigure 
+
+public class EmployeeControllerIntegrationTest {
+
+  @Autowired
+    MockMvc mockMvc; // Es como la persona que manda el request.Clase que permite ejecutar las consultas a un endpoint en particular
+
+    ObjectWriter writer; // inicializar un objeto 
+
+
+  @BeforeEach
+
+    public void setupBeforeAll(){
+        writer = new ObjectMapper()//Permite traducir un objeto nuestro a un string plano en JSON.
+                .registerModule(new JavaTimeModule())
+                .writer();
+    }
+   
+2) Realizamos los test:
+
+   @Test
+    public void saveEmployee() throws Exception {
+
+        // Arrange
+        
+        EmployeeDTO newEmployee = EmployeeDTOFactory.getTinchoDTO(); // Param necesario
+       
+        CrudDTO expected = CrudDTOFactory.crudDTOCreationWithId3(); // La devolucion, Lo que espero, seria el BodyExcepted
+
+
+
+        //REQUEST CON MockHttpServletRequestBuilder & MockMvcRequestBuilders (librerias)
+        
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders  //Declaramos la request que vamos a llamar o hacer
+                .post("/employee/save") // POST porque hacemos un save nos fijamos en el controller
+                .contentType(MediaType.APPLICATION_JSON) // aca aviso que estoy enviando un JSON
+                .content(writer.writeValueAsString(newEmployee)); // y aca hay que usar el writter . Es el empleado convertido en json
+
+        
+        //Los 3 EXPECTED con ResultMatcher & MockMvcResultMatchers
+       
+        ResultMatcher statusExpected = MockMvcResultMatchers.status().isOk(); //StatusExpected el isOk puede varias badrequest ejemplo.
+
+             
+        ResultMatcher bodyExpected = MockMvcResultMatchers.content().json( //BodyExpected
+                writer.writeValueAsString(expected)
+        );
+
+           
+        ResultMatcher contentTypeExpected = MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON); //ContentTypeExpected
+
+
+
+        // act & assert con mockmvc
+        mockMvc.perform(request)// le paso la request
+                .andDo(MockMvcResultHandlers.print()) //Devuelve el request de manera gráfica
+                .andExpect(statusExpected)
+                .andExpect(bodyExpected)
+                .andExpect(contentTypeExpected);
+    }
+
+
+  
+@Test
+    public void findOneEmployee() throws Exception {
+        // arrange
+        Integer id = EmployeeDTOFactory.getJeanDTO().getId();//PARAM REQUERIDO
+        EmployeeDTO expected = EmployeeDTOFactory.getJeanDTO();// ESPERO UN EMPLOYEEDTO
+
+           //REQUEST CON MockHttpServletRequestBuilder & MockMvcRequestBuilders (librerias)
+              //Declaramos la request que vamos a llamar o hacer
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders.get("/employee/get/"+id);
+
+
+        //Los 3 EXPECTED con ResultMatcher & MockMvcResultMatchers
+             //StatusExpected
+        ResultMatcher statusExpected = MockMvcResultMatchers.status().isOk();
+
+             //BodyExpected
+        ResultMatcher bodyExpected = MockMvcResultMatchers.content().json(
+                writer.writeValueAsString(expected)
+        );
+
+              //ContentTypeExpected
+        ResultMatcher contentTypeExpected = MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON);
+
+
+        // act & assert con mockmvc
+        mockMvc.perform(request)
+                .andDo(MockMvcResultHandlers.print()) //Devuelve el request de manera gráfica
+                .andExpect(statusExpected)
+                .andExpect(bodyExpected)
+                .andExpect(contentTypeExpected);
+    }
+
+
+ @Test
+    public void deleteEmploee() throws Exception {
+        //arrange
+        
+        Integer id = 1;
+        CrudDTO expected = CrudDTOFactory.crudDTODeletationWithId1();
+
+        //REQUEST CON MockHttpServletRequestBuilder & MockMvcRequestBuilders (librerias)
+           //Declaramos la request que vamos a llamar o hacer
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders.delete("/employee/delete/{id}",id);
+
+        //Los 3 EXPECTED con ResultMatcher & MockMvcResultMatchers
+            //StatusExpected
+        ResultMatcher statusExpected = MockMvcResultMatchers.status().isOk();
+
+            //BodyExpected
+        ResultMatcher bodyExpected = MockMvcResultMatchers.content().json(
+                writer.writeValueAsString(expected)
+        );
+
+           //ContentTypeExpected
+        ResultMatcher contentTypeExpected = MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON);
+
+        // act & assert con mockmvc
+        mockMvc.perform(request)
+                .andDo(MockMvcResultHandlers.print()) //Devuelve el request de manera gráfica
+                .andExpect(statusExpected)
+                .andExpect(bodyExpected)
+                .andExpect(contentTypeExpected);
+    }
+}
+
+
+3) EN CrudDTOFactory:
+
+ public static CrudDTO crudDTOCreationWithId1(){
+        return CrudDTO.builder()
+                .message("Se creo el empleado con id: " + 0)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTODeletationWithId1(){
+        return CrudDTO.builder()
+                .message("Se elimino el empleado con id " + 1)
+                .action(CrudEnum.DELETATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTOCreationWithId2(){
+        return CrudDTO.builder()
+                .message("Se creo el departamento con id: " + 2)
+                .action(CrudEnum.CREATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTODeletationWithId2(){
+        return CrudDTO.builder()
+                .message("Se elimino el departamento con id " + 2)
+                .action(CrudEnum.DELETATION)
+                .build();
+    }
+
+    public static CrudDTO crudDTOReadingNotFoundWithId7(){
+        return CrudDTO.builder()
+                .message("No se pudo encontrar el empleado con id " + 7)
+                .action(CrudEnum.READING)
+                .build();
+    }
+}
+
