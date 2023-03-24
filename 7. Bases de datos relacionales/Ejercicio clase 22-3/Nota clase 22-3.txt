@@ -1,0 +1,187 @@
+----------------------------------------------------PRACTICA---------------------------------------------------
+use demo;
+-- agregar en una tabla 
+SELECT * FROM usuarios;
+
+INSERT INTO usuarios VALUES 
+('1', 'valentina', 'vallejos');
+
+SELECT * FROM usuarios;
+
+-- Agregas más
+SELECT * FROM usuarios;
+INSERT INTO usuarios (idusuarios, nombre, apellido) VALUES
+('2', 'Valentina', 'Vallejos'),
+('3', 'Roman', 'Pitton'),
+('4', 'Susana', 'Podio'),
+('5', 'Silvina', 'Col');
+SELECT * FROM usuarios;
+
+-- Eliminar un usuario
+DELETE FROM usuarios WHERE idusuarios = 1;
+select * FROM usuarios;
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------CLASE MARCO---------------------------------------------------
+
+SELECT * FROM movies_db.movies;
+# Mostrar todos los registros de la tabla de movies. 
+use movies_db;
+SELECT * FROM movies;
+
+# Mostrar el nombre, apellido y rating de todos los actores.
+SELECT first_name, last_name, rating FROM actors;
+
+# Mostrar el título de todas las series y usar alias para que tanto el nombre de la 
+# tabla como el campo estén en español.
+SELECT title as titulo from series;
+
+# Mostrar el nombre y apellido de los actores cuyo rating sea mayor a 7.5.
+SELECT first_name, last_name, rating FROM actors where rating > 7.5;
+
+# Mostrar el título de las películas, el rating y los premios de las películas 
+# con un rating mayor a 7.5 y con más de dos premios.
+SELECT title, rating, awards FROM movies where rating > 7.5 AND awards > 2;
+
+# Mostrar el título de las películas y el rating ordenadas por rating en forma ascendente.
+SELECT title, rating FROM movies ORDER BY rating ASC;
+
+#Mostrar los títulos de las primeras tres películas en la base de datos.
+SELECT title FROM movies ORDER BY movie_id LIMIT 3;
+
+#Mostrar el top 5 de las películas con mayor rating.
+SELECT title, rating FROM movies ORDER BY rating DESC LIMIT 5;
+
+#Listar los primeros 10 actores.
+SELECT actor_name FROM actors ORDER BY actor_id LIMIT 10;
+
+#Mostrar el título y rating de todas las películas cuyo título sea de Toy Story.
+SELECT title, rating FROM movies WHERE title LIKE '%Toy Story%';
+
+#Mostrar a todos los actores cuyos nombres empiezan con Sam.
+SELECT actor_name FROM actors WHERE actor_name LIKE 'Sam%';
+
+#Mostrar el título de las películas que salieron entre el 2004 y 2008.
+SELECT title FROM movies WHERE release_year BETWEEN 2004 AND 2008;
+
+#Traer el título de las películas con el rating mayor a 3, con más de 1 premio y con fecha de lanzamiento entre el año 1988 al 2009. Ordenar los resultados por rating.
+SELECT title, rating FROM films WHERE rating > 3 AND awards > 1 AND release_year BETWEEN 1988 AND 2009 ORDER BY rating DESC;
+
+
+
+
+
+
+----------------------------------------------------CLASE JEAN---------------------------------------------------
+
+-- Seleccionar el nombre, el puesto y la localidad de los departamentos donde trabajan los vendedores.
+
+SELECT e.nombre, e.puesto, d.localidad
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment;
+
+-- Visualizar los departamentos con por lo menos o más de tres empleados.
+
+SELECT d.*, COUNT(*) total_empleados
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment
+GROUP BY d.iddepartment
+HAVING total_empleados >= 3;
+
+-- Mostrar el nombre, salario y nombre del departamento de los empleados que tengan el mismo puesto que ‘Mito Barchuk’.
+
+SELECT * FROM Employee;
+
+SELECT e.nombre, e.salario, d.nombreDepartamento
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment
+WHERE e.puesto = (SELECT puesto FROM employee WHERE nombre = "Mito" AND apellido = "Barchuk");
+
+SELECT e.nombre, e.salario, d.nombreDepartamento
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment
+WHERE e.puesto = (SELECT puesto FROM employee WHERE nombre = "Cesar" AND apellido = "Piñero");
+
+-- Mostrar los datos de los empleados que trabajan en el departamento de contabilidad, ordenados por nombre.
+
+SELECT e.*
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment
+WHERE d.nombreDepartamento = "Contabilidad"
+ORDER BY e.nombre ASC;
+
+-- Mostrar el nombre del empleado que tiene el salario más bajo.
+
+SELECT * FROM employee;
+
+SELECT e.nombre, MIN(e.salario)
+FROM employee e
+GROUP BY e.nombre;
+
+-- OPCION VALIDA PERO MENOS PERFORMANTE EN TABLAS GRANDES
+SELECT e.nombre, e.salario
+FROM employee e
+WHERE e.salario = (SELECT MIN(salario) FROM employee);
+
+-- OPCION VALIDA PERO MAS PERFORMANTE EN TABLAS GRANDES
+SELECT e.nombre, e.salario
+FROM employee e
+ORDER BY e.salario ASC
+LIMIT 1;
+
+
+-- Mostrar los datos del empleado que tiene el salario más alto en el departamento de ‘Ventas’.
+
+SELECT e.*
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment
+WHERE d.nombreDepartamento = "Ventas"
+ORDER BY e.salario DESC
+LIMIT 1;
+
+SELECT e.*
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment
+WHERE d.nombreDepartamento = "Ventas" AND e.salario = (
+	SELECT MAX(salario) FROM employee e JOIN department d
+	ON e.idDepartamento = d.iddepartment WHERE d.nombreDepartamento = "Ventas");
+    
+  -- EJEMPLO SIN TABLA TEMPORAL CON QUERY COST DE mas o menos 3.0
+SELECT e.nombre, e.salario, d.nombreDepartamento
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment
+WHERE e.puesto = (SELECT puesto FROM employee WHERE nombre = "Cesar" AND apellido = "Piñero");
+
+-- USAR TABLAS TEMPORALES
+
+CREATE TEMPORARY TABLE employeeXdepartment 
+SELECT *
+FROM employee e JOIN department d
+ON e.idDepartamento = d.iddepartment;
+
+SELECT * from employeeXdepartment;
+
+-- USAR INDEX PARA NOMBRE Y APELLIDO
+
+CREATE INDEX nombreCompleto_idx
+ON employee (nombre, apellido);
+
+CREATE INDEX puestoEmployee_idx
+ON employeeXdepartment (puesto);
+
+
+-- EJEMPLO CON TABLA TEMPORAL CON QUERY COST DE 1.90
+-- AL APLICAR INDEXES EL QUERY COST BAJA A 0.70
+SELECT nombre, salario, nombreDepartamento
+FROM employeeXdepartment
+WHERE puesto = (SELECT puesto FROM employee WHERE nombre = "Mito" AND apellido = "Barchuk");  
