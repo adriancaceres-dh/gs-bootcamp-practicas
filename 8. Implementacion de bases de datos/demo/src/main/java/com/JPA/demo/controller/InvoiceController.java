@@ -3,6 +3,7 @@ package com.JPA.demo.controller;
 import com.JPA.demo.dto.InvoiceDTO;
 import com.JPA.demo.dto.MessageDTO;
 import com.JPA.demo.dto.ProductDTO;
+
 import com.JPA.demo.service.InvoiceService;
 import com.JPA.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,6 @@ import java.util.List;
 @RestController
 @RequestMapping("invoice")
 public class InvoiceController {
-
     @Autowired
     private InvoiceService invoiceService;
 
@@ -37,4 +37,6 @@ public class InvoiceController {
     public ResponseEntity<MessageDTO> deleteById(@PathVariable Integer id){
         return ResponseEntity.ok(invoiceService.deleteEntity(id));
     }
+
+
 }
