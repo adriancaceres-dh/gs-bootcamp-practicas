@@ -1,0 +1,37 @@
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+
+
+
+{
+    "firstname": "Jean",
+    "lastname": "Cardo",
+    "dni": "123123129",
+    "birthDate": "05/02/1998",
+    "salary": 8000.50,
+    "age" : 85
+}
+
+
+@Entity // es tratada como una entidad  , objeto traducido a tablas. Indica q springboot que es el equivalente a una tabla de datos
+@Table (name = "persona")// ponerle cuestiones a la base de datos, propiedades especiales a la tabla
+public class Person {
+
+    @Id //siempre que haya id
+    @GeneratedValue(strategy = GenerationType.AUTO) //PERMITE QUE JPD ELIJA POR NOSOTROS
+    //@GeneratedValue(strategy = GenerationType.IDENTITY) // PERMITE QUE SE GENERE UN ID UNICO EN BASE AL GENERADOR AUTOINCREMENTAL,POR EJEMPLO MYSQL
+    //@GeneratedValue(strategy = GenerationType.TABLE)// GENERA A PARTIR DE UNA TABLA. MARIADB ES EL MEJOR DE LOS CASOS
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE)//GENERA ESTRUCTURAS ESPECIALES QUE SE LLAMAN TRIGGERS Y CUANDO SE AGREGA UN NUEVO CAMPO LA SECUENCIA CAMBIA DE VALOR. ORACLE
+    //@GeneratedValue(strategy = GenerationType.UUIO)// GENERA VALORES DE FORMA ALEATORIA
+
+
+ @Column(name = "nombre", nullable = false, length = 40) //SIMILAR A VALIDACIONES
+  @Column (name = "edad", nullable = false, scale = 2) // como max 2 partes enteras scale
