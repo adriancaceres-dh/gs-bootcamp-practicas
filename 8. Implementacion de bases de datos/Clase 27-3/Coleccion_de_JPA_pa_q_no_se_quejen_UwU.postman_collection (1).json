@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "db4c70e8-e00d-4db7-b72a-b2deedb807aa",
+		"_postman_id": "20720938-599c-4a6d-9c5d-28939397b8b3",
 		"name": "Coleccion de JPA pa q no se quejen UwU",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "13700408"
+		"_exporter_id": "23970213"
 	},
 	"item": [
 		{
@@ -214,25 +214,40 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "getByEmail",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/client/getbyemail?email=jean",
+							"raw": "localhost:8080/client/getByEmail/jean.cardo3@digitalhouse.com",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"client",
-								"getbyemail"
+								"getByEmail",
+								"jean.cardo3@digitalhouse.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBycardNumber",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/client/getBycardNumber/123456788",
+							"host": [
+								"localhost"
 							],
-							"query": [
-								{
-									"key": "email",
-									"value": "jean"
-								}
+							"port": "8080",
+							"path": [
+								"client",
+								"getBycardNumber",
+								"123456788"
 							]
 						}
 					},
@@ -415,6 +430,14 @@
 								""
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByNameProduct",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
