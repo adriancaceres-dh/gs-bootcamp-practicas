@@ -7,6 +7,7 @@ import com.JPA.demo.repository.IPersonRepository;
 import com.JPA.demo.service.interfaces.IPersonService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -66,5 +67,64 @@ public class PersonService implements IPersonService {
                 .action("DELETATION")
                 .build();
 
+    }
+
+    //METODOS NOMBRADOS -> REALIZAN CONSULTAS FUERA DE LAS BASICAS(FINDALL(), FINDBYID(), ETC)
+    @Override
+    public List<PersonDTO> findByName(String name) {
+
+        var list = personRepository.findByFirstnameContaining(name);
+
+        return list.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+
+    }
+
+    @Override
+    public List<PersonDTO> findByAges(Short desde, Short hasta) {
+
+        //Puedo hacer que si los valores no los pasan, tome los min y max dados.
+        if (desde == null) {
+            desde = Short.MIN_VALUE;
+        }
+        if (hasta == null) {
+            hasta = Short.MAX_VALUE;
+        }
+
+        var list = personRepository.findByAgeBetween(desde, hasta);
+
+        return list.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<PersonDTO> findByAgesAndSalary(Short desde, Short hasta, Double salario) {
+
+        var list = personRepository.findByAgeBetweenAndSalaryLessThanEqual(desde,hasta,salario);
+
+        return list.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<PersonDTO> orderByName(String order) {
+
+        List<Person> list;
+        Sort sort = null; //Lo utilizo para pasar el ordenamiento
+
+        if(order.equalsIgnoreCase("asc") || order.isEmpty()){
+            sort = Sort.by("firstname").ascending();
+        }else if(order.equalsIgnoreCase("desc")){
+            sort = Sort.by("firstname").descending();
+        }
+
+        list = personRepository.findAll(sort);
+
+        return list.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
     }
 }

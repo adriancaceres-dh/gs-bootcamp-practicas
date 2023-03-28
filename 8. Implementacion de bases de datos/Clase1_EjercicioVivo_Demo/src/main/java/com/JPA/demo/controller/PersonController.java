@@ -35,4 +35,27 @@ public class PersonController {
     public ResponseEntity<MessageDTO> deleteById(@PathVariable Integer id){
         return ResponseEntity.ok(personService.deleteEntity(id));
     }
+
+    @GetMapping("/getName/{name}")
+    public ResponseEntity<List<PersonDTO>> findByName(@PathVariable String name){
+        return ResponseEntity.ok(personService.findByName(name));
+    }
+
+    @GetMapping("/getByAges")
+    public ResponseEntity<List<PersonDTO>> findByAges(@RequestParam(required = false) Short desde,
+                                                      @RequestParam(required = false) Short hasta){
+        return ResponseEntity.ok(personService.findByAges(desde,hasta));
+    }
+
+    @GetMapping("/getByAgesAndSalary")
+    public ResponseEntity<List<PersonDTO>> findByAgesAndSalary(@RequestParam(required = false) Short desde,
+                                                               @RequestParam(required = false) Short hasta,
+                                                               @RequestParam(required = false) Double salario){
+        return ResponseEntity.ok(personService.findByAgesAndSalary(desde,hasta,salario));
+    }
+
+    @GetMapping("/orderByName")
+    public ResponseEntity<List<PersonDTO>> orderByName(@RequestParam String order){
+        return ResponseEntity.ok(personService.orderByName(order));
+    }
 }
