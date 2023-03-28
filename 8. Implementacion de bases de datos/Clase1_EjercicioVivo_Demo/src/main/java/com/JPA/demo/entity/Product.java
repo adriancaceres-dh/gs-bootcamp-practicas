@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -25,4 +27,7 @@ public class Product {
 
     @Column(name = "descripcion", nullable = false, length = 200)
     private String description;
+
+    @ManyToMany
+    private List<Invoice> invoices;
 }

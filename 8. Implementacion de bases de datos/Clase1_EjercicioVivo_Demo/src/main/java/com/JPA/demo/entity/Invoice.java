@@ -9,6 +9,8 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -25,4 +27,10 @@ public class Invoice {
     @Column(name = "fecha", nullable = false)
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate date;
+
+    @ManyToOne //ya que es el padre, 1 solo cliente tiene muchas facturas. o es unidireccional de este lado, o es bidireccional y se coloca el mapped del onetomany.
+    private Client client;
+
+    @ManyToMany(mappedBy = "invoices") //en muchos a muchos el mapeo va en cualquiera.
+    private List<Product> products;
 }

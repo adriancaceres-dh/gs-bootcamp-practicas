@@ -46,4 +46,9 @@ public class Person {
     @Column(name = "salario", precision = 2) //4 partes enteras, 2 partes fraccionarias
     private Double salary;
 
+    private String genre;
+
+    @OneToOne(mappedBy = "person") //Cuando ponemos la relación en ambos, se pone un mappedBy para que priorice la otra y no haga 2 relaciones. El bidireccionalismo se utiliza con JOIN. Ej. Género de una persona a través del cliente.
+    private Client cliente;
+
 }
