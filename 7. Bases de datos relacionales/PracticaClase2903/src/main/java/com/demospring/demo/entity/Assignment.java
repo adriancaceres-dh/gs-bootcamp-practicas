@@ -21,6 +21,9 @@ public class Assignment {
     @Column(name = "nombre_asignatura",length = 50, nullable = false)
     private String name;
 
+    @Column(name = "docente_asignatura",length = 50, nullable = false)
+    private String teacher;
+
     @ManyToMany
     private List<Student>students;
 }

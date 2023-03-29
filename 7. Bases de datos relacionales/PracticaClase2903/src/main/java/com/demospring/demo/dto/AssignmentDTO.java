@@ -13,4 +13,6 @@ public class AssignmentDTO {
 
     private String name;
 
+    private String teacher;
+
 }

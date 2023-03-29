@@ -43,19 +43,22 @@ public class AssignamentService implements ICrudService<AssignmentDTO, Integer> 
     public List<AssignmentDTO> getAllEntities() {
         var listEntity = assignmentRepository.findAll();
         return listEntity.stream().map(
-                        assignment -> {
-                        var DTO = new AssignmentDTO();
-                        return DTO
-                        }//si tengo muchas linas de codigo en una funcion anonima debo colocar llaves
+                        assignamet -> {
+                            var dto = new AssignmentDTO();
+                            dto.setId(assignamet.getId());
+                            dto.setName(assignamet.getName());
+                            dto.setTeacher(assignamet.getTeacher());
+                            // aca deben completar el dto con los datos del assigment
+                            return dto;
+                        }
+                        //si tengo muchas linas de codigo en una funcion anonima debo colocar llaves
 
-                )
-                .collect(Collectors.toList());
+                ).collect(Collectors.toList());
 //        return listEntity.stream().map(
 //                        assignment -> mapper.map(assignment, AssignmentDTO.class)
 //                )
 //                .collect(Collectors.toList());
     }
-
 
 
     @Override
