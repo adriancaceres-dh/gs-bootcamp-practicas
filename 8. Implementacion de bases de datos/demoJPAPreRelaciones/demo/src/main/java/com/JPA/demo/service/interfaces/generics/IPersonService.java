@@ -1,4 +1,4 @@
-package com.JPA.demo.service;
+package com.JPA.demo.service.interfaces.generics;
 
 import com.JPA.demo.dto.MessageDTO;
 import com.JPA.demo.dto.PersonDTO;
