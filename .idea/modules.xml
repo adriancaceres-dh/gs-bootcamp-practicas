@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2. Java/CarreraDeLaSelva/CarreraDeLaSelva.iml" filepath="$PROJECT_DIR$/2. Java/CarreraDeLaSelva/CarreraDeLaSelva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/ClasesAbstractaEInterfaces/ClasesAbstractaEInterfaces.iml" filepath="$PROJECT_DIR$/2. Java/ClasesAbstractaEInterfaces/ClasesAbstractaEInterfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/Distribuidora/Distribuidora.iml" filepath="$PROJECT_DIR$/2. Java/Distribuidora/Distribuidora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/Ejercicio1/Ejercicio1.iml" filepath="$PROJECT_DIR$/2. Java/Ejercicio1/Ejercicio1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/Ejercicio2/Ejercicio2.iml" filepath="$PROJECT_DIR$/2. Java/Ejercicio2/Ejercicio2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/EjercicioPOO/EjercicioPOO.iml" filepath="$PROJECT_DIR$/2. Java/EjercicioPOO/EjercicioPOO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/EstructurasDinamicas/EstructurasDinamicas.iml" filepath="$PROJECT_DIR$/2. Java/EstructurasDinamicas/EstructurasDinamicas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/Exepciones-Ejercicios/Exepciones-Ejercicios.iml" filepath="$PROJECT_DIR$/2. Java/Exepciones-Ejercicios/Exepciones-Ejercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/POO-Ejercicios/POO-Ejercicios.iml" filepath="$PROJECT_DIR$/2. Java/POO-Ejercicios/POO-Ejercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/SaveTheRopaSA/SaveTheRopaSA.iml" filepath="$PROJECT_DIR$/2. Java/SaveTheRopaSA/SaveTheRopaSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Java/TemperaturaGlobales/TemperaturaGlobales.iml" filepath="$PROJECT_DIR$/2. Java/TemperaturaGlobales/TemperaturaGlobales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gs-bootcamp-practicas.iml" filepath="$PROJECT_DIR$/.idea/gs-bootcamp-practicas.iml" />
+    </modules>
+  </component>
+</project>
