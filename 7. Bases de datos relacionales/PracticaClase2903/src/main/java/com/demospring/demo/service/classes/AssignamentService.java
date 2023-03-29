@@ -10,12 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class AssignamentService implements ICrudService<AssignmentDTO, Integer> {
     @Autowired
     IAssignmentRepository assignmentRepository;
     ModelMapper mapper = new ModelMapper();
+
     @Override
     public AssignmentDTO saveEntity(AssignmentDTO assignmentDTO) {
         var entity = mapper.map(assignmentDTO, Assignment.class);
@@ -26,17 +28,41 @@ public class AssignamentService implements ICrudService<AssignmentDTO, Integer> 
     }
 
     @Override
-    public AssignmentDTO getEntityById(Integer integer) {
-        return null;
+    public AssignmentDTO getEntityById(Integer id) {
+        var entity = assignmentRepository.findById(id).orElseThrow(
+                () -> {
+                    throw new RuntimeException("No se encuentra la materia con el ID indicado");
+                }
+        );
+        return mapper.map(
+                entity,
+                AssignmentDTO.class);
     }
 
     @Override
     public List<AssignmentDTO> getAllEntities() {
-        return null;
+        var listEntity = assignmentRepository.findAll();
+        return listEntity.stream().map(
+                        assignment -> mapper.map(assignment, AssignmentDTO.class)
+                )
+                .collect(Collectors.toList());
     }
 
     @Override
-    public MessageDTO deleteEntity(Integer integer) {
-        return null;
+    public MessageDTO deleteEntity(Integer id) {
+        if (assignmentRepository.existsById(id)) {
+            assignmentRepository.deleteById(id);
+
+            return MessageDTO.builder()
+                    .message("Se ha eliminado correctamente la asignatura con id " + id)
+                    .action("DELETATION")
+                    .build();
+        } else {
+            return MessageDTO.builder()
+                    .message("NO se ha encontrado la asignatura con id " + id)
+                    .action("DELETATION")
+                    .build();
+        }
     }
 }
+
