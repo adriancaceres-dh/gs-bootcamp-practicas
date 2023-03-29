@@ -25,9 +25,17 @@ public class ClientService implements IClientService {
     ModelMapper mapper = new ModelMapper();
     @Override
     public ClientDTO saveEntity(ClientDTO clientDTO) {
+        // aca convierto de DTO (porque viene del controller)
+        // a entity (porque va al repositorio)
         var entity = mapper.map(clientDTO, Client.class);
-        return mapper.map(
-                clientRepository.save(entity),
+
+        // aca guardo en la base de datos un entidad
+        // lo mas importante es esto.
+        entity = clientRepository.save(entity);
+
+        // aca convierto de entity (porque viene del repositorio)
+        // a DTO (porque va hacia el controlador)
+        return mapper.map(entity,
                 ClientDTO.class);
     }
 

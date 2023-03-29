@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -26,4 +27,11 @@ public class Client {
 
     @Column(name = "numeroTarjeta")
     private String cardNumber;
+
+    @OneToOne()
+    //@JoinColumn(name="id_persona") //esto se usa para modificar la relacion, pero no hace falta ponerlo.
+    private Person person;
+
+    @OneToMany(mappedBy = "client") // generalmente son unidireccionales del lado del OneToMany o son bidireccionales.
+    private List<Invoice> invoices;
 }

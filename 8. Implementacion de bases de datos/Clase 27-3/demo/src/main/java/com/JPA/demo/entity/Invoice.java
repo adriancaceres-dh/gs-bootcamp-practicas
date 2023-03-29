@@ -10,6 +10,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
+import java.util.Set;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -25,4 +28,10 @@ public class Invoice {
     @Column(name = "fecha", nullable = false)
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate date;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    private Client client;
+
+    @ManyToMany
+    private List<Product> products;
 }

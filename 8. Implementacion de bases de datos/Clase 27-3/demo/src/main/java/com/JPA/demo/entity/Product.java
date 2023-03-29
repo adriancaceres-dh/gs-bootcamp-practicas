@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -26,4 +28,11 @@ public class Product {
 
     @Column(name = "descripcion", nullable = false, length = 255)
     private String description;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "productsXInvoices",
+            joinColumns = @JoinColumn(name = "iid", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "pid", referencedColumnName = "id")
+    )
+    private Set<Invoice> invoices;
 }
