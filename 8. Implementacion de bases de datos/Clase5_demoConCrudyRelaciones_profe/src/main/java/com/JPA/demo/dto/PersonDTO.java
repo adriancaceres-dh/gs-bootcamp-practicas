@@ -1,9 +1,7 @@
 package com.JPA.demo.dto;
 
-import com.JPA.demo.entity.Client;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Column;
-import jakarta.persistence.OneToOne;
+import javax.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,9 +28,5 @@ public class PersonDTO {
     private Short age;
 
     private Double salary;
-
-    private String genre;
-
-    //private ClientDTO cliente;
 
 }

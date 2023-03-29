@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b043d2e-be70-4a64-b6b0-5b4500e73c14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/ClientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/ClientDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/InvoiceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/InvoiceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/PersonDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/PersonDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/dto/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/entity/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/java/com/JPA/demo/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase1_EjercicioVivo_Demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2KBSIHPryP89KKP4AsTbKG05DNQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/lfesta/Desktop/DigitalHouse-JAVA 2023/Repo_practicas/gs-bootcamp-practicas/8. Implementacion de bases de datos/Clase5_demoConCrudyRelaciones_profe"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="com.JPA.demo.DemoApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JPA.demo.DemoApplication" />
+      <module name="demo" />
+      <option name="PROGRAM_PARAMETERS" value="spring-boot:run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b043d2e-be70-4a64-b6b0-5b4500e73c14" name="Changes" comment="" />
+      <created>1673446403776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673446403776</updated>
+    </task>
+    <servers />
+  </component>
+</project>

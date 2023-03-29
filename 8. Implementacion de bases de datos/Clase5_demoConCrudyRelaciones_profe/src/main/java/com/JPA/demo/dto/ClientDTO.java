@@ -1,9 +1,8 @@
 package com.JPA.demo.dto;
 
+import javax.persistence.Column;
+
 import com.JPA.demo.entity.Invoice;
-import com.JPA.demo.entity.Person;
-import jakarta.persistence.Column;
-import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,7 +19,5 @@ public class ClientDTO {
 
     private String cardNumber;
 
-    private PersonDTO Person;
-
-    private List<InvoiceDTO> invoices;
+    private PersonDTO person;
 }

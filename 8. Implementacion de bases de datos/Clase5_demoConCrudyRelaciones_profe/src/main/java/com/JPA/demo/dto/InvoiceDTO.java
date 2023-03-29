@@ -1,9 +1,10 @@
 package com.JPA.demo.dto;
 
 
+import javax.persistence.Column;
+
 import com.JPA.demo.entity.Client;
 import com.JPA.demo.entity.Product;
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,6 +24,5 @@ public class InvoiceDTO {
 
     private ClientDTO client;
 
-    private List<ProductDTO> products;
-
+    private List<Product> products;
 }

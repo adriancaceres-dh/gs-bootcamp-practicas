@@ -36,7 +36,7 @@ public class Person {
     @Column(name = "documento", nullable = false, length = 8)
     private String dni;
 
-    @Column(name = "fechan_nacimiento", nullable = false)
+    @Column(name = "fecha_nacimiento", nullable = false)
     @JsonFormat(pattern = "dd/MM/yyy")
     private LocalDate birthDate;
 
@@ -48,7 +48,6 @@ public class Person {
 
     private String genre;
 
-    @OneToOne(mappedBy = "person") //Cuando ponemos la relación en ambos, se pone un mappedBy para que priorice la otra y no haga 2 relaciones. El bidireccionalismo se utiliza con JOIN. Ej. Género de una persona a través del cliente.
-    private Client cliente;
+   //Cuando ponemos la relación en ambos, se pone un mappedBy para que priorice la otra y no haga 2 relaciones. El bidireccionalismo se utiliza con JOIN. Ej. Género de una persona a través del cliente.
 
 }
