@@ -1,0 +1,48 @@
+Atributos:
+Cliente:
+
+ID (PK)
+Nombre (varchar)
+Apellido (varchar)
+Teléfono (varchar)
+Dirección (varchar)
+Email (varchar)
+Coche:
+
+ID (PK)
+Marca (varchar)
+Modelo (varchar)
+Año (int)
+Placa (varchar)
+Cliente_ID (FK)
+Servicio:
+
+ID (PK)
+Tipo_de_servicio (varchar)
+Fecha (date)
+Costo (float)
+Coche_ID (FK)
+Relaciones:
+
+Un cliente puede tener muchos coches (1:N). La FK se agrega en la tabla Coche.
+Un coche puede tener muchos servicios (1:N). La FK se agrega en la tabla Servicio.
+
+
+
+   +----------------+       +--------------+       +---------------+
+   |    Cliente     |       |    Coche     |       |    Servicio   |
+   +----------------+       +--------------+       +---------------+
+   | ID             |       | ID           |       | ID            |
+   | Nombre         |       | Marca        |       | Tipo_de_serv. |
+   | Apellido       |       | Modelo       |       | Fecha         |
+   | Teléfono       |       | Año          |       | Costo         |
+   | Dirección      |       | Placa        |       | Coche_ID (FK) |
+   | Email          |       | Cliente_ID   |       +---------------+
+   +----------------+       +--------------+
+
+
+
+PK = clave primaria, FK = clave foránea. El atributo Cliente_ID en la tabla Coche es una 
+clave foránea que referencia a la clave primaria ID en la tabla Cliente. El atributo Coche_ID 
+en la tabla Servicio es una clave foránea que referencia a la clave primaria ID en la tabla Coche.
+
