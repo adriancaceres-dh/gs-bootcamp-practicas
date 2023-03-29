@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "9ff4304b-164f-46b6-93b0-8375a26090a7",
+		"name": "Studentdb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23970213"
+	},
+	"item": [
+		{
+			"name": "Assignament",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Matematica\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/assignment/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assignment",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/assignment/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assignment",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/person/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/assignment/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assignment",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/student/getByName/Juan",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student",
+								"getByName",
+								"Juan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jean.cardo@digitalhouse.com\",\r\n    \"cardNumber\": \"123456789\",\r\n    \"person\": {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/client/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/client/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/client/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/client/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/student/getByName/Juan",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student",
+								"getByName",
+								"Juan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
