@@ -31,7 +31,7 @@ public class Client {
     // Relación 1 a 1 con person.
     // Si lo ponemos en ambas tablas(bidireccional), en una de ellas ponemos el mappedBy para evitar la doble relación en la db.
     // Persist hace que al ingresar por postman un cliente con un person que no existe, me la cree en person.
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.MERGE)
     private Person person;
 
     // Un cliente tiene muchas facturas por lo que OneToMany va en el padre.
