@@ -24,9 +24,12 @@ public class Invoice {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate date;
 
-    @ManyToOne //ya que es el padre, 1 solo cliente tiene muchas facturas. o es unidireccional de este lado, o es bidireccional y se coloca el mapped del onetomany.
+    // Un cliente tiene muchas facturas, por lo que ManyToOne va del lado del hijo (muchas).
+    // La relación OneToMany es unidireccional de este lado, o es bidireccional y se coloca el mapped del onetomany.
+    @ManyToOne
     private Client client;
 
-    @ManyToMany(mappedBy = "invoices") //en muchos a muchos el mapeo va en cualquiera.
+    // En la relación muchos a muchos el mapeo va en cualquiera.
+    @ManyToMany(mappedBy = "invoices")
     private List<Product> products;
 }

@@ -7,6 +7,9 @@ import java.util.List;
 
 public interface IClientRepository extends JpaRepository<Client,Integer> {
 
-    List<Client> findClientByPersonGenre(String genre); //Bidireccionalismo buscando género de persona a través de cliente (join)
+    //Bidireccionalismo buscando género de persona a través de cliente (join->OneToOne en ambos objetos).
+    //Podría hacer lo mismo con buscar info de un cliente a través de una persona.
+    // Ej. TC VISA de un cliente a través de person.
+    List<Client> findClientByPersonGenreEquals(String genre);
 
 }
