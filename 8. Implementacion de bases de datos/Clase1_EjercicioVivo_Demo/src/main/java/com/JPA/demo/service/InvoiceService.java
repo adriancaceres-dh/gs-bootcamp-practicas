@@ -2,6 +2,7 @@ package com.JPA.demo.service;
 
 import com.JPA.demo.dto.InvoiceDTO;
 import com.JPA.demo.dto.MessageDTO;
+import com.JPA.demo.dto.PersonDTO;
 import com.JPA.demo.entity.Invoice;
 import com.JPA.demo.repository.IInvoiceRepository;
 import com.JPA.demo.service.interfaces.IInvoiceService;

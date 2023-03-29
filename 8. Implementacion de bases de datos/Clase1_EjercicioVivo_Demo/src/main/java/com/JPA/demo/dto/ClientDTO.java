@@ -22,5 +22,4 @@ public class ClientDTO {
 
     private PersonDTO Person;
 
-    private List<InvoiceDTO> invoices;
 }
