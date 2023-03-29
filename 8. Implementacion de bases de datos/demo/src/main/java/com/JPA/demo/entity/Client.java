@@ -26,4 +26,7 @@ public class Client {
 
     @Column(name = "numeroTarjeta")
     private String cardNumber;
+
+    @OneToOne
+    private Person person;
 }

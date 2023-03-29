@@ -3,6 +3,7 @@ package com.JPA.demo.controller;
 import com.JPA.demo.dto.MessageDTO;
 import com.JPA.demo.dto.PersonDTO;
 import com.JPA.demo.service.interfaces.IPersonService;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -34,5 +35,23 @@ public class PersonController {
     @DeleteMapping("/{id}")
     public ResponseEntity<MessageDTO> deleteById(@PathVariable Integer id){
         return ResponseEntity.ok(personService.deleteEntity(id));
+    }
+
+    @GetMapping("/getByName/{name}")
+    public ResponseEntity<List<PersonDTO>> findByName(@PathVariable String name){
+        return ResponseEntity.ok(personService.findByName(name));
+    }
+
+    @GetMapping("/getByAges")
+    public ResponseEntity<List<PersonDTO>> findByAge(@RequestParam(required = false) Short desde,
+                                                     @RequestParam(required = false) Short hasta){
+        return ResponseEntity.ok(personService.findByAges(desde, hasta));
+    }
+
+    @GetMapping("/getByAgesAndSalary")
+    public ResponseEntity<List<PersonDTO>> findByAgesAndSalary(@RequestParam(required = false) Short desde,
+                                                               @RequestParam(required = false) Short hasta,
+                                                               @RequestParam(required = false) Double salario){
+        return ResponseEntity.ok(personService.findByAgesAndSalary(desde, hasta, salario));
     }
 }

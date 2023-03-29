@@ -14,4 +14,6 @@ public interface IPersonService {
     List<PersonDTO> getAllPeople();
 
     MessageDTO deletePersona(Integer id);
+
+    List<PersonDTO> findByName(String name);
 }

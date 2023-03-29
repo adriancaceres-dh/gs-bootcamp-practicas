@@ -9,6 +9,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -38,6 +39,16 @@ public class InvoiceService implements IInvoiceService {
     @Override
     public List<InvoiceDTO> getAllEntities() {
         var list = invoiceRepository.findAll();
+
+        /*List<InvoiceDTO> invoices = new ArrayList<>();
+        
+         for (int i = 0; i < list.size() - 1; i++){
+            var entity = list.get(i); // stream
+            InvoiceDTO dtoAux = mapper.map(entity, InvoiceDTO.class); // map
+            invoices.add(dtoAux); // collect to list
+        }
+        return invoices;*/
+
         return list.stream().map(
                 invoice -> mapper.map(invoice, InvoiceDTO.class)
         )

@@ -63,4 +63,43 @@ public class PersonService implements IPersonService {
                     .build();
         }
     }
+
+    @Override
+    public List<PersonDTO> findByName(String name) {
+
+        var list = personRepository.findByFirstnameContaining(name);
+
+        return list.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<PersonDTO> findByAges(Short desde, Short hasta) {
+
+        if(desde == null)
+            desde = Short.MIN_VALUE;
+        if(hasta == null)
+            desde = Short.MAX_VALUE;
+
+        var list = personRepository.findByAgeBetween(desde, hasta);
+
+        return list.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<PersonDTO> findByAgesAndSalary(Short desde, Short hasta, Double salario) {
+
+        var list = personRepository.findByAgeBetweenAndSalaryLessThanEqual(desde, hasta, salario);
+
+        return list.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+
+    }
+
+
+
 }

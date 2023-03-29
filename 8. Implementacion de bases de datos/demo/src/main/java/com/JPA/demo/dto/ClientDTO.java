@@ -14,4 +14,6 @@ public class ClientDTO {
     private String email;
 
     private String cardNumber;
+
+    private PersonDTO person;
 }
