@@ -58,4 +58,16 @@ public class PersonController {
     public ResponseEntity<List<PersonDTO>> orderByName(@RequestParam String order){
         return ResponseEntity.ok(personService.orderByName(order));
     }
+
+    //EJERCICIOS HQL
+    @GetMapping("/orderByNameHQL")
+    public ResponseEntity<List<PersonDTO>> orderByNameHQL(){
+        return ResponseEntity.ok(personService.orderByNameHQL());
+    }
+
+    @GetMapping("/findByAgesHQL")
+    public ResponseEntity<List<PersonDTO>> findByAgesHQL(@RequestParam Integer year1,
+                                                         @RequestParam Integer year2) {
+        return ResponseEntity.ok(personService.findByAgesHQL(year1, year2));
+    }
 }

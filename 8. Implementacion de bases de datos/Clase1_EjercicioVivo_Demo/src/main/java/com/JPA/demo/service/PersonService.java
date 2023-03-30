@@ -127,4 +127,20 @@ public class PersonService implements IPersonService {
                 person -> mapper.map(person, PersonDTO.class)
         ).collect(Collectors.toList());
     }
+
+    public List<PersonDTO> orderByNameHQL(){
+        var persons = personRepository.orderByNameHQL();
+
+        return persons.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+    }
+
+    public List<PersonDTO> findByAgesHQL(Integer year1, Integer year2){
+        var persons = personRepository.findByAgesHQL(year1, year2);
+
+        return persons.stream().map(
+                person -> mapper.map(person, PersonDTO.class)
+        ).collect(Collectors.toList());
+    }
 }

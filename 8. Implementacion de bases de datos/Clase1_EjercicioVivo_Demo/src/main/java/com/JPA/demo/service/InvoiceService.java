@@ -1,5 +1,6 @@
 package com.JPA.demo.service;
 
+import com.JPA.demo.dto.ClientDTO;
 import com.JPA.demo.dto.InvoiceDTO;
 import com.JPA.demo.dto.MessageDTO;
 import com.JPA.demo.dto.PersonDTO;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -67,4 +69,36 @@ public class InvoiceService implements IInvoiceService {
                 .action("DELETATION")
                 .build();
     }
+
+    //METODOS CON HQL
+    public List<InvoiceDTO> findByYear(Integer year){
+        var list = invoiceRepository.findInvoiceByDateEquals(year);
+
+        return list.stream().map(
+                yearActual -> mapper.map(yearActual, InvoiceDTO.class)
+        ).collect(Collectors.toList());
+    }
+
+/*    public List<InvoiceDTO> findByCategory(String category){
+        var list = invoiceRepository.findByCategory(category);
+
+        return list.stream().map(
+                categoryActual -> mapper.map(categoryActual, InvoiceDTO.class)
+        ).collect(Collectors.toList());
+    }*/
+
+    public List<Map<String,Integer>> getIdWithCount(){
+        var list = invoiceRepository.getIdWithCount();
+
+        return list;
+    }
+
+    public List<InvoiceDTO> listInvoiceWithProduct(String producto){
+        var list = invoiceRepository.listInvoiceWithProduct(producto);
+
+        return list.stream().map(
+                productActual -> mapper.map(productActual, InvoiceDTO.class)
+        ).collect(Collectors.toList());
+    }
+
 }

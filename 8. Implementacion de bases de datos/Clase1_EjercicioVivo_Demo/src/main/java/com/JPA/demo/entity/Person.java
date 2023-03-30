@@ -51,5 +51,8 @@ public class Person {
 
     // Cuando ponemos la relación en ambos, se pone un mappedBy para que priorice la otra y no haga 2 relaciones.
     // El bidireccionalismo se utiliza con JOIN. Ej. Género de una persona a través del cliente.
+    @OneToOne(mappedBy = "person")
+    private Client client;
+
 
 }

@@ -33,6 +33,6 @@ public class PersonDTO {
 
     private String genre;
 
-    //private ClientDTO cliente;
+    private ClientDTO cliente;
 
 }
