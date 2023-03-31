@@ -46,4 +46,9 @@ public class ClientController {
     public ResponseEntity<List<ClientDTO>> findBycardNumber(@PathVariable String cardNumber ){
         return ResponseEntity.ok(clientService.findBycardNumber(cardNumber));
     }
+
+    @GetMapping("/orderByName")
+    public ResponseEntity<List<ClientDTO>> orderByName(@RequestParam(required = false) String order){
+        return ResponseEntity.ok(clientService.orderByName(order));
+    }
 }

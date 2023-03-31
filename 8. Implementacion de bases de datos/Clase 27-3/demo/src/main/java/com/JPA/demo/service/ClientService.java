@@ -11,6 +11,7 @@ import com.JPA.demo.repository.IClientRepository;
 import com.JPA.demo.service.interfaces.IClientService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -90,4 +91,18 @@ public class ClientService implements IClientService {
                 client -> mapper.map(client, ClientDTO.class)
         ).collect(Collectors.toList());
     }
+
+    @Override
+    public List<ClientDTO> orderByName(String order) {
+        Sort sort = Sort.by("person.firstname");
+        if(order.equalsIgnoreCase("asc") || order == null)
+    sort = Sort.by("firstname").ascending();
+        else if(order.equalsIgnoreCase("desc"))
+    sort = Sort.by("firstname").descending();
+
+    var list = clientRepository.findAll(sort);
+        return list.stream().map(
+                client -> mapper.map(client, ClientDTO.class)
+            ).collect(Collectors.toList());
+}
 }

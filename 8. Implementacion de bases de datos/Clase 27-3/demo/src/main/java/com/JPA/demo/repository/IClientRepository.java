@@ -12,4 +12,5 @@ public interface IClientRepository extends JpaRepository<Client, Integer> {
     List<Client> findByEmailContaining(String email);
 
     List<Client> findBycardNumberContaining(String cardNumber);
+
 }
