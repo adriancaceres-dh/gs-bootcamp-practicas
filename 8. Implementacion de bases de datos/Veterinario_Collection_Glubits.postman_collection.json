@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "93be0e03-8c7e-4f11-a782-aeabfbf5292c",
+		"name": "Veterinario Collection Glubits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13700408"
+	},
+	"item": [
+		{
+			"name": "Duenio",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Jean\",\r\n    \"email\" : \"jeancaardo@gmail.com\",\r\n    \"telefono\" : \"123123123\",\r\n    \"edad\" : 25,\r\n    \"fechaNacimiento\" : \"1998-02-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/duenio/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/duenio/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/duenio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/duenio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Veterinario",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Marco\",\r\n    \"matricula\" : \"ABC123\",\r\n    \"especialidad\" : \"Oncologo Veterinario\",\r\n    \"horario\" : \"9hs a 23hs\",\r\n    \"telefono\" : \"123123123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/veterinario/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veterinario",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/veterinario/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veterinario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/veterinario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veterinario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/veterinario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veterinario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mascota",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"edad\": 5,\r\n    \"tipoAnimal\": \"Perro\",\r\n    \"raza\": \"Golden Retriever\",\r\n    \"nombre\": \"Nala\",\r\n    \"duenio\": {\r\n        \"id\" : 1\r\n    },\r\n    \"veterinario\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/mascota/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mascota",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mascota/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mascota",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mascota/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mascota",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mascota/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mascota",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
