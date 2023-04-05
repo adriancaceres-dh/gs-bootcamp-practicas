@@ -8,6 +8,7 @@ import com.example.demo.entity.Paciente;
 import com.example.demo.exceptions.NotFoundException;
 import com.example.demo.repository.IDoctorRepository;
 import com.example.demo.repository.IPacienteRepository;
+import com.example.demo.repository.ITutorRepository;
 import com.example.demo.service.generics.ICrudService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +23,20 @@ public class PacienteService implements ICrudService<PacienteDTO,Integer> {
     @Autowired
     IPacienteRepository pacienteRepository;
 
+    ITutorRepository tutorRepository;
+
     ModelMapper mapper = new ModelMapper();
 
     @Override
     public PacienteDTO saveEntity(PacienteDTO dto) {
 
         var entity = mapper.map(dto, Paciente.class);
+
+/*        if(dto.getTutor().getId() != null){
+            entity.setTutor(
+                    tutorRepository.findById(dto.getTutor().getId()).get()
+            );
+        }*/
 
         pacienteRepository.save(entity);
 

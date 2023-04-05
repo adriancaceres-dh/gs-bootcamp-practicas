@@ -30,7 +30,8 @@ public class Paciente {
     @Column(length = 10)
     private Integer documento;
 
-    @ManyToOne //Paciente domina relación
+    //Permite guarda paciente con datos de tutor(no existente anteriormente) Para crear ahora, con id de tutor ya creado modifico el save.
+    @ManyToOne//(cascade = {CascadeType.PERSIST}) //Paciente domina relación
     private Tutor tutor;
 
     @ManyToOne() //Paciente domina relación

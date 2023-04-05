@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 // LOMBOK
 @Data
@@ -15,7 +16,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "duenio")
-public class    Duenio {
+public class Duenio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.util.List;
 
 // LOMBOK
 @Data
@@ -14,25 +14,25 @@ import java.time.LocalDate;
 // JPA
 
 @Entity
-@Table(name = "duenio")
-public class    Duenio {
-
+@Table(name = "veterinario")
+public class Veterinario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 50)
+    @Column(length = 100)
     private String nombre;
 
+    @Column(length = 10)
+    private String matricula;
+
     @Column(length = 100)
-    private String email;
+    private String especialidad;
+
+    @Column(length = 100)
+    private String horario;
 
     @Column(length = 20)
     private String telefono;
-
-    @Column(length = 2)
-    private Short edad;
-
-    private LocalDate fechaNacimiento;
 
 }

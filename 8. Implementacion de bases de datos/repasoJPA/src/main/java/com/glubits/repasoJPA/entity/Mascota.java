@@ -31,7 +31,7 @@ public class Mascota {
     @Column(length = 100)
     private String nombre;
 
-    @ManyToOne(cascade = {CascadeType.ALL}) //Permite guarda paciente con datos de tutor(no existente anteriormente) Para crear ahora, con id de tutor ya creado modifico el save.
+    @ManyToOne(cascade = {CascadeType.ALL})
     private Duenio duenio;
 
     @ManyToOne()
